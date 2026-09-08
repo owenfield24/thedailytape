@@ -54,8 +54,9 @@ src/js/watchlist-quotes.js   Client-side fetch/render of data/watchlist-quotes.j
 src/js/pod-star.js           "Pin to your homepage" star + grid reorder (localStorage, per-browser)
 api/update-market-pulse.js   Daily cron function
 api/lib/nyse-calendar.js     Trading-day check (weekday + holiday list)
-api/lib/market-data-finnhub.js  Finnhub client (isolated — swap providers here only)
-api/lib/anthropic-client.js  Claude client — writes each pod's sector brief from real news headlines
+api/lib/market-data-finnhub.js  Finnhub client — equity/ETF quotes + news (isolated — swap providers here only)
+api/lib/market-data-fred.js  FRED client — the real 10-year Treasury yield only (Finnhub free tier can't give this)
+api/lib/anthropic-client.js  Claude client — writes Today's Brief and each pod's sector brief from real data
 api/lib/github-commit.js     Commits a file back to this repo via GitHub's REST API
 public/archive.html          Generated: every entry from every pod, aggregated newest-first
 public/about.html            Generated: what the site is, how the automation works, data sources
@@ -159,8 +160,10 @@ Two unrelated features both called "pinning" — don't conflate them:
 `vercel.json`. It checks whether today is a US trading day
 (`api/lib/nyse-calendar.js`), and if so, does three things in the same run:
 
-1. Fetches macro data via `api/lib/market-data-finnhub.js` and commits
-   `data/market-pulse.json`.
+1. Fetches indices via `api/lib/market-data-finnhub.js` (as SPY/DIA/QQQ ETF
+   proxies — see the "Why ETF proxies, and no VIX" note below) and the real
+   10-year Treasury yield via `api/lib/market-data-fred.js`, has Claude write
+   Today's Brief from them, and commits `data/market-pulse.json`.
 2. Calls `collectAllWatchlistTickers()` (`lib/parse-pods.js`) to find every
    ticker across every pod's `## Watchlist` section, fetches a quote for each
    via `fetchWatchlistQuotes()` (`api/lib/market-data-finnhub.js`), and
@@ -212,6 +215,28 @@ If Finnhub ever needs to be swapped for another provider, only
 `fetchMarketData()` and `fetchWatchlistQuotes()` with fixed return shapes;
 write a sibling module with the same exports and swap the `require(...)` in
 `api/update-market-pulse.js`.
+
+## Why ETF proxies, and no VIX
+
+Not a stylistic choice — verified live against real keys for two providers.
+Finnhub's free tier rejects every caret-prefixed index symbol (`^GSPC`,
+`^DJI`, `^IXIC`, `^VIX`, `^TNX`) with "Market data subscription required for
+CFD indices." Twelve Data was tested as an alternative and hit the identical
+wall (`SPX` explicitly requires a paid "Grow or Venture" plan). Real index
+levels are licensed data (S&P Dow Jones Indices, Cboe) that free tiers
+essentially never include — this isn't a Finnhub-specific gap.
+
+What free tiers *do* give you: plain equity/ETF quotes. So S&P 500 / Dow /
+Nasdaq are shown as SPY/DIA/QQQ (the ETFs that track them), always labeled
+honestly ("S&P 500 (SPY)") rather than presented as the real index figure —
+an ETF share price is a different number than the index level. The 10-year
+Treasury yield comes from FRED instead (a different provider entirely, not
+just a different symbol — see `api/lib/market-data-fred.js`). VIX has no
+equivalent on this site at all: there's no ETF that equals the real VIX
+print (VIXY tracks VIX *futures*, which decay differently from the index
+itself), and showing an inaccurate number under the VIX label would be worse
+than not showing one. Don't reintroduce a `vix` field or a `^`-prefixed
+Finnhub symbol without re-verifying against a real key first.
 
 ## Closed-market banner
 

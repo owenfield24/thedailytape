@@ -3,11 +3,15 @@
 // What it does:
 //   1. Checks whether today is a US trading day (weekday + not an NYSE holiday).
 //      If not, exits without doing anything.
-//   2. If it is, fetches S&P 500 / Dow / Nasdaq / 10Y Treasury / VIX and
-//      general market headlines from Finnhub, then asks Claude
+//   2. If it is, fetches S&P 500 / Dow / Nasdaq (as SPY/DIA/QQQ ETF proxies —
+//      see api/lib/market-data-finnhub.js for why) and general market
+//      headlines from Finnhub, the real 10-year Treasury yield from FRED
+//      (api/lib/market-data-fred.js), then asks Claude
 //      (generateMarketBrief() in api/lib/anthropic-client.js) to write
 //      Today's Brief — a headline, one-line deck, and a 2-3 paragraph
-//      analysis — grounded in those actual index moves and headlines.
+//      analysis — grounded in those actual moves and headlines. There is no
+//      VIX figure on this site: no free source gives the real index value
+//      (see market-data-finnhub.js's comment for what was tried).
 //   3. Scans every pod's content file for a "## Watchlist" section (see
 //      lib/parse-pods.js) and fetches a live quote for each ticker flagged
 //      there — this is what powers the current-price shown next to each
@@ -30,7 +34,8 @@
 //      (src/js/market-pulse.js, src/js/watchlist-quotes.js), and the new pod
 //      entries show up as regular static HTML from the next build onward.
 //
-// Requires FINNHUB_API_KEY, GITHUB_TOKEN, GITHUB_REPO, and ANTHROPIC_API_KEY.
+// Requires FINNHUB_API_KEY, FRED_API_KEY, GITHUB_TOKEN, GITHUB_REPO, and
+// ANTHROPIC_API_KEY.
 //
 // content/pods/*.md is read directly off disk at runtime (see below), which
 // needs the "includeFiles" entry for this function in vercel.json — Vercel's
@@ -70,6 +75,7 @@ const fs = require('fs');
 const path = require('path');
 const { isTradingDay } = require('./lib/nyse-calendar');
 const { fetchMarketData, fetchWatchlistQuotes, fetchCompanyNews } = require('./lib/market-data-finnhub');
+const { fetchTreasury10y } = require('./lib/market-data-fred');
 const { generateMarketBrief, generateSectorBrief } = require('./lib/anthropic-client');
 const { commitFile } = require('./lib/github-commit');
 const { collectAllWatchlistTickers, prependEntry } = require('../lib/parse-pods');
@@ -88,8 +94,8 @@ module.exports = async function handler(req, res) {
       return;
     }
 
-    const { indices, treasury10y, vix, headlines } = await fetchMarketData();
-    const brief = await generateMarketBrief({ indices, treasury10y, vix, headlines });
+    const [{ indices, headlines }, treasury10y] = await Promise.all([fetchMarketData(), fetchTreasury10y()]);
+    const brief = await generateMarketBrief({ indices, treasury10y, headlines });
     const sources = [...new Set(headlines.map((h) => h.source))].join(', ');
 
     const marketPulsePayload = {
@@ -97,7 +103,6 @@ module.exports = async function handler(req, res) {
       tradingDay: true,
       indices,
       treasury10y,
-      vix,
       headline: brief.headline,
       deck: brief.deck,
       body: brief.body,

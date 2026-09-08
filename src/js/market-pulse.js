@@ -14,12 +14,14 @@
 
 (function () {
   // Short mono symbols for the movers grid — fixed metadata, not runtime data.
+  // These are the actual ETF tickers (see api/lib/market-data-finnhub.js for
+  // why S&P/Dow/Nasdaq are ETF proxies, not the real index levels), matching
+  // what's already spelled out in each stat's label ("S&P 500 (SPY)").
   var SHORT_SYMBOLS = {
-    sp500: 'SPX',
-    dow: 'DJI',
-    nasdaq: 'IXIC',
+    sp500: 'SPY',
+    dow: 'DIA',
+    nasdaq: 'QQQ',
     treasury10y: '10Y',
-    vix: 'VIX',
   };
 
   var STATS_ORDER = [
@@ -27,7 +29,6 @@
     { key: 'dow', group: 'indices' },
     { key: 'nasdaq', group: 'indices' },
     { key: 'treasury10y', group: 'root' },
-    { key: 'vix', group: 'root' },
   ];
 
   function formatValue(stat) {

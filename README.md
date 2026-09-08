@@ -33,12 +33,14 @@ pod's daily sector brief, and refresh live security quotes.
   come from `data/watchlist-quotes.json`, fetched client-side
   (`src/js/watchlist-quotes.js`) and written by the same daily cron job that
   updates Today's Brief (see below).
-- **Market Pulse** (S&P 500, Dow, Nasdaq, 10-Year Treasury, VIX, and a short
-  news headline/deck), the Watchlist quotes above, and every pod's daily
-  sector brief are all written by one daily cron job
-  (`/api/update-market-pulse`), which commits everything straight back to
-  this repo. Pages fetch the JSON pieces client-side — no database, no server
-  needed at page-load time.
+- **Market Pulse** (S&P 500 / Dow / Nasdaq — as the SPY/DIA/QQQ ETFs that
+  track them, not the literal index levels; see below — plus the real
+  10-year Treasury yield and a short news headline/deck), the Watchlist
+  quotes above, and every pod's daily sector brief are all written by one
+  daily cron job (`/api/update-market-pulse`), which commits everything
+  straight back to this repo. Pages fetch the JSON pieces client-side — no
+  database, no server needed at page-load time. There's no VIX figure on
+  this site — see "Why ETF proxies, and no VIX" below.
 
 ```
 content/pods/*.md            <- rewritten daily by the cron; still hand-editable for curation
@@ -89,8 +91,9 @@ cp .env.local.example .env.local
 
 | Variable | Purpose |
 |---|---|
-| `FINNHUB_API_KEY` | Market data (indices, treasury yield proxy, VIX, news) |
-| `ANTHROPIC_API_KEY` | Writes each pod's daily sector brief from real news headlines |
+| `FINNHUB_API_KEY` | Equity/ETF quotes (SPY/DIA/QQQ index proxies, watchlist tickers) and news |
+| `FRED_API_KEY` | The real 10-year Treasury yield (Finnhub's free tier can't provide this) |
+| `ANTHROPIC_API_KEY` | Writes Today's Brief and each pod's daily sector brief |
 | `GITHUB_TOKEN` | Lets the cron function commit updated files back to this repo |
 | `GITHUB_REPO` | `owner/repo-name` for this repo |
 | `GITHUB_BRANCH` | Branch to commit to (defaults to `main`) |
@@ -106,11 +109,43 @@ read in production — Vercel only uses its own dashboard-configured env vars.
 3. Put it in `.env.local` (`FINNHUB_API_KEY=...`) for local dev, and in the
    Vercel project's environment variables for production.
 
-The free tier is generous enough for one API call a day. If Finnhub's index
-coverage or pricing ever changes, `api/lib/market-data-finnhub.js` is the only
-file that needs to change — see the comment at the top of that file for how to
-swap in a different provider (Alpha Vantage, Twelve Data, Financial Modeling
-Prep, etc.) without touching the rest of the codebase.
+The free tier is generous enough for this site's usage. If Finnhub's
+equity/ETF coverage or pricing ever changes, `api/lib/market-data-finnhub.js`
+is the only file that needs to change — see the comment at the top of that
+file for how to swap in a different provider without touching the rest of
+the codebase.
+
+### Why ETF proxies, and no VIX
+
+This isn't a stylistic choice — it's what's actually possible on free data
+tiers. Tested live against a real key: Finnhub's free tier rejects every
+caret-prefixed index symbol (`^GSPC`, `^DJI`, `^IXIC`, `^VIX`, `^TNX`) with
+"Market data subscription required for CFD indices." Real index levels are
+licensed data (S&P Dow Jones Indices, Cboe), and free tiers almost
+universally don't include them — a second provider (Twelve Data) was tested
+and hit the identical wall (`SPX` explicitly required a paid plan).
+
+What does work on free tiers: plain equity and ETF quotes. So:
+- **S&P 500 / Dow / Nasdaq** are shown as the ETFs that track them — SPY,
+  DIA, QQQ — labeled honestly ("S&P 500 (SPY)") rather than presented as the
+  real index number, since an ETF share price is not the same figure.
+- **10-year Treasury yield** comes from FRED instead of Finnhub — see below.
+- **VIX has no equivalent here at all.** There's no ETF that equals the real
+  VIX print (VIXY tracks VIX *futures*, which decay differently from the
+  index), so showing one would be more misleading than showing nothing.
+
+### Getting a FRED API key
+
+1. Go to [fred.stlouisfed.org/docs/api/api_key.html](https://fred.stlouisfed.org/docs/api/api_key.html)
+   and request a key — instant, free, self-service, no paid tier exists.
+2. Put it in `.env.local` (`FRED_API_KEY=...`) for local dev, and in the
+   Vercel project's environment variables for production.
+
+This powers `fetchTreasury10y()` in `api/lib/market-data-fred.js`, which
+pulls the `DGS10` series (10-Year Treasury Constant Maturity Rate) directly
+from the Federal Reserve. It publishes once per business day, so the
+freshest value when the cron runs (~1 hour before market open) may still be
+the prior business day's close — that's a real limit of the data, not a bug.
 
 ### Getting an Anthropic API key
 
@@ -256,9 +291,10 @@ On each run, the function:
 1. Checks `data/nyse-holidays.json` and the day of week to see if today is a
    US trading day. If not (weekend or holiday), it exits immediately and does
    nothing.
-2. If it is a trading day, it fetches the S&P 500, Dow, Nasdaq, 10-Year
-   Treasury yield, VIX, and a top headline/deck from Finnhub, and writes that
-   to `data/market-pulse.json`.
+2. If it is a trading day, it fetches the S&P 500 / Dow / Nasdaq (via their
+   SPY/DIA/QQQ ETF proxies) and general news from Finnhub, the real 10-year
+   Treasury yield from FRED, asks Claude to write Today's Brief from all of
+   it, and writes the result to `data/market-pulse.json`.
 3. It scans every pod's markdown file for a `## Watchlist` section, fetches a
    quote for each ticker it finds, and writes those to
    `data/watchlist-quotes.json`.

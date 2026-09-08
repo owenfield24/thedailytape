@@ -52,19 +52,22 @@ async function askClaudeForJson(prompt, label) {
 }
 
 // indices/treasury10y/vix: the same shapes fetchMarketData() in
-// market-data-finnhub.js returns. headlines: [{ headline, source }] from
-// Finnhub's general news feed. Grounding the brief in the day's actual index
-// moves (not just headlines) is what keeps it from reading like generic
-// news commentary disconnected from what the numbers show.
-async function generateMarketBrief({ indices, treasury10y, vix, headlines }) {
+// market-data-finnhub.js and market-data-fred.js return. headlines:
+// [{ headline, source }] from Finnhub's general news feed. Grounding the
+// brief in the day's actual index moves (not just headlines) is what keeps
+// it from reading like generic news commentary disconnected from what the
+// numbers show. Note "indices" here are ETF proxies (SPY/DIA/QQQ), not the
+// literal index levels — see the comment at the top of
+// market-data-finnhub.js for why — so the model sees the same honestly
+// labeled names ("S&P 500 (SPY)") that end up on the page.
+async function generateMarketBrief({ indices, treasury10y, headlines }) {
   const fmtChange = (n) => `${n > 0 ? '+' : ''}${n.toFixed(2)}%`;
   const indexLines = Object.values(indices)
     .map((i) => `${i.label}: ${i.value.toLocaleString('en-US')} (${fmtChange(i.changePercent)})`)
     .join('\n');
   const dataLines = [
     indexLines,
-    `${treasury10y.label}: ${treasury10y.value}${treasury10y.unit} (${fmtChange(treasury10y.changePercent)})`,
-    `${vix.label}: ${vix.value} (${fmtChange(vix.changePercent)})`,
+    `${treasury10y.label}: ${treasury10y.value}${treasury10y.unit} (${fmtChange(treasury10y.changePercent)} pts)`,
   ].join('\n');
 
   const headlineList = headlines.length

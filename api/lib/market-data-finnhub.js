@@ -1,32 +1,40 @@
-// Finnhub market data client.
+// Finnhub market data client — equities, ETFs, and news only.
 //
 // This is the ONLY file that knows about Finnhub's specific endpoints/response
 // shapes. If Finnhub's free tier ever stops covering what we need, write a
-// sibling module (e.g. market-data-alphavantage.js or market-data-fmp.js) that
-// exports the same `fetchMarketData()` shape below, and swap the `require(...)`
-// in api/update-market-pulse.js — nothing else in the codebase needs to change.
+// sibling module (e.g. market-data-alphavantage.js) that exports the same
+// shape below, and swap the `require(...)` in api/update-market-pulse.js —
+// nothing else in the codebase needs to change.
 //
 // Requires FINNHUB_API_KEY as an environment variable.
 //
-// Notes on index coverage (free tier):
-// - Finnhub's /quote endpoint works for the caret-prefixed index symbols below
-//   on most plans, but exact free-tier coverage can change. Verify against a
-//   real API call after signing up; swap providers if a symbol stops resolving.
-// - There's no dedicated free "10-year treasury yield" quote endpoint on
-//   Finnhub. We use the CBOE 10-Year Treasury Yield Index (^TNX), whose quoted
-//   price is the yield * 10 (e.g. a price of 41.2 means a 4.12% yield), which
-//   is the standard convention brokers use for that symbol.
+// IMPORTANT — index coverage on the free tier (verified against a real key):
+// Finnhub's /quote endpoint rejects every caret-prefixed index symbol
+// (^GSPC, ^DJI, ^IXIC, ^VIX, ^TNX) on the free tier with "Market data
+// subscription required for CFD indices" — this isn't a fluke, it's because
+// real index levels are licensed data (S&P Dow Jones Indices, Cboe) that
+// providers charge for. Plain equity/ETF tickers work fine on free tier
+// (confirmed: AAPL, SPY, DIA, QQQ, VIXY, TLT all return real quotes).
+//
+// So instead of the raw indices, we use the ETF that tracks each one:
+//   S&P 500 -> SPY, Dow Jones -> DIA, Nasdaq -> QQQ
+// These are real, free, reliable quotes — but they're ETF share prices, NOT
+// the literal index level (SPY trades at roughly a tenth of the S&P 500
+// figure you'd see quoted elsewhere). The UI labels them accordingly (e.g.
+// "S&P 500 (SPY)") rather than presenting them as the real index number.
+// The 10-year Treasury yield comes from a different free source entirely
+// (FRED, the Federal Reserve's own data API) — see market-data-fred.js.
+// There is no free equity-quotable proxy for the actual VIX print (VIXY
+// tracks VIX *futures*, which decay differently from the index itself), so
+// VIX is intentionally not part of this site's data at all.
 
 const FINNHUB_BASE = 'https://finnhub.io/api/v1';
 
-const INDEX_SYMBOLS = {
-  sp500: { symbol: '^GSPC', label: 'S&P 500' },
-  dow: { symbol: '^DJI', label: 'Dow Jones' },
-  nasdaq: { symbol: '^IXIC', label: 'Nasdaq' },
+const INDEX_PROXIES = {
+  sp500: { symbol: 'SPY', label: 'S&P 500 (SPY)' },
+  dow: { symbol: 'DIA', label: 'Dow Jones (DIA)' },
+  nasdaq: { symbol: 'QQQ', label: 'Nasdaq (QQQ)' },
 };
-
-const VIX_SYMBOL = { symbol: '^VIX', label: 'VIX' };
-const TREASURY_10Y_SYMBOL = { symbol: '^TNX', label: '10-Year Treasury' };
 
 function apiKey() {
   const key = process.env.FINNHUB_API_KEY;
@@ -47,26 +55,11 @@ async function fetchQuote(symbol) {
 
 async function fetchIndices() {
   const results = {};
-  for (const [key, meta] of Object.entries(INDEX_SYMBOLS)) {
+  for (const [key, meta] of Object.entries(INDEX_PROXIES)) {
     const quote = await fetchQuote(meta.symbol);
     results[key] = { label: meta.label, value: quote.c, changePercent: quote.dp };
   }
   return results;
-}
-
-async function fetchVix() {
-  const quote = await fetchQuote(VIX_SYMBOL.symbol);
-  return { label: VIX_SYMBOL.label, value: quote.c, changePercent: quote.dp };
-}
-
-async function fetchTreasury10y() {
-  const quote = await fetchQuote(TREASURY_10Y_SYMBOL.symbol);
-  return {
-    label: TREASURY_10Y_SYMBOL.label,
-    value: Math.round((quote.c / 10) * 100) / 100,
-    unit: '%',
-    changePercent: quote.dp,
-  };
 }
 
 // Raw general market news — this grounds Today's Brief (written by
@@ -90,19 +83,14 @@ async function fetchGeneralNews() {
 }
 
 async function fetchMarketData() {
-  const [indices, treasury10y, vix, headlines] = await Promise.all([
-    fetchIndices(),
-    fetchTreasury10y(),
-    fetchVix(),
-    fetchGeneralNews(),
-  ]);
-  return { indices, treasury10y, vix, headlines };
+  const [indices, headlines] = await Promise.all([fetchIndices(), fetchGeneralNews()]);
+  return { indices, headlines };
 }
 
 // For the "Securities to Note" live prices: fetches a plain equity quote for
-// each ticker pod leads have flagged in a Watchlist section. Tickers here are
-// arbitrary and pod-lead-entered (occasional typos expected), so a bad symbol
-// is skipped with a warning rather than failing the whole cron run.
+// each ticker flagged in a Watchlist section. Tickers here are arbitrary and
+// hand-entered (occasional typos expected), so a bad symbol is skipped with
+// a warning rather than failing the whole cron run.
 async function fetchWatchlistQuotes(tickers) {
   const quotes = {};
   for (const ticker of tickers) {

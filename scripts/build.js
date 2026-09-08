@@ -332,13 +332,15 @@ function renderAboutPage(navPods) {
       <p>Pod content still lives in one plain Markdown file per pod, with no CMS, admin panel, or database &mdash; a club member can still curate a pod by editing its file directly (flagging a "Securities to Note" list, pinning a pod to the top of the homepage), the automated pipeline just handles the daily writing.</p>
 
       <h2>How it works</h2>
-      <p>A scheduled job runs every trading morning, about an hour before the market opens. It checks the NYSE holiday calendar, pulls index levels, the 10-year Treasury yield, VIX, and news headlines to write Today's Brief, and separately pulls recent news for a representative ticker in each sector and asks an AI model to write that pod's brief from it. Everything is committed straight to this site's repository, which triggers an automatic rebuild.</p>
+      <p>A scheduled job runs every trading morning, about an hour before the market opens. It checks the NYSE holiday calendar, pulls S&amp;P 500 / Dow / Nasdaq levels (via the SPY, DIA, and QQQ ETFs that track them), the real 10-year Treasury yield, and news headlines to write Today's Brief, and separately pulls recent news for a few representative tickers in each sector and asks an AI model to write that pod's brief from it. Everything is committed straight to this site's repository, which triggers an automatic rebuild.</p>
       <p>The same job scans every pod's "Securities to Note" list and fetches a live quote for each ticker flagged there.</p>
+      <p>There's no VIX figure on this site &mdash; no free data source gives the real index value, and showing an approximation (like a VIX futures ETF) would be more misleading than not showing one at all.</p>
 
       <h2>Data sources</h2>
       <ul>
-        <li><strong>Finnhub</strong> &mdash; index levels, 10-year Treasury yield proxy, VIX, watchlist quotes, and news headlines</li>
-        <li><strong>Anthropic API</strong> &mdash; writes each sector brief from the news headlines above</li>
+        <li><strong>Finnhub</strong> &mdash; equity/ETF quotes (including the SPY/DIA/QQQ index proxies and watchlist tickers) and news headlines</li>
+        <li><strong>FRED</strong> (Federal Reserve Economic Data) &mdash; the real 10-year Treasury yield</li>
+        <li><strong>Anthropic API</strong> &mdash; writes each sector brief and Today's Brief from the data and news headlines above</li>
       </ul>
 
       <h2>Disclaimer</h2>
