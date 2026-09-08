@@ -1,0 +1,16 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "functions": {
+    "api/update-market-pulse.js": {
+      "includeFiles": "content/pods/**",
+      "maxDuration": 60
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/update-market-pulse",
+      "schedule": "30 13 * * *"
+    }
+  ]
+}

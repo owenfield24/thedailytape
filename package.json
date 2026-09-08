@@ -1,0 +1,13 @@
+{
+  "name": "nerc-pod-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Neeley Equity Research Club website — static site generated from Markdown pod content, plus a daily Vercel cron function for the Market Pulse strip.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "npm run build && npx --yes serve public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

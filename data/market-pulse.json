@@ -1,0 +1,9 @@
+{
+  "asOf": null,
+  "tradingDay": false,
+  "indices": {},
+  "headline": "Today's Brief Publishes Each Trading Morning",
+  "deck": "This site hasn't run its first automated brief yet — check back after the daily cron's next scheduled run.",
+  "body": "Once the update-market-pulse cron runs on the next trading day, this file is overwritten automatically with a live headline, market analysis, and index data written by Claude from real Finnhub data.",
+  "sources": ""
+}

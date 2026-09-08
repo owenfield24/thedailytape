@@ -1,0 +1,982 @@
+/* The Daily Tape — site styles.
+   Modeled closely on mktbrief.com's newspaper-style digital-brief layout:
+   Playfair Display headlines, IBM Plex Sans body, IBM Plex Mono for
+   data/labels/nav, an ink-black + warm-gold palette, and a
+   kicker -> headline -> italic deck -> byline -> body article structure.
+   No framework, no CSS build step — this file is meant to be readable and
+   editable by hand. */
+
+:root {
+  --bg: #f7f5f0;
+  --paper: #fffef9;
+  --ink: #1a1814;
+  --ink2: #3a3830;
+  --ink3: #7a7870;
+  --rule: #ddd9cc;
+  --rule-strong: #c9c4b3;
+  --gold: #9a7000;
+  --up: #1a5c32;
+  --dn: #8b1a1a;
+  --radius: 3px;
+  --font-head: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--ink2);
+  background: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* --- Masthead --- */
+
+.masthead {
+  background: var(--paper);
+  border-bottom: 3px solid var(--ink);
+  padding: 0 1.5rem;
+}
+
+.masthead-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.masthead-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.35rem 0 1.1rem;
+  border-bottom: 1px solid var(--rule);
+  flex-wrap: wrap;
+}
+
+.masthead-logo {
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.logo-accent {
+  color: var(--gold);
+}
+
+.masthead-tabs {
+  list-style: none;
+  display: flex;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.masthead-tabs a {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink3);
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid transparent;
+}
+
+.masthead-tabs a:hover {
+  color: var(--ink);
+}
+
+.masthead-tabs a.active {
+  color: var(--ink);
+  border-bottom-color: var(--gold);
+  font-weight: 500;
+}
+
+.site-nav {
+  padding: 0.75rem 0 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink3);
+  padding: 0 1.15rem 0.65rem 0;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  color: var(--ink);
+}
+
+.nav-links a.active {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+  font-weight: 500;
+}
+
+/* --- Layout --- */
+
+.site-main {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.page-wrap {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Pod pages render .page-wrap as the direct child of .site-main (the
+   homepage nests it inside .today-brief, which supplies its own top
+   padding) — give it the same top breathing room every other top-level
+   page (.today-brief, .about-wrap) already has. */
+.site-main > .page-wrap {
+  padding-top: 2.25rem;
+}
+
+.page-wrap.single {
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 780px) {
+  .page-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    margin-top: 0;
+  }
+}
+
+.page-header {
+  padding: 2.25rem 0 1.25rem;
+}
+
+.page-header h1 {
+  font-family: var(--font-head);
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+.page-subtitle {
+  color: var(--ink3);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* --- Kicker (category eyebrow with trailing rule) --- */
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+}
+
+.kicker::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+/* --- Scrolling ticker tape (homepage only) --- */
+
+.ticker-tape {
+  background: var(--ink);
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 3%, #000 97%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 3%, #000 97%, transparent 100%);
+}
+
+.ticker-track {
+  display: inline-flex;
+  width: max-content;
+  animation: ticker-scroll 34s linear infinite;
+  padding: 0.55rem 0;
+}
+
+.ticker-tape:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0 1.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ticker-item-label {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.64rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.ticker-item-value {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.ticker-item-change.positive {
+  color: #6ee7a0;
+}
+
+.ticker-item-change.negative {
+  color: #fca5a5;
+}
+
+.ticker-loading {
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0 1.5rem;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+  }
+}
+
+/* --- Article: headline / deck / byline (Today's Brief and featured entries) --- */
+
+.today-brief {
+  padding: 2.25rem 0 2.5rem;
+}
+
+.article-hed {
+  font-family: var(--font-head);
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0 0 0.9rem;
+}
+
+.article-deck {
+  font-family: var(--font-head);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--ink2);
+  border-top: 2.5px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+  padding: 0.85rem 0;
+  margin: 0 0 1.1rem;
+}
+
+.byline {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink3);
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.byline .auto-tag {
+  border-bottom: 1px dotted var(--ink3);
+  cursor: help;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.5rem;
+  margin: 0 0 0.9rem;
+}
+
+/* --- Notable movers grid (homepage) --- */
+
+.movers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.mover-card {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mover-card.up {
+  border-left: 3px solid var(--up);
+}
+
+.mover-card.down {
+  border-left: 3px solid var(--dn);
+}
+
+.mc-sym {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.mc-name {
+  font-size: 0.72rem;
+  color: var(--ink3);
+  margin-top: 0.15rem;
+}
+
+.mc-value {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink);
+  text-align: right;
+}
+
+.mc-chg {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  text-align: right;
+  margin-top: 0.15rem;
+}
+
+.mc-chg.up {
+  color: var(--up);
+}
+
+.mc-chg.down {
+  color: var(--dn);
+}
+
+.movers-loading {
+  font-size: 0.82rem;
+  color: var(--ink3);
+  grid-column: 1 / -1;
+}
+
+/* --- Sidebar --- */
+
+.sidebar-rule {
+  border: none;
+  border-top: 3px solid var(--ink);
+  margin: 0 0 1.1rem;
+}
+
+.sidebar-label {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.9rem;
+}
+
+.ai-box {
+  padding: 0.9rem 1.1rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.ai-box-head {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.55rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: pulse-dot 1.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.ai-box-body {
+  font-size: 0.82rem;
+  color: var(--ink3);
+  line-height: 1.65;
+}
+
+/* --- Sample-content banner --- */
+
+.sample-note {
+  font-size: 0.8rem;
+  color: var(--ink3);
+  font-style: italic;
+  background-color: var(--paper);
+  border-left: 3px solid var(--gold);
+  padding: 0.6rem 0.9rem;
+  margin: 0 0 1.5rem;
+}
+
+/* --- Market-closed banner (homepage, shown only on non-trading days) --- */
+
+.market-status {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--ink);
+  background-color: var(--paper);
+  border-left: 3px solid var(--gold);
+  padding: 0.6rem 0.9rem;
+  margin: 0 0 1.25rem;
+}
+
+/* --- Pod page: star toggle, sidebar watchlist --- */
+
+.star-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink3);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.star-toggle:hover {
+  color: var(--ink);
+}
+
+.star-toggle[aria-pressed="true"] {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.star-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.watchlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.watchlist li {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.watchlist li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.watchlist-ticker-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.watchlist-ticker {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.watchlist-quote {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--ink3);
+  white-space: nowrap;
+}
+
+.watchlist-quote .positive {
+  color: var(--up);
+}
+
+.watchlist-quote .negative {
+  color: var(--dn);
+}
+
+.watchlist-note {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--ink2);
+}
+
+/* --- Section divider ornament (homepage, between brief and pod grid) --- */
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--rule-strong);
+  margin: 0.5rem 0 2rem;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--rule-strong);
+}
+
+.section-divider span {
+  font-size: 0.85rem;
+  color: var(--gold);
+}
+
+/* --- Pods grid (homepage) --- */
+
+.pods-section {
+  padding-top: 0.5rem;
+}
+
+.pods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.pod-card {
+  display: block;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--ink);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.4rem;
+  transition: border-color 0.15s ease;
+}
+
+.pod-card:hover {
+  border-color: var(--rule-strong);
+}
+
+.pod-card:hover .pod-card-cta {
+  text-decoration: underline;
+}
+
+.pod-card-starred {
+  border-top-color: var(--gold);
+}
+
+.pod-card-name {
+  font-family: var(--font-head);
+  font-weight: 900;
+  color: var(--ink);
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+.pod-card-starred .pod-card-name::before {
+  content: "\2605  ";
+  color: var(--gold);
+  font-family: var(--font-body);
+}
+
+.pod-card-date {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink3);
+  margin-bottom: 0.3rem;
+}
+
+.pod-card-headline {
+  font-size: 0.88rem;
+  color: var(--ink2);
+}
+
+.pod-card-empty {
+  font-size: 0.85rem;
+  color: var(--ink3);
+  font-style: italic;
+}
+
+.pod-card-cta {
+  margin-top: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: var(--gold);
+}
+
+/* --- Pod page / entry feed --- */
+
+.entry-feed {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.entry {
+  border-top: 1px solid var(--rule);
+  padding: 1.75rem 0;
+}
+
+.entry:first-child {
+  border-top: 1px solid var(--rule-strong);
+}
+
+.entry-date {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink3);
+  margin-bottom: 0.5rem;
+}
+
+.entry-headline {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--ink);
+  margin: 0 0 0.6rem;
+  line-height: 1.25;
+}
+
+.entry-body {
+  color: var(--ink2);
+  font-size: 0.96rem;
+  font-weight: 300;
+  margin: 0 0 0.75rem;
+  white-space: pre-line;
+  max-width: 75ch;
+  line-height: 1.75;
+}
+
+.entry-featured .entry-body::first-letter {
+  font-family: var(--font-head);
+  font-size: 3rem;
+  font-weight: 900;
+  float: left;
+  line-height: 0.78;
+  margin: 0.3rem 0.5rem 0 0;
+  color: var(--ink);
+}
+
+.ticker-tags {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+.ticker-tag:not(:last-child)::after {
+  content: " \00b7 ";
+  color: var(--rule-strong);
+}
+
+.entry-sources {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--ink3);
+  margin: 0;
+}
+
+.empty-state {
+  color: var(--ink3);
+  font-style: italic;
+}
+
+/* Older entries, collapsed behind a native <details> disclosure — no JS. */
+
+.previous-briefs {
+  margin-top: -1rem;
+}
+
+.previous-briefs-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+  cursor: pointer;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--rule-strong);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: var(--gold);
+}
+
+.previous-briefs-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.previous-briefs-toggle:hover {
+  color: var(--ink);
+}
+
+.previous-briefs-toggle::after {
+  content: "+";
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.previous-briefs[open] .previous-briefs-toggle::after {
+  content: "\2212";
+}
+
+.previous-briefs[open] .previous-briefs-toggle {
+  border-bottom: 1px solid var(--rule);
+}
+
+.previous-briefs-list {
+  padding-top: 0.5rem;
+}
+
+.previous-briefs-list .entry:first-child {
+  border-top: none;
+}
+
+/* --- Footer --- */
+
+.site-footer {
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  line-height: 2.1;
+}
+
+.site-footer strong {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+/* --- About page --- */
+
+.about-wrap {
+  max-width: 680px;
+  padding: 2.25rem 0 3rem;
+}
+
+.about-wrap h1 {
+  font-family: var(--font-head);
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0 0 1rem;
+}
+
+.about-wrap h2 {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.about-wrap p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--ink2);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.about-wrap ul {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.about-wrap ul li {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink3);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.about-wrap ul li:last-child {
+  border-bottom: none;
+}
+
+.about-wrap ul li strong {
+  color: var(--ink);
+}
+
+/* --- Archive page --- */
+
+.archive-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.archive-item {
+  display: block;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--rule);
+  transition: opacity 0.15s;
+}
+
+.archive-item:hover {
+  opacity: 0.7;
+}
+
+.archive-item:last-child {
+  border-bottom: none;
+}
+
+.archive-item-date {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.archive-item-hed {
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+/* --- Print --- */
+
+@media print {
+  .ticker-tape,
+  .masthead-tabs,
+  .site-nav,
+  .star-toggle,
+  .pod-card-cta,
+  .sidebar,
+  .section-divider,
+  .previous-briefs-toggle {
+    display: none;
+  }
+
+  .page-wrap {
+    display: block;
+  }
+
+  body {
+    background: #fff;
+  }
+}
+
+@media (max-width: 600px) {
+  .masthead-logo {
+    font-size: 1.5rem;
+  }
+
+  .masthead-tabs {
+    gap: 1.1rem;
+  }
+
+  .ticker-track {
+    animation-duration: 22s;
+  }
+}
