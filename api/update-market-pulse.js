@@ -78,18 +78,26 @@
 //
 // --- Cron scheduling notes (read this before touching vercel.json) ---
 //
-// The cron is set to "30 13 * * *" (13:30 UTC), which is ~1 hour before the
-// 9:30 AM ET market open ONLY while US clocks are on Eastern Daylight Time
-// (UTC-4, roughly mid-March to early November). During Eastern Standard Time
-// (UTC-5, roughly early November to mid-March) 13:30 UTC is 8:30 AM ET, i.e.
-// the run drifts an hour earlier relative to market open. Vercel's cron
-// expression is fixed in UTC and does NOT shift itself for US daylight saving.
+// The target is 8:30 AM ET — 1 hour before the 9:30 AM ET market open —
+// year-round. Vercel's cron expression is fixed in UTC and does NOT shift
+// itself for US daylight saving, so which UTC hour hits 8:30 AM ET flips
+// twice a year:
+//   - Eastern Daylight Time (UTC-4, roughly mid-March to early November):
+//     8:30 AM ET = 12:30 UTC.
+//   - Eastern Standard Time (UTC-5, roughly early November to mid-March):
+//     8:30 AM ET = 13:30 UTC.
+// The cron is currently set to "30 12 * * *" (12:30 UTC), correct for EDT.
+// (An earlier version of this file had these two values backwards — 13:30
+// UTC during EDT actually lands AT 9:30 AM ET, the open itself, not an hour
+// before it. Verified against real UTC->America/New_York conversions before
+// fixing, not just reasoned about — DST arithmetic is exactly the kind of
+// thing worth double-checking with a real date rather than trusting memory.)
 //
-// ACTION NEEDED twice a year: after the US clock change each March and
-// November, nudge the hour in vercel.json by ±1 (12:30 UTC in the winter,
-// 13:30 UTC in the summer) if you want the run to stay ~1 hour before the
-// open. This manual nudge is simpler than fighting timezone math in a single
-// static cron expression, especially on the Hobby plan.
+// ACTION NEEDED twice a year: after each US clock change in March and
+// November, flip the hour in vercel.json between 12:30 UTC (EDT/summer) and
+// 13:30 UTC (EST/winter) to keep the run at 8:30 AM ET. This manual nudge is
+// simpler than fighting timezone math in a single static cron expression,
+// especially on the Hobby plan.
 //
 // Also note: Vercel's Hobby plan allows only one cron invocation per day, and
 // its timing precision is approximate (documented as within ~59 minutes of

@@ -386,18 +386,23 @@ bundle, or the function is timing out before all seven pods finish.
 ### Two things to know about the cron schedule
 
 **1. It drifts by an hour across Daylight Saving Time changes.**
-`13:30 UTC` is 1 hour before the 9:30 AM ET market open only while the US is
-on Eastern Daylight Time (roughly mid-March to early November). During
-Eastern Standard Time (roughly early November to mid-March), 13:30 UTC is
-8:30 AM ET — two hours before open instead of one. Vercel cron schedules are
-fixed in UTC and don't shift for US daylight saving automatically.
+The target is 8:30 AM ET, 1 hour before the 9:30 AM ET market open,
+year-round — but Vercel cron schedules are fixed in UTC and don't shift for
+US daylight saving automatically, so the UTC hour that hits 8:30 AM ET flips
+twice a year: `12:30 UTC` during Eastern Daylight Time (roughly mid-March to
+early November) and `13:30 UTC` during Eastern Standard Time (roughly early
+November to mid-March). `vercel.json` is currently set to `12:30 UTC`,
+correct for EDT.
 
 **Twice a year** (after the clocks change in mid-March and early November),
-nudge the hour in `vercel.json` by ±1 if you want to keep it at ~1 hour before
-open: `12:30 UTC` in the winter, `13:30 UTC` in the summer. This manual nudge
-is simpler than trying to encode DST-aware logic into a single cron
-expression. (This is also called out as a code comment at the top of
-`api/update-market-pulse.js`.)
+flip the hour in `vercel.json` between `12:30 UTC` (EDT/summer) and
+`13:30 UTC` (EST/winter) to keep the run at 8:30 AM ET. This manual nudge is
+simpler than trying to encode DST-aware logic into a single cron expression.
+(This is also called out as a code comment at the top of
+`api/update-market-pulse.js` — verify the UTC math against a real date
+before trusting either value if you ever touch this, rather than reasoning
+about DST direction from memory. An earlier version of this doc and that
+comment had the two values backwards.)
 
 **2. Vercel Hobby plan cron limits.**
 The Hobby (free) plan allows only **one cron run per day**, and Vercel

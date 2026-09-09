@@ -17,7 +17,7 @@
   "crons": [
     {
       "path": "/api/update-market-pulse",
-      "schedule": "30 13 * * *"
+      "schedule": "30 12 * * *"
     }
   ]
 }
