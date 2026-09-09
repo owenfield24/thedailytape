@@ -274,6 +274,7 @@ function renderHomepage(pods, navPods) {
     bodyHtml,
     tickerHtml,
     navPods,
+    showSubscribeForm: true,
     extraHead: `<script src="js/market-pulse.js?v=${BUILD_ID}" defer></script>`,
   });
 }

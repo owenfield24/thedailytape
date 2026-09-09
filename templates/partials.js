@@ -83,13 +83,13 @@ function renderFooter() {
 // in api/lib/subscribers-store.js so it's never confused with an actual pod.
 const MARKET_BRIEF_SLUG = 'today-brief';
 
-// Email signup, rendered on every page just above the footer. Posts to
-// /api/subscribe (api/subscribe.js), which stores the subscriber (in a
-// separate private repo, not this site's public one — see
-// api/lib/subscribers-store.js) tagged with whichever items they checked.
-// Site-root-absolute form action/fetch path for the same reason as
-// watchlist-quotes.js: this partial renders at every page depth (site root
-// and /pods/*.html alike).
+// Email signup, rendered just above the footer — homepage only (see
+// showSubscribeForm in pageShell() below; renderHomepage() is the only
+// caller that passes it). Posts to /api/subscribe (api/subscribe.js), which
+// stores the subscriber (in a separate private repo, not this site's public
+// one — see api/lib/subscribers-store.js) tagged with whichever items they
+// checked. Still takes navPods as a param (rather than always using PODS
+// directly) so it renders the same alphabetical/pinned order as the nav.
 function renderSubscribeForm(navPods = PODS) {
   const checkboxes = navPods
     .map(
@@ -136,7 +136,17 @@ const BUILD_ID = Date.now();
 const FAVICON_DATA_URI =
   'data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz48cmVjdCB3aWR0aD0nMTAwJyBoZWlnaHQ9JzEwMCcgZmlsbD0nIzFhMTgxNCcvPjx0ZXh0IHg9JzUwJyB5PSc3NCcgZm9udC1zaXplPSc2OCcgZm9udC1mYW1pbHk9J0dlb3JnaWEsIHNlcmlmJyBmb250LXdlaWdodD0nOTAwJyBmaWxsPScjOWE3MDAwJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz5UPC90ZXh0Pjwvc3ZnPg==';
 
-function pageShell({ title, description, activeSlug, rootPrefix = '', bodyHtml, extraHead = '', tickerHtml = '', navPods }) {
+function pageShell({
+  title,
+  description,
+  activeSlug,
+  rootPrefix = '',
+  bodyHtml,
+  extraHead = '',
+  tickerHtml = '',
+  navPods,
+  showSubscribeForm = false,
+}) {
   const safeTitle = escapeHtml(title);
   const safeDescription = escapeHtml(description || '');
   return `<!DOCTYPE html>
@@ -163,11 +173,11 @@ function pageShell({ title, description, activeSlug, rootPrefix = '', bodyHtml, 
   <main class="site-main">
     ${bodyHtml}
   </main>
-  ${renderSubscribeForm(navPods)}
+  ${showSubscribeForm ? renderSubscribeForm(navPods) : ''}
   ${renderFooter()}
   <script src="${rootPrefix}js/pod-star.js?v=${BUILD_ID}" defer></script>
   <script src="${rootPrefix}js/watchlist-quotes.js?v=${BUILD_ID}" defer></script>
-  <script src="${rootPrefix}js/subscribe-form.js?v=${BUILD_ID}" defer></script>
+  ${showSubscribeForm ? `<script src="${rootPrefix}js/subscribe-form.js?v=${BUILD_ID}" defer></script>` : ''}
 </body>
 </html>
 `;
