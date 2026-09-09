@@ -1,6 +1,7 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "public",
+  "cleanUrls": true,
   "functions": {
     "api/update-market-pulse.js": {
       "includeFiles": "content/pods/**",
