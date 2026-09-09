@@ -1,9 +1,31 @@
 {
-  "asOf": null,
-  "tradingDay": false,
-  "indices": {},
-  "headline": "Today's Brief Publishes Each Trading Morning",
-  "deck": "This site hasn't run its first automated brief yet — check back after the daily cron's next scheduled run.",
-  "body": "Once the update-market-pulse cron runs on the next trading day, this file is overwritten automatically with a live headline, market analysis, and index data written by Claude from real Finnhub and FRED data.",
-  "sources": ""
+  "asOf": "2026-09-09T00:42:44.942Z",
+  "tradingDay": true,
+  "indices": {
+    "sp500": {
+      "label": "S&P 500 (SPY)",
+      "value": 765.96,
+      "changePercent": -0.5492
+    },
+    "dow": {
+      "label": "Dow Jones (DIA)",
+      "value": 528.03,
+      "changePercent": -1.1328
+    },
+    "nasdaq": {
+      "label": "Nasdaq (QQQ)",
+      "value": 718.36,
+      "changePercent": -0.0835
+    }
+  },
+  "treasury10y": {
+    "label": "10-Year Treasury",
+    "value": 4.78,
+    "unit": "%",
+    "changePercent": 0.01
+  },
+  "headline": "Markets slip as geopolitical tensions weigh on risk appetite",
+  "deck": "Stocks finished modestly lower today as escalating Middle East conflicts and defense-related developments overshadowed economic data, with energy concerns lurking in the headlines.",
+  "body": "Broad equity weakness marked today's session, with the Dow leading declines at -1.13% while the S&P 500 and Nasdaq held closer to flat. The divergence suggests defensive positioning, as large-cap growth held up better than industrials and financials—a typical response when geopolitical risk rises. Treasury yields barely budged at 4.78%, indicating the market isn't pricing in an imminent flight to safety but remains cautiously cautious.\n\nHeadlines paint a picture of escalating regional conflict that's directly moving markets. Multiple Reuters reports on Houthi attacks against Saudi cities, Iranian drone captures, and Ukrainian weapons procurement all point to broader Middle East and Europe tensions that traditionally support energy prices and drive tactical trading. The commentary about $100 barrel oil suggests market participants are already pricing in supply disruption scenarios, which could weigh on economic growth expectations if sustained.\n\nOn the corporate front, geopolitical exposure is a live risk for select names, particularly companies with Iran dealings like Huawei heading to trial. Meanwhile, the uptick in alternative energy stock options activity hints that some investors are hedging or positioning for energy volatility. The UK air traffic control disruption is a minor operational story, but combined with broader uncertainty, it reinforces why risk sentiment remains subdued even as absolute market moves remain contained.",
+  "sources": "Reuters, CNBC"
 }
