@@ -3,9 +3,14 @@ pod: Technology
 ---
 
 ## Watchlist
-- $AAPL: iPhone event Wednesday; potential catalyst for consumer tech sentiment
-- $MSFT: Useful yield test narrative challenges NVIDIA AI pricing assumptions
-- $CEG: AI power deal revenue deferred to 2027; tests market patience for AI monetization
+- $AAPL: Foldable iPhone event imminent; tests market appetite for premium-priced growth in rate-sensitive environment
+- $GOOGL: AI infrastructure investment ($15B energy solution) signals shift toward capital-intensive, profitability-focused narrative
+
+## 2026-09-09
+**Tech Sector Faces Rate Headwinds as Macro Uncertainty Pressures Growth Valuations**
+With the 10-year Treasury holding steady at 4.78% and the Nasdaq down only marginally despite broader market weakness, technology stocks are showing relative resilience but remain sensitive to persistent rate pressures. The sector's high-growth names typically trade on multiple expansion, which becomes constrained in a higher-for-longer rate environment; today's flat Nasdaq performance alongside a 113-basis-point decline in the Dow suggests large-cap tech is holding up better than cyclicals, but only barely. Meanwhile, the sector's narrative is increasingly centered on capital intensity and profitability—whether through premium product positioning (foldable iPhones, luxury positioning) or AI infrastructure efficiency (energy solutions)—as companies seek to justify valuations without relying on multiple expansion.
+Tickers: $AAPL, $GOOGL
+Sources: Yahoo
 
 ## 2026-09-08
 **Tech Sector Treads Water as Rate Stability Tests AI Investment Returns**
