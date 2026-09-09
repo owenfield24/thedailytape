@@ -20,6 +20,17 @@ function apiKey() {
   return key;
 }
 
+// Belt-and-suspenders against the model slipping in markdown syntax despite
+// being told not to (caught live: Claude wrapped a "deck" field in
+// *asterisks* meaning italic, even though the page already applies italics
+// via CSS and renders this as plain text — the literal "*" characters would
+// otherwise show up on the page). Blunt but appropriate for these short
+// single-purpose fields, where a stray asterisk/underscore/backtick is never
+// something we'd want to preserve.
+function stripMarkdown(text) {
+  return text.replace(/[*_`]/g, '').trim();
+}
+
 // Sends one prompt, expects a single JSON object back, and returns it
 // parsed. Shared by generateMarketBrief() and generateSectorBrief() so the
 // request/response plumbing (and error messages) stay consistent between them.
@@ -83,9 +94,11 @@ Recent market-moving headlines:
 ${headlineList}
 
 Write:
-- A headline under 12 words describing the market's overall tone today, no markdown formatting, no trailing period
-- A one-sentence italic "deck" teaser summarizing the day in a single line
+- A headline under 12 words describing the market's overall tone today, no trailing period
+- A one-sentence "deck" teaser summarizing the day in a single line — the page already renders this in italics via CSS, so write it as plain text
 - A 2-3 paragraph analysis (separate paragraphs with a blank line) of what's driving markets today, connecting the index moves above to the headlines. Keep each paragraph to 2-4 sentences — informative, not padded.
+
+None of the three fields should contain markdown formatting (no asterisks, underscores, backticks, or headers) — this is plain text rendered directly, not markdown.
 
 Do not invent specific facts, figures, or data beyond what's given above. Respond with ONLY a JSON object and nothing else, no markdown code fences: {"headline": "...", "deck": "...", "body": "..."} — in "body", separate paragraphs with a literal "\\n\\n" (a valid JSON-escaped blank line), not an actual line break.`;
 
@@ -95,9 +108,9 @@ Do not invent specific facts, figures, or data beyond what's given above. Respon
   }
 
   return {
-    headline: String(parsed.headline).trim(),
-    deck: String(parsed.deck || '').trim(),
-    body: String(parsed.body).trim(),
+    headline: stripMarkdown(String(parsed.headline)),
+    deck: stripMarkdown(String(parsed.deck || '')),
+    body: stripMarkdown(String(parsed.body)),
   };
 }
 
@@ -126,6 +139,8 @@ Write:
 - A two-paragraph analysis (separate the paragraphs with a blank line): the first covering what happened across the sector and why, the second covering what investors in this sector should watch next. Keep each paragraph to 2-3 sentences — informative, not padded.
 - 1-3 stock tickers (just the symbols) from the headlines above that best represent the sector-wide themes discussed
 
+None of the fields should contain markdown formatting (no asterisks, underscores, backticks, or headers) — this is plain text rendered directly, not markdown.
+
 Do not invent specific facts, figures, or filings that aren't present in the headlines above. Respond with ONLY a JSON object and nothing else, no markdown code fences: {"headline": "...", "body": "...", "tickers": ["TICK"]} — in "body", separate the two paragraphs with a literal "\\n\\n" (a valid JSON-escaped blank line), not an actual line break.`;
 
   const parsed = await askClaudeForJson(prompt, podName);
@@ -134,8 +149,8 @@ Do not invent specific facts, figures, or filings that aren't present in the hea
   }
 
   return {
-    headline: String(parsed.headline).trim(),
-    body: String(parsed.body).trim(),
+    headline: stripMarkdown(String(parsed.headline)),
+    body: stripMarkdown(String(parsed.body)),
     tickers: Array.isArray(parsed.tickers) ? parsed.tickers.map((t) => String(t).toUpperCase()) : [],
   };
 }
