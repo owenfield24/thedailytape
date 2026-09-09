@@ -1,6 +1,10 @@
 {
-  "asOf": "2026-09-09T00:57:41.758Z",
+  "asOf": "2026-09-09T02:33:52.201Z",
   "quotes": {
+    "JPM": {
+      "price": 353.51,
+      "changePercent": -1.4304
+    },
     "GS": {
       "price": 1036.53,
       "changePercent": -0.2003
@@ -9,21 +13,17 @@
       "price": 62.39,
       "changePercent": -0.4627
     },
-    "JPM": {
-      "price": 353.51,
-      "changePercent": -1.4304
-    },
     "AAPL": {
       "price": 316.22,
       "changePercent": -1.172
     },
-    "NVDA": {
-      "price": 225.73,
-      "changePercent": -2.0099
+    "MSFT": {
+      "price": 493.95,
+      "changePercent": -1.1507
     },
-    "HPE": {
-      "price": 56.03,
-      "changePercent": 7.75
+    "CEG": {
+      "price": 299.05,
+      "changePercent": 0.0301
     },
     "UNH": {
       "price": 400.84,
@@ -65,13 +65,13 @@
       "price": 822.48,
       "changePercent": 1.0492
     },
-    "MMM": {
-      "price": 167.52,
-      "changePercent": -0.617
-    },
     "GE": {
       "price": 334.91,
       "changePercent": -0.6556
+    },
+    "MMM": {
+      "price": 167.52,
+      "changePercent": -0.617
     },
     "AMD": {
       "price": 505.74,
