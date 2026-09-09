@@ -3,9 +3,15 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $AMD: Guides $70B 2027 data center revenue; stock up on AI numbers; capex cycle confidence amid rate environment
-- $META: Launches personal AI agent; testing monetization path as rates hold steady; consumer AI narrative vs. macro caution
-- $GOOGL: Seen as cheap on cash flows per Cramer; high-profile allocators rotating into/out; duration risk in AI upside
+- $META: Premarket jump on AI agent launch; tracking execution on infrastructure and competitive positioning
+- $GOOGL: €13bn Finland data center investment announced; watching capex guidance and power cost pressures ahead
+- $NETGEAR: Surging premarket; smaller-cap telecom infrastructure play sensitive to rate environment and demand cycles
+
+## 2026-09-09
+**AI Infrastructure Capex Surge Offsets Modest Market Headwinds**
+With the 10-year yield holding steady near 4.78% and broad market sentiment mixed (SPY -0.55%, Nasdaq flat), Communication & Platforms names are bifurcating on macro exposure. Rate-sensitive names and lower-growth plays face near-term pressure in a higher-for-longer yield environment, yet mega-cap tech giants are leaning into massive infrastructure investments—particularly in AI data centers—as a strategic counterweight to both competitive pressure and long-term secular opportunity. This willingness to deploy capital aggressively despite macro uncertainty suggests conviction that AI infrastructure spend will outpace near-term recession fears.
+Tickers: $GOOGL, $META, $NETGEAR
+Sources: ChartMill, Yahoo
 
 ## 2026-09-08
 **AI Capex Cycle Extends Runway Despite Rate Headwinds and Broader Selloff**
