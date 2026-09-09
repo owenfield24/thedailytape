@@ -97,6 +97,7 @@ cp .env.local.example .env.local
 | `GITHUB_TOKEN` | Lets the cron function commit updated files back to this repo |
 | `GITHUB_REPO` | `owner/repo-name` for this repo |
 | `GITHUB_BRANCH` | Branch to commit to (defaults to `main`) |
+| `BUTTONDOWN_API_KEY` | Stores email signups and sends each pod's brief to subscribers who chose it |
 
 In production, add the same variables under **Vercel Dashboard → your project
 → Settings → Environment Variables**. `.env.local` is gitignored and never
@@ -182,6 +183,31 @@ token with write access:
 
 (A classic personal access token with the `repo` scope also works if you
 prefer, but a fine-grained token scoped to just this repo is safer.)
+
+### Getting a Buttondown API key
+
+The "Get sector briefs in your inbox" form (bottom of every page) needs
+somewhere private to store subscriber emails and a way to actually send
+mail — this repo's `data/*.json` files are public (committed via the GitHub
+API), so subscriber emails can't live there. Buttondown handles both.
+
+1. Create a free account at [buttondown.com](https://buttondown.com).
+2. Per-pod targeting (letting a subscriber pick specific pods) needs
+   Buttondown's **tags** feature, which is a paid add-on, not on the free
+   plan — see the pricing page for current cost. Without it, everyone would
+   get every pod's email regardless of what they picked at signup.
+3. Copy your API key from **Settings → API**.
+4. Put it in `.env.local` as `BUTTONDOWN_API_KEY=...` for local testing, and
+   add it to the Vercel project's environment variables for production.
+
+`api/subscribe.js` handles the signup form's POST request and tags each
+subscriber `pod:<slug>` for every pod they checked (see
+`api/lib/buttondown-client.js` — the only file that knows Buttondown's API
+shape). Actually emailing a pod's brief to its tagged subscribers when it
+publishes is not yet wired into the daily cron — see the comment atop
+`sendPodBriefEmail()` in that file for why (the tag-filter field on
+Buttondown's send-email endpoint needs to be verified against a real API key
+before it's trusted, same as every other external API in this project).
 
 ## How sector briefs are generated
 

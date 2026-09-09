@@ -76,6 +76,38 @@ function renderFooter() {
     </footer>`;
 }
 
+// Email signup, rendered on every page just above the footer. Posts to
+// /api/subscribe (api/subscribe.js), which forwards to Buttondown with the
+// checked pods as tags — see BUTTONDOWN_API_KEY in .env.local.example and
+// api/lib/buttondown-client.js. Site-root-absolute form action/fetch path
+// for the same reason as watchlist-quotes.js: this partial renders at every
+// page depth (site root and /pods/*.html alike).
+function renderSubscribeForm(navPods = PODS) {
+  const checkboxes = navPods
+    .map(
+      (pod) => `<label class="subscribe-pod">
+            <input type="checkbox" name="pods" value="${pod.slug}" />
+            ${escapeHtml(pod.name)}
+          </label>`
+    )
+    .join('\n          ');
+
+  return `<section class="subscribe-box" id="subscribe">
+      <div class="subscribe-inner">
+        <div class="subscribe-label">Get sector briefs in your inbox</div>
+        <p class="subscribe-copy">Pick the pods you care about. You'll get that pod's AI-generated brief by email whenever it's published on a trading day.</p>
+        <form id="subscribe-form" class="subscribe-form" novalidate>
+          <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address" />
+          <div class="subscribe-pods">
+            ${checkboxes}
+          </div>
+          <button type="submit">Subscribe</button>
+          <p class="subscribe-status" id="subscribe-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>`;
+}
+
 // rootPrefix: '' for pages at site root, '../' for pages one level down (e.g. /pods/*.html)
 // tickerHtml: optional markup rendered above the masthead (used for the homepage's
 // scrolling stock ticker) — kept separate from bodyHtml because it needs to
@@ -119,12 +151,14 @@ function pageShell({ title, description, activeSlug, rootPrefix = '', bodyHtml, 
   <main class="site-main">
     ${bodyHtml}
   </main>
+  ${renderSubscribeForm(navPods)}
   ${renderFooter()}
   <script src="${rootPrefix}js/pod-star.js?v=${BUILD_ID}" defer></script>
   <script src="${rootPrefix}js/watchlist-quotes.js?v=${BUILD_ID}" defer></script>
+  <script src="${rootPrefix}js/subscribe-form.js?v=${BUILD_ID}" defer></script>
 </body>
 </html>
 `;
 }
 
-module.exports = { SITE_NAME, PODS, pageShell, renderNav, renderFooter, escapeHtml, BUILD_ID };
+module.exports = { SITE_NAME, PODS, pageShell, renderNav, renderFooter, renderSubscribeForm, escapeHtml, BUILD_ID };
