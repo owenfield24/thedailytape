@@ -3,9 +3,15 @@ pod: Industrial & Materials
 ---
 
 ## Watchlist
-- $CAT: Up 95% YoY; revaluation risk in macro slowdown warrants close watching
-- $GE: Aerospace unit cited; capital allocation decisions on early cash could signal confidence
-- $MMM: Transportation and electronics strength noted; barometer for capex-driven demand durability
+- $CAT: Up 95% over one year; key bellwether for capex cycle resilience amid rate environment
+- $GE: Aerospace cash timing discussed as sector rotation into defense and infrastructure plays accelerates
+- $MMM: Transportation and electronics strength signals demand durability outside rate-sensitive commercial real estate
+
+## 2026-09-09
+**Industrial capex cycle resilient despite modest equity weakness and higher rates**
+With the 10-year yield holding steady at 4.78% and the Dow declining 1.13% while broader indices show relative stability, the Industrial & Materials sector is displaying selective strength tied to structural demand rather than broad risk appetite. Headlines point to semiconductor and pharma-driven construction projects lifting non-residential capex, while transportation equipment and electronics subsegments are outperforming, suggesting investors are rotating into cyclicals with visible end-market visibility despite the rate headwind and mixed market tone today.
+Tickers: $CAT, $GE, $MMM
+Sources: Yahoo, ChartMill
 
 ## 2026-09-08
 **Capital Intensity Resilient as Rates Hold; Industrials Diverge on Macro Headwinds**
