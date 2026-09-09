@@ -1,1 +1,0 @@
-This is a temporary test file to verify GitHub PAT write access for The Daily Tape's cron function. Safe to ignore/delete.
