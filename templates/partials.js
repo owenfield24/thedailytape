@@ -108,7 +108,7 @@ function renderSubscribeForm(navPods = PODS) {
           <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address" />
           <label class="subscribe-pod subscribe-pod-market">
             <input type="checkbox" name="pods" value="${MARKET_BRIEF_SLUG}" />
-            Today's Brief (broad market)
+            Daily Market Briefs
           </label>
           <div class="subscribe-pods">
             ${checkboxes}
