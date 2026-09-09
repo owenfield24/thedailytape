@@ -2,6 +2,11 @@
 pod: Industrial & Materials
 ---
 
+## Watchlist
+- $CAT: Up 95% YoY; critical indicator of construction cycle health
+- $MMM: Transportation and electronics strength; watch for margin expansion
+- $GE: Aerospace cash generation timing; signals defense sector demand
+
 ## 2026-09-08
 **Industrial Sector Positioned for Infrastructure and Defense-Driven Growth**
 Industrial and materials companies are benefiting from a confluence of structural tailwinds, including non-residential construction momentum tied to chip and pharmaceutical manufacturing expansion, alongside strength in aerospace and defense. Transportation and electronics-focused segments within diversified industrials are showing particular resilience, as evidenced by broad-based gains across equipment manufacturers and aerospace suppliers, while energy volatility from geopolitical events continues to create pricing dynamics across the sector.
