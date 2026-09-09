@@ -15,11 +15,16 @@
 //   3. For each of the seven pods, fetches recent news for that pod's three
 //      "bellwether" tickers (see PODS in templates/partials.js), pools and
 //      dedupes the headlines, and asks Claude (api/lib/anthropic-client.js)
-//      to write that pod's daily brief broadly about the sector from them —
-//      several companies' worth of headlines, not one, is what keeps the
-//      brief from reading like a single-stock news item. The same call also
-//      produces 2-3 "Securities to Note" (a ticker + short reason) grounded
-//      in the same headlines, which REPLACES (not accumulates on top of) any
+//      to write that pod's daily brief. The SAME market-wide macro figures
+//      fetched in step 2 (indices, treasury10y) are passed into this call
+//      too, and the prompt explicitly frames the macro backdrop — rates,
+//      market tone, inflation — as the primary driver of the sector story,
+//      with the pooled company headlines used only as supporting evidence of
+//      how that backdrop is showing up in this sector. This is what keeps a
+//      brief from reading like a recap of two or three companies' news
+//      rather than genuine sector analysis. The same call also produces 2-3
+//      "Securities to Note" (a ticker + short reason) grounded in the same
+//      headlines, which REPLACES (not accumulates on top of) any
 //      existing "## Watchlist" section in that pod's file — it reflects
 //      what's worth watching right now, not a history. The dated entry is
 //      then prepended after it. This is the whole reason a pod's content
@@ -151,7 +156,7 @@ module.exports = async function handler(req, res) {
             return { pod, skipped: true, reason: 'no news available' };
           }
 
-          const brief = await generateSectorBrief({ podName: pod.name, headlines });
+          const brief = await generateSectorBrief({ podName: pod.name, headlines, indices, treasury10y });
           const sources = [...new Set(headlines.map((h) => h.source))].join(', ');
 
           const filePath = path.join(CONTENT_DIR, `${pod.slug}.md`);
