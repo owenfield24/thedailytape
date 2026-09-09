@@ -138,20 +138,31 @@ Write:
 - A headline under 12 words describing a sector-wide theme, no markdown formatting, no trailing period, and not centered on a single company
 - A two-paragraph analysis (separate the paragraphs with a blank line): the first covering what happened across the sector and why, the second covering what investors in this sector should watch next. Keep each paragraph to 2-3 sentences — informative, not padded.
 - 1-3 stock tickers (just the symbols) from the headlines above that best represent the sector-wide themes discussed
+- 2-3 "Securities to Note": specific tickers from the headlines above worth watching today, each with a short note (under 15 words) explaining why — e.g. "Reports earnings before the open" or "Named in today's merger report"
 
 None of the fields should contain markdown formatting (no asterisks, underscores, backticks, or headers) — this is plain text rendered directly, not markdown.
 
-Do not invent specific facts, figures, or filings that aren't present in the headlines above. Respond with ONLY a JSON object and nothing else, no markdown code fences: {"headline": "...", "body": "...", "tickers": ["TICK"]} — in "body", separate the two paragraphs with a literal "\\n\\n" (a valid JSON-escaped blank line), not an actual line break.`;
+Do not invent specific facts, figures, or filings that aren't present in the headlines above. Respond with ONLY a JSON object and nothing else, no markdown code fences: {"headline": "...", "body": "...", "tickers": ["TICK"], "watchlist": [{"ticker": "TICK", "note": "..."}]} — in "body", separate the two paragraphs with a literal "\\n\\n" (a valid JSON-escaped blank line), not an actual line break.`;
 
   const parsed = await askClaudeForJson(prompt, podName);
   if (!parsed.headline || !parsed.body) {
     throw new Error(`Anthropic response for ${podName} missing headline/body`);
   }
 
+  const watchlist = Array.isArray(parsed.watchlist)
+    ? parsed.watchlist
+        .filter((w) => w && w.ticker && w.note)
+        .map((w) => ({
+          ticker: String(w.ticker).replace(/^\$/, '').toUpperCase(),
+          note: stripMarkdown(String(w.note)),
+        }))
+    : [];
+
   return {
     headline: stripMarkdown(String(parsed.headline)),
     body: stripMarkdown(String(parsed.body)),
     tickers: Array.isArray(parsed.tickers) ? parsed.tickers.map((t) => String(t).toUpperCase()) : [],
+    watchlist,
   };
 }
 

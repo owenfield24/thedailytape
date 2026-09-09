@@ -12,19 +12,24 @@
 //      analysis — grounded in those actual moves and headlines. There is no
 //      VIX figure on this site: no free source gives the real index value
 //      (see market-data-finnhub.js's comment for what was tried).
-//   3. Scans every pod's content file for a "## Watchlist" section (see
-//      lib/parse-pods.js) and fetches a live quote for each ticker flagged
-//      there — this is what powers the current-price shown next to each
-//      ticker in a pod page's "Securities to Note" sidebar.
-//   4. For each of the seven pods, fetches recent news for that pod's three
+//   3. For each of the seven pods, fetches recent news for that pod's three
 //      "bellwether" tickers (see PODS in templates/partials.js), pools and
 //      dedupes the headlines, and asks Claude (api/lib/anthropic-client.js)
 //      to write that pod's daily brief broadly about the sector from them —
 //      several companies' worth of headlines, not one, is what keeps the
-//      brief from reading like a single-stock news item. The result is
-//      prepended as a new dated entry in that pod's own
-//      content/pods/<slug>.md — this is the whole reason a pod's content file
-//      is no longer something a human needs to edit by hand day to day.
+//      brief from reading like a single-stock news item. The same call also
+//      produces 2-3 "Securities to Note" (a ticker + short reason) grounded
+//      in the same headlines, which REPLACES (not accumulates on top of) any
+//      existing "## Watchlist" section in that pod's file — it reflects
+//      what's worth watching right now, not a history. The dated entry is
+//      then prepended after it. This is the whole reason a pod's content
+//      file is no longer something a human needs to edit by hand day to day.
+//   4. Scans every pod's content file for a "## Watchlist" section (see
+//      lib/parse-pods.js) — merging in the ones just generated in step 3, so
+//      a brand-new AI-suggested ticker gets a price the same day rather than
+//      waiting for tomorrow's build to see today's commit — and fetches a
+//      live quote for each ticker found. This powers the current-price shown
+//      next to each ticker in a pod page's "Securities to Note" sidebar.
 //   5. Writes everything (data/market-pulse.json, data/watchlist-quotes.json,
 //      and each updated content/pods/<slug>.md) by committing directly to the
 //      GitHub repo via the GitHub REST API (a real `git commit` isn't
@@ -81,7 +86,7 @@ const { fetchMarketData, fetchWatchlistQuotes, fetchCompanyNews } = require('./l
 const { fetchTreasury10y } = require('./lib/market-data-fred');
 const { generateMarketBrief, generateSectorBrief } = require('./lib/anthropic-client');
 const { commitFile } = require('./lib/github-commit');
-const { collectAllWatchlistTickers, prependEntry } = require('../lib/parse-pods');
+const { collectAllWatchlistTickers, prependEntry, replaceWatchlist } = require('../lib/parse-pods');
 const { PODS } = require('../templates/partials');
 
 const MARKET_PULSE_PATH = 'data/market-pulse.json';
@@ -118,17 +123,6 @@ module.exports = async function handler(req, res) {
       `Update market pulse data for ${isoDate}`
     );
 
-    const tickers = collectAllWatchlistTickers(CONTENT_DIR, PODS.map((pod) => pod.slug));
-    const quotes = await fetchWatchlistQuotes(tickers);
-
-    const watchlistPayload = { asOf: new Date().toISOString(), quotes };
-
-    await commitFile(
-      WATCHLIST_QUOTES_PATH,
-      JSON.stringify(watchlistPayload, null, 2) + '\n',
-      `Update watchlist quotes for ${isoDate}`
-    );
-
     // Phase 1: fetch news + generate each pod's brief IN PARALLEL — pure
     // Finnhub/Claude API calls, no git writes yet, so there's no race to
     // worry about here. One pod's news/model failure shouldn't take down the
@@ -162,7 +156,11 @@ module.exports = async function handler(req, res) {
 
           const filePath = path.join(CONTENT_DIR, `${pod.slug}.md`);
           const raw = fs.readFileSync(filePath, 'utf8');
-          const updated = prependEntry(raw, {
+          // Watchlist is fully replaced (not accumulated) each run — it's
+          // "what's worth watching right now," not a history — then the new
+          // entry is prepended after it.
+          const withWatchlist = replaceWatchlist(raw, brief.watchlist);
+          const updated = prependEntry(withWatchlist, {
             date: isoDate,
             headline: brief.headline,
             body: brief.body,
@@ -170,7 +168,7 @@ module.exports = async function handler(req, res) {
             sources,
           });
 
-          return { pod, skipped: false, updated };
+          return { pod, skipped: false, updated, watchlist: brief.watchlist };
         } catch (err) {
           console.error(`Sector brief generation failed for ${pod.name}: ${err.message}`);
           return { pod, skipped: true, reason: err.message };
@@ -201,6 +199,25 @@ module.exports = async function handler(req, res) {
         sectorBriefResults.push({ pod: result.pod.slug, skipped: true, reason: err.message });
       }
     }
+
+    // Watchlist quotes run AFTER sector briefs commit, not before — the
+    // disk-based scan (collectAllWatchlistTickers) only sees whatever was
+    // bundled at deploy time, i.e. yesterday's watchlists, so today's
+    // freshly-generated tickers are merged in from memory (`prepared`) too.
+    // Otherwise a brand-new AI-suggested ticker would show no price for a
+    // full extra day until the next build picks up its own prior commit.
+    const diskTickers = collectAllWatchlistTickers(CONTENT_DIR, PODS.map((pod) => pod.slug));
+    const freshTickers = prepared.filter((r) => !r.skipped).flatMap((r) => r.watchlist.map((w) => w.ticker));
+    const tickers = [...new Set([...diskTickers, ...freshTickers])];
+    const quotes = await fetchWatchlistQuotes(tickers);
+
+    const watchlistPayload = { asOf: new Date().toISOString(), quotes };
+
+    await commitFile(
+      WATCHLIST_QUOTES_PATH,
+      JSON.stringify(watchlistPayload, null, 2) + '\n',
+      `Update watchlist quotes for ${isoDate}`
+    );
 
     res.status(200).json({ skipped: false, date: isoDate, watchlistTickers: tickers, sectorBriefs: sectorBriefResults });
   } catch (err) {
