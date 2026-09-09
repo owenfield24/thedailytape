@@ -2,6 +2,11 @@
 pod: Communication & Platforms
 ---
 
+## Watchlist
+- $AMD: AI data center guidance sparked stock surge; execution risk on 2027 targets key
+- $META: Launched Muse AI agent as platform shifts strategy; watch adoption and margin impact
+- $GOOGL: Subject of recent large allocator rotations; valuation debate centers on AI capex payoff
+
 ## 2026-09-08
 **AI Infrastructure Demand Reshapes Tech Sector Investment Thesis**
 The communication and platforms sector is experiencing a fundamental repricing as investors pivot toward companies positioned to benefit from artificial intelligence infrastructure buildout. AMD's guidance of $70 billion in 2027 data center revenue and Constellation Energy's multi-year power agreements underscore how AI capex is reshaping capital allocation across semiconductors, cloud platforms, and energy providers. Meanwhile, high-profile investors like Druckenmiller are rotating between mega-cap tech names, suggesting conviction in the AI narrative is consolidating around companies with clearest paths to monetization and lowest regulatory friction.
