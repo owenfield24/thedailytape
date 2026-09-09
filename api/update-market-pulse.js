@@ -42,12 +42,15 @@
 // automatic file-tracing can miss files read via a dynamic path built from
 // fs.readdirSync() rather than a static require()/readFileSync() call.
 //
-// Sector brief generation for all seven pods runs in parallel (each pod
-// writes a different file, so there's no shared-state conflict) to keep this
-// function's total wall-clock time down — with Finnhub + Claude round trips
-// per pod, running them sequentially could approach Vercel's function
-// duration limit. vercel.json sets this function's `maxDuration` higher than
-// the default to give it headroom regardless.
+// Sector brief GENERATION (Finnhub news + Claude) for all seven pods runs in
+// parallel to keep this function's total wall-clock time down. The actual
+// GitHub COMMITS do not — confirmed live: seven concurrent PUTs to different
+// files on the same `main` branch 409 against each other, because each
+// commit needs to attach to the branch's current tip, which moves out from
+// under slower requests when several land at once. So commits happen one at
+// a time after generation finishes; vercel.json sets this function's
+// `maxDuration` higher than the default to give the combined parallel
+// generation + sequential commit phases enough headroom regardless.
 //
 // --- Cron scheduling notes (read this before touching vercel.json) ---
 //
@@ -126,9 +129,12 @@ module.exports = async function handler(req, res) {
       `Update watchlist quotes for ${isoDate}`
     );
 
-    // One pod's news/model/commit failure shouldn't take down the other six —
-    // each is independent, so failures are caught and reported per-pod.
-    const sectorBriefResults = await Promise.all(
+    // Phase 1: fetch news + generate each pod's brief IN PARALLEL — pure
+    // Finnhub/Claude API calls, no git writes yet, so there's no race to
+    // worry about here. One pod's news/model failure shouldn't take down the
+    // other six, so failures are caught and carried through as a result
+    // rather than thrown.
+    const prepared = await Promise.all(
       PODS.map(async (pod) => {
         try {
           // News for several representative tickers, not just one, pooled
@@ -148,7 +154,7 @@ module.exports = async function handler(req, res) {
             .slice(0, 8); // keep the prompt focused rather than dumping every headline from three tickers
 
           if (!headlines.length) {
-            return { pod: pod.slug, skipped: true, reason: 'no news available' };
+            return { pod, skipped: true, reason: 'no news available' };
           }
 
           const brief = await generateSectorBrief({ podName: pod.name, headlines });
@@ -164,15 +170,37 @@ module.exports = async function handler(req, res) {
             sources,
           });
 
-          await commitFile(`content/pods/${pod.slug}.md`, updated, `AI-generated brief for ${pod.name} — ${isoDate}`);
-
-          return { pod: pod.slug, skipped: false };
+          return { pod, skipped: false, updated };
         } catch (err) {
-          console.error(`Sector brief failed for ${pod.name}: ${err.message}`);
-          return { pod: pod.slug, skipped: true, reason: err.message };
+          console.error(`Sector brief generation failed for ${pod.name}: ${err.message}`);
+          return { pod, skipped: true, reason: err.message };
         }
       })
     );
+
+    // Phase 2: commit each generated brief ONE AT A TIME. All seven land on
+    // the same `main` branch, and GitHub's contents API can only apply one
+    // commit at a time per branch — running these in parallel causes a real
+    // race (confirmed live: concurrent PUTs to different files on the same
+    // branch 409 against each other).
+    const sectorBriefResults = [];
+    for (const result of prepared) {
+      if (result.skipped) {
+        sectorBriefResults.push({ pod: result.pod.slug, skipped: true, reason: result.reason });
+        continue;
+      }
+      try {
+        await commitFile(
+          `content/pods/${result.pod.slug}.md`,
+          result.updated,
+          `AI-generated brief for ${result.pod.name} — ${isoDate}`
+        );
+        sectorBriefResults.push({ pod: result.pod.slug, skipped: false });
+      } catch (err) {
+        console.error(`Commit failed for ${result.pod.name}: ${err.message}`);
+        sectorBriefResults.push({ pod: result.pod.slug, skipped: true, reason: err.message });
+      }
+    }
 
     res.status(200).json({ skipped: false, date: isoDate, watchlistTickers: tickers, sectorBriefs: sectorBriefResults });
   } catch (err) {
