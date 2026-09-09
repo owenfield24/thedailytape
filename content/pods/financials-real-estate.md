@@ -2,6 +2,11 @@
 pod: Financials & Real Estate
 ---
 
+## Watchlist
+- $GS: Up 38.6% YTD; assess if gains warrant pullback or further upside
+- $BAC: Bullish on memory chips despite rate concerns; mixed signals on rate outlook
+- $JPM: Canadian revenue nearly doubles but stock slips; divergence warrants attention
+
 ## 2026-09-08
 **Banking sector navigates rate signals amid bond market shift**
 Financial institutions are experiencing mixed momentum as market dynamics reshape fixed-income landscapes. JPMorgan's geographic diversification and Goldman's year-long rally illustrate divergent paths within banking, while preferred stocks are flashing warning signals about interest rate trajectories that could pressure net interest margins going forward.
