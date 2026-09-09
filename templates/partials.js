@@ -55,6 +55,7 @@ function renderNav(activeSlug, rootPrefix, navPods = PODS) {
             <li><a href="${rootPrefix}index.html"${tabClass('home')}>Home</a></li>
             <li><a href="${rootPrefix}archive.html"${tabClass('archive')}>Archive</a></li>
             <li><a href="${rootPrefix}about.html"${tabClass('about')}>About</a></li>
+            <li><a href="${rootPrefix}index.html#subscribe" class="masthead-subscribe">Subscribe</a></li>
           </ul>
         </div>
         <nav class="site-nav">

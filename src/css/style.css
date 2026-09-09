@@ -110,6 +110,16 @@ a {
   font-weight: 500;
 }
 
+.masthead-tabs a.masthead-subscribe {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.masthead-tabs a.masthead-subscribe:hover {
+  color: var(--ink);
+  border-bottom-color: var(--gold);
+}
+
 .site-nav {
   padding: 0.75rem 0 0;
 }
