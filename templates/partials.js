@@ -76,9 +76,17 @@ function renderFooter() {
     </footer>`;
 }
 
+// Selecting this in the subscribe form means "email me Today's Brief" (the
+// homepage's broad market brief) rather than any one pod. Not a real pod
+// slug — kept alongside PODS since api/subscribe.js validates against both
+// lists together — but tagged distinctly from `pod:<slug>` tags in
+// api/lib/buttondown-client.js so a "pod:today-brief" tag is never confused
+// with an actual pod.
+const MARKET_BRIEF_SLUG = 'today-brief';
+
 // Email signup, rendered on every page just above the footer. Posts to
 // /api/subscribe (api/subscribe.js), which forwards to Buttondown with the
-// checked pods as tags — see BUTTONDOWN_API_KEY in .env.local.example and
+// checked items as tags — see BUTTONDOWN_API_KEY in .env.local.example and
 // api/lib/buttondown-client.js. Site-root-absolute form action/fetch path
 // for the same reason as watchlist-quotes.js: this partial renders at every
 // page depth (site root and /pods/*.html alike).
@@ -95,9 +103,13 @@ function renderSubscribeForm(navPods = PODS) {
   return `<section class="subscribe-box" id="subscribe">
       <div class="subscribe-inner">
         <div class="subscribe-label">Get sector briefs in your inbox</div>
-        <p class="subscribe-copy">Pick the pods you care about. You'll get that pod's AI-generated brief by email whenever it's published on a trading day.</p>
+        <p class="subscribe-copy">Pick what you want emailed whenever it's published on a trading day.</p>
         <form id="subscribe-form" class="subscribe-form" novalidate>
           <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address" />
+          <label class="subscribe-pod subscribe-pod-market">
+            <input type="checkbox" name="pods" value="${MARKET_BRIEF_SLUG}" />
+            Today's Brief (broad market)
+          </label>
           <div class="subscribe-pods">
             ${checkboxes}
           </div>
@@ -161,4 +173,14 @@ function pageShell({ title, description, activeSlug, rootPrefix = '', bodyHtml, 
 `;
 }
 
-module.exports = { SITE_NAME, PODS, pageShell, renderNav, renderFooter, renderSubscribeForm, escapeHtml, BUILD_ID };
+module.exports = {
+  SITE_NAME,
+  PODS,
+  MARKET_BRIEF_SLUG,
+  pageShell,
+  renderNav,
+  renderFooter,
+  renderSubscribeForm,
+  escapeHtml,
+  BUILD_ID,
+};

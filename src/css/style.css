@@ -876,16 +876,28 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.7rem 1.2rem;
+  gap: 0.5rem 1.1rem;
 }
 
 .subscribe-pod {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--ink2);
+  gap: 0.35rem;
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.82rem;
+  color: var(--ink3);
+}
+
+.subscribe-pod input {
+  accent-color: var(--gold);
+}
+
+.subscribe-pod-market {
+  color: var(--ink);
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
 }
 
 .subscribe-form button {

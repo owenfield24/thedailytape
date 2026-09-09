@@ -5,11 +5,13 @@
 // are public, committed via GitHub — see CLAUDE.md) and there'd be no
 // mechanism to send mail at all.
 //
-// Tags are how per-pod targeting works: subscribing to a pod adds a
-// `pod:<slug>` tag to that subscriber, and sending a pod's daily brief means
-// sending to subscribers with that tag. Tag-based sends require Buttondown's
-// paid tags add-on — confirmed live before wiring this in, since the free
-// plan doesn't include tags at all.
+// Tags are how per-pod (and per-brief) targeting works: subscribing to a pod
+// adds a `pod:<slug>` tag to that subscriber, subscribing to Today's Brief
+// adds a `today-brief` tag, and sending a brief means sending to subscribers
+// with the matching tag. Which raw form value maps to which tag is decided
+// by the caller (api/subscribe.js) — this file just takes tags as given.
+// Tag-based sends require Buttondown's paid tags add-on — confirmed live
+// before wiring this in, since the free plan doesn't include tags at all.
 //
 // Requires BUTTONDOWN_API_KEY as an environment variable.
 
@@ -25,14 +27,13 @@ function podTag(slug) {
   return `pod:${slug}`;
 }
 
-// Subscribes (or updates) an email address with the given pod tags. If the
-// address already exists, Buttondown's API returns a 400 on POST — in that
-// case we PATCH the existing subscriber's tags instead, adding to whatever
-// tags they already have (X-Buttondown-Collision-Behavior: add) rather than
-// overwriting their other pod choices.
-async function subscribeEmail(email, podSlugs) {
-  const tags = podSlugs.map(podTag);
-
+// Subscribes (or updates) an email address with the given Buttondown tags
+// (already formatted by the caller — see tagForSlug() in api/subscribe.js).
+// If the address already exists, Buttondown's API returns a 400 on POST —
+// in that case we PATCH the existing subscriber's tags instead, adding to
+// whatever tags they already have (X-Buttondown-Collision-Behavior: add)
+// rather than overwriting their other pod/brief choices.
+async function subscribeEmail(email, tags) {
   const createRes = await fetch(`${BUTTONDOWN_API}/subscribers`, {
     method: 'POST',
     headers: {
@@ -97,4 +98,29 @@ async function sendPodBriefEmail(podSlug, { subject, body }) {
   return res.json();
 }
 
-module.exports = { subscribeEmail, sendPodBriefEmail };
+// Sends Today's Brief (the homepage's broad-market brief) to every
+// subscriber tagged `today-brief` — see MARKET_BRIEF_SLUG in
+// templates/partials.js. Same NOT-YET-VERIFIED caveat as sendPodBriefEmail
+// above: don't call this from the cron until the `included_tags` field is
+// confirmed against a real BUTTONDOWN_API_KEY.
+async function sendMarketBriefEmail({ subject, body }) {
+  const res = await fetch(`${BUTTONDOWN_API}/emails`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Token ${apiKey()}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      subject,
+      body,
+      included_tags: ['today-brief'],
+    }),
+  });
+
+  if (!res.ok) {
+    throw new Error(`Buttondown send failed for Today's Brief: ${res.status} ${await res.text()}`);
+  }
+  return res.json();
+}
+
+module.exports = { subscribeEmail, sendPodBriefEmail, sendMarketBriefEmail };
