@@ -2,6 +2,11 @@
 pod: Technology
 ---
 
+## Watchlist
+- $AAPL: iPhone event Wednesday; tests consumer demand amid sector AI pivot
+- $NVDA: Faces scrutiny on AI economics as Microsoft tests alternative chip approaches
+- $HPE: Positioned as new buy by analysts; benefits from infrastructure spending cycle
+
 ## 2026-09-08
 **Tech Sector Faces Pressure as AI Economics and Power Constraints Dominate**
 Technology stocks are experiencing broad headwinds as investors grapple with two competing narratives: the capital intensity of AI deployments and questions about near-term profitability. Hardware and infrastructure players like AMD and HPE are seeing renewed buying interest despite broader market weakness, suggesting investors see opportunity in the buildout phase. Simultaneously, energy constraints and delayed monetization timelines—exemplified by major power deals not generating returns until 2027—are creating uncertainty around the sustainability of current AI investment levels.
