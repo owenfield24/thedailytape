@@ -1,14 +1,17 @@
 // Vercel Serverless Function backing the "Get sector briefs in your inbox"
 // form (renderSubscribeForm() in templates/partials.js, wired up client-side
-// by src/js/subscribe-form.js). Validates the submission, then hands off to
+// by src/js/subscribe-form.js). Validates the submission, hands off to
 // api/lib/subscribers-store.js to store the subscriber (in a separate
 // PRIVATE GitHub repo, not this site's public one) with whichever
-// pods/Today's Brief they picked.
+// pods/Today's Brief they picked, then sends a one-time welcome email
+// (api/lib/email-templates.js) confirming what they signed up for.
 //
-// Requires SUBSCRIBERS_GITHUB_TOKEN and SUBSCRIBERS_GITHUB_REPO as
-// environment variables (see api/lib/subscribers-store.js).
+// Requires SUBSCRIBERS_GITHUB_TOKEN, SUBSCRIBERS_GITHUB_REPO, and
+// RESEND_API_KEY as environment variables.
 
 const { addOrUpdateSubscriber } = require('./lib/subscribers-store');
+const { sendEmail } = require('./lib/resend-client');
+const { welcomeEmail } = require('./lib/email-templates');
 const { PODS, MARKET_BRIEF_SLUG } = require('../templates/partials');
 
 const VALID_SLUGS = new Set([...PODS.map((pod) => pod.slug), MARKET_BRIEF_SLUG]);
@@ -44,7 +47,22 @@ module.exports = async function handler(req, res) {
       return;
     }
 
-    await addOrUpdateSubscriber(email, slugs.map(topicForSlug));
+    const subscriber = await addOrUpdateSubscriber(email, slugs.map(topicForSlug));
+
+    // A welcome-email failure (Resend down, bad RESEND_API_KEY, etc.)
+    // shouldn't fail the signup itself — the subscription is already
+    // stored by this point, which is the part that actually matters.
+    try {
+      const { subject, text, html } = welcomeEmail({
+        topics: subscriber.topics,
+        email: subscriber.email,
+        token: subscriber.unsubscribeToken,
+      });
+      await sendEmail({ to: subscriber.email, subject, text, html });
+    } catch (err) {
+      console.error(`Welcome email failed for ${subscriber.email}: ${err.message}`);
+    }
+
     res.status(200).json({ ok: true });
   } catch (err) {
     console.error('subscribe failed:', err);

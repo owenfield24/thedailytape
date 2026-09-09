@@ -59,19 +59,24 @@ async function writeSubscribers(subscribers, commitMessage) {
 // same underlying race as concurrent commits in api/update-market-pulse.js,
 // but at this volume a single retry is enough rather than the sequential-
 // commit-phase approach that fixed it there).
+// Returns the resulting subscriber record ({ email, topics, unsubscribeToken })
+// — with ALL of their topics, old and new merged — so the caller
+// (api/subscribe.js) can send a welcome email reflecting their complete,
+// current picks rather than just what was submitted in this request.
 async function addOrUpdateSubscriber(email, topics, attempt = 0) {
   const normalized = normalizeEmail(email);
   const { subscribers } = await readSubscribers();
 
-  const existing = subscribers.find((s) => normalizeEmail(s.email) === normalized);
-  if (existing) {
-    existing.topics = [...new Set([...(existing.topics || []), ...topics])];
+  let record = subscribers.find((s) => normalizeEmail(s.email) === normalized);
+  if (record) {
+    record.topics = [...new Set([...(record.topics || []), ...topics])];
   } else {
-    subscribers.push({
+    record = {
       email: normalized,
       topics: [...new Set(topics)],
       unsubscribeToken: crypto.randomBytes(16).toString('hex'),
-    });
+    };
+    subscribers.push(record);
   }
 
   try {
@@ -82,12 +87,17 @@ async function addOrUpdateSubscriber(email, topics, attempt = 0) {
     }
     throw err;
   }
+
+  return record;
 }
 
-// All subscribers who have the given topic, for the daily cron to send to.
-async function getSubscribersForTopic(topic) {
+// The full subscriber list, for the daily cron to send one combined email
+// per subscriber — it needs everyone's topics at once to work out which of
+// today's published sections belong in each person's single email, rather
+// than looking up one topic at a time.
+async function getAllSubscribers() {
   const { subscribers } = await readSubscribers();
-  return subscribers.filter((s) => Array.isArray(s.topics) && s.topics.includes(topic));
+  return subscribers;
 }
 
 // Removes a subscriber entirely (all topics) if their token matches — full
@@ -110,4 +120,4 @@ async function removeSubscriber(email, token) {
   return true;
 }
 
-module.exports = { addOrUpdateSubscriber, getSubscribersForTopic, removeSubscriber };
+module.exports = { addOrUpdateSubscriber, getAllSubscribers, removeSubscriber };

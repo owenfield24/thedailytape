@@ -288,16 +288,25 @@ Instead, two free services each do one job:
   needing a paid tier anywhere (Buttondown's tag-based segmentation, the
   obvious alternative, costs $9/mo; doing the filtering ourselves is free).
 
-`api/subscribe.js` validates a signup and calls
-`addOrUpdateSubscriber()`. `api/update-market-pulse.js` calls
-`emailSubscribers(topic, ...)` right after Today's Brief and each pod's
-brief commit, which looks up that topic's subscribers and sends each one a
-personalized email (`api/lib/email-templates.js` builds the subject/body,
-including a per-subscriber unsubscribe link). `api/unsubscribe.js` is a GET
-endpoint (must be GET — email clients only ever follow links) that removes a
-subscriber if their token matches, always showing the same confirmation
-either way so the page can't be used to probe whether an address is
-subscribed.
+`api/subscribe.js` validates a signup, calls `addOrUpdateSubscriber()`, and
+immediately sends a one-time welcome email (`welcomeEmail()` in
+`api/lib/email-templates.js`) confirming what the subscriber picked and what
+to expect — a subscriber's first-ever email from this site should never be
+an unexplained brief.
+
+Once Today's Brief and every pod's brief have committed, `sendCombinedEmails()`
+in `api/update-market-pulse.js` sends ONE email per subscriber, not one per
+topic — a subscriber who picked both Today's Brief and a pod gets a single
+message with both sections, built by `combinedBriefEmail()`. It works by
+collecting `{ topic, section }` for everything that published that run,
+fetching the full subscriber list once (`getAllSubscribers()`), and per
+subscriber filtering `publishedSections` down to the topics they picked —
+skipping anyone whose picks didn't include anything published today. Every
+email (welcome or daily) includes a per-subscriber unsubscribe link.
+`api/unsubscribe.js` is a GET endpoint (must be GET — email clients only
+ever follow links) that removes a subscriber if their token matches, always
+showing the same confirmation either way so the page can't be used to probe
+whether an address is subscribed.
 
 Real subscribers can't receive mail until a sending domain is verified in
 the Resend dashboard — without one, Resend's shared `onboarding@resend.dev`

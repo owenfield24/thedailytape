@@ -43,13 +43,19 @@
 //      site — pages pick up the fresh JSON via plain client-side fetches
 //      (src/js/market-pulse.js, src/js/watchlist-quotes.js), and the new pod
 //      entries show up as regular static HTML from the next build onward.
-//   6. Right after Today's Brief and each pod's brief commit, emails it to
-//      whoever subscribed to that topic (see emailSubscribers() below,
-//      api/lib/subscribers-store.js for who's subscribed — stored in a
-//      separate PRIVATE repo, not this one — and api/lib/resend-client.js
-//      for the actual send). A subscriber list load/send failure is logged
-//      and swallowed, never thrown — email is additive on top of the site
-//      publishing and should never block or fail the run that updates it.
+//   6. Once Today's Brief and every pod's brief have committed, sends ONE
+//      combined email per subscriber — not a separate email per topic —
+//      covering every topic they picked that published something today
+//      (see sendCombinedEmails() below; api/lib/subscribers-store.js for
+//      who's subscribed, stored in a separate PRIVATE repo, not this one;
+//      api/lib/email-templates.js for how a multi-section email is built;
+//      api/lib/resend-client.js for the actual send). This runs immediately
+//      as part of the same cron invocation that publishes the site, so a
+//      subscriber gets their email the moment that morning's content goes
+//      out, not on some separate delayed schedule. A subscriber list
+//      load/send failure is logged and swallowed, never thrown — email is
+//      additive on top of the site publishing and should never block or
+//      fail the run that updates it.
 //
 // Requires FINNHUB_API_KEY, FRED_API_KEY, GITHUB_TOKEN, GITHUB_REPO,
 // ANTHROPIC_API_KEY, RESEND_API_KEY, SUBSCRIBERS_GITHUB_TOKEN, and
@@ -101,44 +107,57 @@ const { generateMarketBrief, generateSectorBrief } = require('./lib/anthropic-cl
 const { commitFile } = require('./lib/github-commit');
 const { collectAllWatchlistTickers, prependEntry, replaceWatchlist } = require('../lib/parse-pods');
 const { PODS } = require('../templates/partials');
-const { getSubscribersForTopic } = require('./lib/subscribers-store');
+const { getAllSubscribers } = require('./lib/subscribers-store');
 const { sendEmail } = require('./lib/resend-client');
-const { podBriefEmail, marketBriefEmail } = require('./lib/email-templates');
+const { combinedBriefEmail } = require('./lib/email-templates');
 
 const MARKET_PULSE_PATH = 'data/market-pulse.json';
 const WATCHLIST_QUOTES_PATH = 'data/watchlist-quotes.json';
 const CONTENT_DIR = path.join(__dirname, '..', 'content', 'pods');
 
-// Emails every subscriber of `topic` (e.g. "today-brief" or "pod:technology")
-// using buildEmailForSubscriber(subscriber) to get that recipient's
-// personalized {subject, text, html} (personalized because each one needs
-// its own unsubscribe link — see api/lib/email-templates.js). Deliberately
+// publishedSections: [{ topic, section }] for everything that published
+// today — "today-brief" plus "pod:<slug>" for each pod that didn't skip.
+// For each subscriber, picks out just the sections matching topics they
+// picked at signup and sends ONE email covering all of them (skipping
+// anyone whose picks didn't include anything published today). Deliberately
 // swallows every failure (a missing RESEND_API_KEY/SUBSCRIBERS_GITHUB_TOKEN,
-// one bad address, Resend being down) rather than throwing, the same way a
-// single pod's brief-generation failure doesn't take down the other six —
+// one bad address, Resend being down) rather than throwing, same as a
+// single pod's brief-generation failure not taking down the other six —
 // email delivery is additive on top of the site publishing, never a reason
 // to fail the run that actually updates the site.
-async function emailSubscribers(topic, buildEmailForSubscriber) {
+async function sendCombinedEmails(publishedSections, isoDate) {
   let subscribers;
   try {
-    subscribers = await getSubscribersForTopic(topic);
+    subscribers = await getAllSubscribers();
   } catch (err) {
-    console.error(`Could not load subscribers for ${topic}: ${err.message}`);
-    return { sent: 0, failed: 0 };
+    console.error(`Could not load subscribers: ${err.message}`);
+    return { recipients: 0, sent: 0, failed: 0 };
   }
 
   let sent = 0;
   let failed = 0;
+  let recipients = 0;
   for (const subscriber of subscribers) {
+    const topics = Array.isArray(subscriber.topics) ? subscriber.topics : [];
+    const sections = publishedSections.filter((p) => topics.includes(p.topic)).map((p) => p.section);
+    if (!sections.length) continue;
+
+    recipients++;
     try {
-      await sendEmail({ to: subscriber.email, ...buildEmailForSubscriber(subscriber) });
+      const { subject, text, html } = combinedBriefEmail({
+        sections,
+        email: subscriber.email,
+        token: subscriber.unsubscribeToken,
+        date: isoDate,
+      });
+      await sendEmail({ to: subscriber.email, subject, text, html });
       sent++;
     } catch (err) {
-      console.error(`Email send failed for ${subscriber.email} (${topic}): ${err.message}`);
+      console.error(`Combined email send failed for ${subscriber.email}: ${err.message}`);
       failed++;
     }
   }
-  return { sent, failed };
+  return { recipients, sent, failed };
 }
 
 module.exports = async function handler(req, res) {
@@ -171,16 +190,16 @@ module.exports = async function handler(req, res) {
       `Update market pulse data for ${isoDate}`
     );
 
-    const marketEmailResult = await emailSubscribers('today-brief', (subscriber) =>
-      marketBriefEmail({
-        headline: brief.headline,
-        deck: brief.deck,
-        body: brief.body,
-        sources,
-        email: subscriber.email,
-        token: subscriber.unsubscribeToken,
-      })
-    );
+    // Collected as each piece publishes, then emailed out in one combined
+    // pass at the end (see sendCombinedEmails()) rather than sent
+    // immediately here — a subscriber picking both Today's Brief and a pod
+    // should get one email, not two.
+    const publishedSections = [
+      {
+        topic: 'today-brief',
+        section: { title: "Today's Brief", headline: brief.headline, deck: brief.deck, body: brief.body, sources },
+      },
+    ];
 
     // Phase 1: fetch news + generate each pod's brief IN PARALLEL — pure
     // Finnhub/Claude API calls, no git writes yet, so there's no race to
@@ -261,18 +280,12 @@ module.exports = async function handler(req, res) {
           `AI-generated brief for ${result.pod.name} — ${isoDate}`
         );
 
-        const podEmailResult = await emailSubscribers(`pod:${result.pod.slug}`, (subscriber) =>
-          podBriefEmail({
-            podName: result.pod.name,
-            headline: result.headline,
-            body: result.body,
-            sources: result.sources,
-            email: subscriber.email,
-            token: subscriber.unsubscribeToken,
-          })
-        );
+        publishedSections.push({
+          topic: `pod:${result.pod.slug}`,
+          section: { title: result.pod.name, headline: result.headline, body: result.body, sources: result.sources },
+        });
 
-        sectorBriefResults.push({ pod: result.pod.slug, skipped: false, email: podEmailResult });
+        sectorBriefResults.push({ pod: result.pod.slug, skipped: false });
       } catch (err) {
         console.error(`Commit failed for ${result.pod.name}: ${err.message}`);
         sectorBriefResults.push({ pod: result.pod.slug, skipped: true, reason: err.message });
@@ -298,12 +311,16 @@ module.exports = async function handler(req, res) {
       `Update watchlist quotes for ${isoDate}`
     );
 
+    // Everything's published — now send today's combined email to each
+    // subscriber, covering whichever of the sections above they picked.
+    const emailResult = await sendCombinedEmails(publishedSections, isoDate);
+
     res.status(200).json({
       skipped: false,
       date: isoDate,
       watchlistTickers: tickers,
       sectorBriefs: sectorBriefResults,
-      marketBriefEmail: marketEmailResult,
+      email: emailResult,
     });
   } catch (err) {
     console.error('update-market-pulse failed:', err);
