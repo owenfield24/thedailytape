@@ -52,10 +52,6 @@ module.exports = async function handler(req, res) {
     // A welcome-email failure (Resend down, bad RESEND_API_KEY, etc.)
     // shouldn't fail the signup itself — the subscription is already
     // stored by this point, which is the part that actually matters.
-    // TEMPORARY DIAGNOSTIC — remove debugEmailError once the live welcome-
-    // email failure is root-caused. It's not sensitive (just an upstream
-    // error message), but it doesn't belong in the permanent response shape.
-    let debugEmailError = null;
     try {
       const { subject, text, html } = welcomeEmail({
         topics: subscriber.topics,
@@ -65,10 +61,9 @@ module.exports = async function handler(req, res) {
       await sendEmail({ to: subscriber.email, subject, text, html });
     } catch (err) {
       console.error(`Welcome email failed for ${subscriber.email}: ${err.message}`);
-      debugEmailError = err.message;
     }
 
-    res.status(200).json({ ok: true, debugEmailError });
+    res.status(200).json({ ok: true });
   } catch (err) {
     console.error('subscribe failed:', err);
     res.status(500).json({ ok: false, error: 'Something went wrong. Try again later.' });
