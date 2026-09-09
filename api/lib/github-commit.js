@@ -62,9 +62,15 @@ async function getFileSha(filePath, overrides) {
   return file ? file.sha : null;
 }
 
-async function commitFile(filePath, contentString, commitMessage, overrides) {
+// knownSha: pass this when the caller already fetched the file's current
+// SHA (e.g. subscribers-store.js reading the file to modify it, then
+// writing it back) to skip a redundant GET before the PUT — shaves a full
+// network round trip off latency-sensitive request-handling endpoints like
+// api/subscribe.js, which has no minutes-long budget the way the daily
+// cron does. Omit it (the default) to look the SHA up here, as before.
+async function commitFile(filePath, contentString, commitMessage, overrides, knownSha) {
   const { repo, branch } = config(overrides);
-  const sha = await getFileSha(filePath, overrides);
+  const sha = knownSha !== undefined ? knownSha : await getFileSha(filePath, overrides);
 
   const url = `${GITHUB_API}/repos/${repo}/contents/${filePath}`;
   const body = {

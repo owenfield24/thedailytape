@@ -47,9 +47,13 @@ async function readSubscribers() {
   return { sha: file.sha, subscribers: Array.isArray(parsed.subscribers) ? parsed.subscribers : [] };
 }
 
-async function writeSubscribers(subscribers, commitMessage) {
+// knownSha: the SHA already fetched by the caller's readSubscribers() call —
+// passed through to commitFile() so it doesn't re-fetch the same file's SHA
+// right before writing it. Every caller here already has it, so there's
+// never a reason to omit it.
+async function writeSubscribers(subscribers, commitMessage, knownSha) {
   const content = JSON.stringify({ subscribers }, null, 2) + '\n';
-  await commitFile(SUBSCRIBERS_PATH, content, commitMessage, overrides());
+  await commitFile(SUBSCRIBERS_PATH, content, commitMessage, overrides(), knownSha);
 }
 
 // Adds a new subscriber, or merges topics into an existing one (a repeat
@@ -65,7 +69,7 @@ async function writeSubscribers(subscribers, commitMessage) {
 // current picks rather than just what was submitted in this request.
 async function addOrUpdateSubscriber(email, topics, attempt = 0) {
   const normalized = normalizeEmail(email);
-  const { subscribers } = await readSubscribers();
+  const { subscribers, sha } = await readSubscribers();
 
   let record = subscribers.find((s) => normalizeEmail(s.email) === normalized);
   if (record) {
@@ -80,7 +84,7 @@ async function addOrUpdateSubscriber(email, topics, attempt = 0) {
   }
 
   try {
-    await writeSubscribers(subscribers, `Subscribe/update ${normalized}`);
+    await writeSubscribers(subscribers, `Subscribe/update ${normalized}`, sha);
   } catch (err) {
     if (attempt === 0 && /409/.test(err.message)) {
       return addOrUpdateSubscriber(email, topics, attempt + 1);
@@ -108,7 +112,7 @@ async function getAllSubscribers() {
 // leaking whether an address was ever subscribed.
 async function removeSubscriber(email, token) {
   const normalized = normalizeEmail(email);
-  const { subscribers } = await readSubscribers();
+  const { subscribers, sha } = await readSubscribers();
 
   const index = subscribers.findIndex(
     (s) => normalizeEmail(s.email) === normalized && s.unsubscribeToken === token
@@ -116,7 +120,7 @@ async function removeSubscriber(email, token) {
   if (index === -1) return false;
 
   subscribers.splice(index, 1);
-  await writeSubscribers(subscribers, `Unsubscribe ${normalized}`);
+  await writeSubscribers(subscribers, `Unsubscribe ${normalized}`, sha);
   return true;
 }
 

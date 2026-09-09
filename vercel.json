@@ -6,6 +6,12 @@
     "api/update-market-pulse.js": {
       "includeFiles": "content/pods/**",
       "maxDuration": 60
+    },
+    "api/subscribe.js": {
+      "maxDuration": 30
+    },
+    "api/unsubscribe.js": {
+      "maxDuration": 30
     }
   },
   "crons": [
