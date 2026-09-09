@@ -79,17 +79,17 @@ function renderFooter() {
 // Selecting this in the subscribe form means "email me Today's Brief" (the
 // homepage's broad market brief) rather than any one pod. Not a real pod
 // slug — kept alongside PODS since api/subscribe.js validates against both
-// lists together — but tagged distinctly from `pod:<slug>` tags in
-// api/lib/buttondown-client.js so a "pod:today-brief" tag is never confused
-// with an actual pod.
+// lists together — but stored as a distinct topic from `pod:<slug>` topics
+// in api/lib/subscribers-store.js so it's never confused with an actual pod.
 const MARKET_BRIEF_SLUG = 'today-brief';
 
 // Email signup, rendered on every page just above the footer. Posts to
-// /api/subscribe (api/subscribe.js), which forwards to Buttondown with the
-// checked items as tags — see BUTTONDOWN_API_KEY in .env.local.example and
-// api/lib/buttondown-client.js. Site-root-absolute form action/fetch path
-// for the same reason as watchlist-quotes.js: this partial renders at every
-// page depth (site root and /pods/*.html alike).
+// /api/subscribe (api/subscribe.js), which stores the subscriber (in a
+// separate private repo, not this site's public one — see
+// api/lib/subscribers-store.js) tagged with whichever items they checked.
+// Site-root-absolute form action/fetch path for the same reason as
+// watchlist-quotes.js: this partial renders at every page depth (site root
+// and /pods/*.html alike).
 function renderSubscribeForm(navPods = PODS) {
   const checkboxes = navPods
     .map(

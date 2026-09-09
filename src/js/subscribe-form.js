@@ -1,8 +1,9 @@
 // Wires up the "Get sector briefs in your inbox" form rendered on every page
 // (renderSubscribeForm() in templates/partials.js). Posts to /api/subscribe
-// (api/subscribe.js), which forwards the email + chosen pods to Buttondown
-// as subscriber tags. Site-root-absolute fetch path since this script runs
-// at every page depth, same reasoning as watchlist-quotes.js.
+// (api/subscribe.js), which stores the email + chosen pods in a private
+// subscriber list (see api/lib/subscribers-store.js). Site-root-absolute
+// fetch path since this script runs at every page depth, same reasoning as
+// watchlist-quotes.js.
 
 (function () {
   var form = document.getElementById('subscribe-form');

@@ -97,7 +97,12 @@ cp .env.local.example .env.local
 | `GITHUB_TOKEN` | Lets the cron function commit updated files back to this repo |
 | `GITHUB_REPO` | `owner/repo-name` for this repo |
 | `GITHUB_BRANCH` | Branch to commit to (defaults to `main`) |
-| `BUTTONDOWN_API_KEY` | Stores email signups and sends each pod's brief to subscribers who chose it |
+| `RESEND_API_KEY` | Sends subscriber emails (Today's Brief and each pod's brief) |
+| `RESEND_FROM_ADDRESS` | Optional `"Name <you@yourdomain.com>"` sender; defaults to Resend's shared test sender |
+| `SUBSCRIBERS_GITHUB_TOKEN` | Lets `/api/subscribe` and the cron read/write the private subscribers repo |
+| `SUBSCRIBERS_GITHUB_REPO` | `owner/repo-name` of that separate PRIVATE repo |
+| `SUBSCRIBERS_GITHUB_BRANCH` | Branch in that repo to commit to (defaults to `main`) |
+| `SITE_URL` | This site's public URL, used to build the unsubscribe link in emails |
 
 In production, add the same variables under **Vercel Dashboard → your project
 → Settings → Environment Variables**. `.env.local` is gitignored and never
@@ -184,30 +189,53 @@ token with write access:
 (A classic personal access token with the `repo` scope also works if you
 prefer, but a fine-grained token scoped to just this repo is safer.)
 
-### Getting a Buttondown API key
+### Setting up email signup — a free Resend + private-repo alternative
 
 The "Get sector briefs in your inbox" form (bottom of every page) needs
 somewhere private to store subscriber emails and a way to actually send
 mail — this repo's `data/*.json` files are public (committed via the GitHub
-API), so subscriber emails can't live there. Buttondown handles both.
+API), so subscriber emails can't live there. This is deliberately built on
+two free services doing one job each, rather than a single paid newsletter
+platform (Buttondown's tag-based segmentation, the obvious alternative,
+costs $9/mo — not needed here since this codebase does its own filtering):
 
-1. Create a free account at [buttondown.com](https://buttondown.com).
-2. Per-pod targeting (letting a subscriber pick specific pods) needs
-   Buttondown's **tags** feature, which is a paid add-on, not on the free
-   plan — see the pricing page for current cost. Without it, everyone would
-   get every pod's email regardless of what they picked at signup.
-3. Copy your API key from **Settings → API**.
-4. Put it in `.env.local` as `BUTTONDOWN_API_KEY=...` for local testing, and
-   add it to the Vercel project's environment variables for production.
+- **Storage**: a second, **private** GitHub repo, committed to via the same
+  "GitHub contents API" pattern already used for `data/market-pulse.json` —
+  see `api/lib/subscribers-store.js`. Free and unlimited on a personal
+  GitHub account.
+- **Sending**: [Resend](https://resend.com), used purely as a plain
+  send-one-email API (not its paid "Audiences" product) — see
+  `api/lib/resend-client.js`. Free tier: 3,000 emails/month.
 
-`api/subscribe.js` handles the signup form's POST request and tags each
-subscriber `pod:<slug>` for every pod they checked (see
-`api/lib/buttondown-client.js` — the only file that knows Buttondown's API
-shape). Actually emailing a pod's brief to its tagged subscribers when it
-publishes is not yet wired into the daily cron — see the comment atop
-`sendPodBriefEmail()` in that file for why (the tag-filter field on
-Buttondown's send-email endpoint needs to be verified against a real API key
-before it's trusted, same as every other external API in this project).
+Setup:
+
+1. Create a new **private** GitHub repo (e.g. `thedailytape-subscribers`) —
+   empty, no README needed. This holds nothing but `subscribers.json`.
+2. Create a fine-grained PAT scoped to just that repo with **Contents: Read
+   and write** (same steps as "Creating a GitHub personal access token"
+   above, just pointed at the new repo). Put it in `.env.local` as
+   `SUBSCRIBERS_GITHUB_TOKEN=...`, and set `SUBSCRIBERS_GITHUB_REPO` to
+   `owner/repo-name`.
+3. Create a free account at [resend.com](https://resend.com).
+4. (Recommended before real subscribers use this) Add and verify a sending
+   domain under **Domains** — until you do, Resend's shared
+   `onboarding@resend.dev` sender can only deliver to the address you signed
+   up with, which is fine for testing but not for actual subscribers.
+5. Create an API key under **API Keys** with **Sending access** only, and
+   put it in `.env.local` as `RESEND_API_KEY=...`.
+6. Set `SITE_URL` to this site's real URL (used to build the unsubscribe
+   link in every email).
+7. Add all of the above to the Vercel project's environment variables for
+   production too.
+
+`api/subscribe.js` handles the signup form's POST request and stores each
+subscriber with `pod:<slug>` (or `today-brief`) topics in the private repo's
+`subscribers.json`. `api/update-market-pulse.js` looks up subscribers for
+each topic right after that brief commits and emails them via Resend
+(`api/lib/email-templates.js` builds the subject/body; every email includes
+an unsubscribe link handled by `api/unsubscribe.js`, which removes that
+subscriber entirely on click — no login needed, just a random per-subscriber
+token baked into the link).
 
 ## How sector briefs are generated
 

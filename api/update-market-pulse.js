@@ -43,9 +43,17 @@
 //      site — pages pick up the fresh JSON via plain client-side fetches
 //      (src/js/market-pulse.js, src/js/watchlist-quotes.js), and the new pod
 //      entries show up as regular static HTML from the next build onward.
+//   6. Right after Today's Brief and each pod's brief commit, emails it to
+//      whoever subscribed to that topic (see emailSubscribers() below,
+//      api/lib/subscribers-store.js for who's subscribed — stored in a
+//      separate PRIVATE repo, not this one — and api/lib/resend-client.js
+//      for the actual send). A subscriber list load/send failure is logged
+//      and swallowed, never thrown — email is additive on top of the site
+//      publishing and should never block or fail the run that updates it.
 //
-// Requires FINNHUB_API_KEY, FRED_API_KEY, GITHUB_TOKEN, GITHUB_REPO, and
-// ANTHROPIC_API_KEY.
+// Requires FINNHUB_API_KEY, FRED_API_KEY, GITHUB_TOKEN, GITHUB_REPO,
+// ANTHROPIC_API_KEY, RESEND_API_KEY, SUBSCRIBERS_GITHUB_TOKEN, and
+// SUBSCRIBERS_GITHUB_REPO.
 //
 // content/pods/*.md is read directly off disk at runtime (see below), which
 // needs the "includeFiles" entry for this function in vercel.json — Vercel's
@@ -93,10 +101,45 @@ const { generateMarketBrief, generateSectorBrief } = require('./lib/anthropic-cl
 const { commitFile } = require('./lib/github-commit');
 const { collectAllWatchlistTickers, prependEntry, replaceWatchlist } = require('../lib/parse-pods');
 const { PODS } = require('../templates/partials');
+const { getSubscribersForTopic } = require('./lib/subscribers-store');
+const { sendEmail } = require('./lib/resend-client');
+const { podBriefEmail, marketBriefEmail } = require('./lib/email-templates');
 
 const MARKET_PULSE_PATH = 'data/market-pulse.json';
 const WATCHLIST_QUOTES_PATH = 'data/watchlist-quotes.json';
 const CONTENT_DIR = path.join(__dirname, '..', 'content', 'pods');
+
+// Emails every subscriber of `topic` (e.g. "today-brief" or "pod:technology")
+// using buildEmailForSubscriber(subscriber) to get that recipient's
+// personalized {subject, text, html} (personalized because each one needs
+// its own unsubscribe link — see api/lib/email-templates.js). Deliberately
+// swallows every failure (a missing RESEND_API_KEY/SUBSCRIBERS_GITHUB_TOKEN,
+// one bad address, Resend being down) rather than throwing, the same way a
+// single pod's brief-generation failure doesn't take down the other six —
+// email delivery is additive on top of the site publishing, never a reason
+// to fail the run that actually updates the site.
+async function emailSubscribers(topic, buildEmailForSubscriber) {
+  let subscribers;
+  try {
+    subscribers = await getSubscribersForTopic(topic);
+  } catch (err) {
+    console.error(`Could not load subscribers for ${topic}: ${err.message}`);
+    return { sent: 0, failed: 0 };
+  }
+
+  let sent = 0;
+  let failed = 0;
+  for (const subscriber of subscribers) {
+    try {
+      await sendEmail({ to: subscriber.email, ...buildEmailForSubscriber(subscriber) });
+      sent++;
+    } catch (err) {
+      console.error(`Email send failed for ${subscriber.email} (${topic}): ${err.message}`);
+      failed++;
+    }
+  }
+  return { sent, failed };
+}
 
 module.exports = async function handler(req, res) {
   try {
@@ -126,6 +169,17 @@ module.exports = async function handler(req, res) {
       MARKET_PULSE_PATH,
       JSON.stringify(marketPulsePayload, null, 2) + '\n',
       `Update market pulse data for ${isoDate}`
+    );
+
+    const marketEmailResult = await emailSubscribers('today-brief', (subscriber) =>
+      marketBriefEmail({
+        headline: brief.headline,
+        deck: brief.deck,
+        body: brief.body,
+        sources,
+        email: subscriber.email,
+        token: subscriber.unsubscribeToken,
+      })
     );
 
     // Phase 1: fetch news + generate each pod's brief IN PARALLEL — pure
@@ -173,7 +227,15 @@ module.exports = async function handler(req, res) {
             sources,
           });
 
-          return { pod, skipped: false, updated, watchlist: brief.watchlist };
+          return {
+            pod,
+            skipped: false,
+            updated,
+            watchlist: brief.watchlist,
+            headline: brief.headline,
+            body: brief.body,
+            sources,
+          };
         } catch (err) {
           console.error(`Sector brief generation failed for ${pod.name}: ${err.message}`);
           return { pod, skipped: true, reason: err.message };
@@ -198,7 +260,19 @@ module.exports = async function handler(req, res) {
           result.updated,
           `AI-generated brief for ${result.pod.name} — ${isoDate}`
         );
-        sectorBriefResults.push({ pod: result.pod.slug, skipped: false });
+
+        const podEmailResult = await emailSubscribers(`pod:${result.pod.slug}`, (subscriber) =>
+          podBriefEmail({
+            podName: result.pod.name,
+            headline: result.headline,
+            body: result.body,
+            sources: result.sources,
+            email: subscriber.email,
+            token: subscriber.unsubscribeToken,
+          })
+        );
+
+        sectorBriefResults.push({ pod: result.pod.slug, skipped: false, email: podEmailResult });
       } catch (err) {
         console.error(`Commit failed for ${result.pod.name}: ${err.message}`);
         sectorBriefResults.push({ pod: result.pod.slug, skipped: true, reason: err.message });
@@ -224,7 +298,13 @@ module.exports = async function handler(req, res) {
       `Update watchlist quotes for ${isoDate}`
     );
 
-    res.status(200).json({ skipped: false, date: isoDate, watchlistTickers: tickers, sectorBriefs: sectorBriefResults });
+    res.status(200).json({
+      skipped: false,
+      date: isoDate,
+      watchlistTickers: tickers,
+      sectorBriefs: sectorBriefResults,
+      marketBriefEmail: marketEmailResult,
+    });
   } catch (err) {
     console.error('update-market-pulse failed:', err);
     res.status(500).json({ error: err.message });
