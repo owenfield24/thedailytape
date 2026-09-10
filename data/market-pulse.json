@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-09T13:06:18.570Z",
+  "asOf": "2026-09-10T13:06:23.091Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 765.96,
-      "changePercent": -0.5492
+      "value": 762.4,
+      "changePercent": -0.4648
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 528.03,
-      "changePercent": -1.1328
+      "value": 524.07,
+      "changePercent": -0.75
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 718.36,
-      "changePercent": -0.0835
+      "value": 716.31,
+      "changePercent": -0.2854
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 4.78,
+    "value": 4.8,
     "unit": "%",
-    "changePercent": 0.01
+    "changePercent": 0.02
   },
-  "headline": "Stocks slip as oil surge and geopolitical tensions weigh",
-  "deck": "Markets treaded water Wednesday as Middle East escalation pushed crude above $100, while Treasury officials signal fiscal tightening ahead.",
-  "body": "Equities retreated modestly across the board, with the Dow leading declines at -1.13% while the Nasdaq showed relative resilience at -0.08%. The mixed performance reflects a market grappling with competing forces: Treasury Secretary Bessent's forthcoming bond plan details suggest fiscal discipline that could support long-term growth, yet immediate uncertainty around the specifics weighed on sentiment. The 10-year yield edged slightly higher to 4.78%, a signal that bond markets are pricing in the reality of elevated rates.\n\nThe primary catalyst for weakness today was geopolitical friction intensifying across the Middle East. Brent crude surged past $100 per barrel as regional conflict escalated, with reports of oil tanker strikes in Iraqi waters and U.S.-Iran tensions raising supply concerns. This energy shock typically pressures equity markets, particularly growth-heavy sectors, though the Nasdaq's modest decline suggests tech investors viewed the move as temporary or priced it in. Traders appear caught between inflation worries from higher oil and the stabilizing effect of any fiscal restraint from Washington.\n\nWith Bessent poised to detail his bond strategy while markets digest both geopolitical risk and energy volatility, the path forward hinges on whether fiscal discipline can offset energy-driven price pressures. For now, the market's muted reaction—small declines across broad indices—suggests investors are waiting for more clarity before making major positioning moves.",
-  "sources": "CNBC, Reuters"
+  "headline": "Stocks slip on geopolitical tensions and rate uncertainty",
+  "deck": "Markets edged lower today as Middle East tensions weighed on sentiment while investors braced for inflation data that could signal the Fed's next move.",
+  "body": "Equities opened with modest declines across all three major indices, with the Dow underperforming at -0.75% amid broader risk-off positioning. The move higher in the 10-year Treasury to 4.8% suggests investors are pricing in sticky inflation expectations, creating headwinds for growth-sensitive sectors like technology. These baseline pressures set the tone for a cautious open ahead of critical wholesale inflation data that could reshape rate expectations.\n\nGeopolitical friction is adding to the caution. The Houthis' seizure of a key Red Sea port, combined with Iran's moves on shipping charges, threatens to disrupt global energy flows and inject volatility into crude markets. Meanwhile, diplomatic tensions between Algeria and the UAE underscore broader regional fragmentation that could complicate trade and growth outlooks across emerging markets.\n\nOn the earnings front, Macy's strong turnaround results and raised guidance offered a bright spot, suggesting some consumer resilience despite macro headwinds. However, all eyes are on Oracle's earnings and the unusual options activity surrounding the name, signaling investors are bracing for either significant upside or disappointment that could ripple through the tech sector.",
+  "sources": "Reuters, CNBC"
 }
