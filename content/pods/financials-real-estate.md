@@ -3,9 +3,15 @@ pod: Financials & Real Estate
 ---
 
 ## Watchlist
-- $JPM: Canadian revenue momentum offset broader headwinds; watch NIM sustainability
-- $GS: Up 38.6% YTD amid sticky rates; risk of pullback if yield curve flattens
-- $BAC: Bank preferred stocks warning on rates; valuation still works near current yields
+- $JPM: Multiple analyst highlights ahead of Fed decision; cash distribution announcements signal confidence
+- $BAC: Weighing in on market timing concerns and Apple outlook; sentiment barometer for sector risk
+- $USB: Stablecoin launch signals digital banking pivot amid macro uncertainty
+
+## 2026-09-10
+**Higher Rates Pressure Financials; Banks Navigate Fed Decision Uncertainty**
+The 10-year Treasury holding firm at 4.8% continues to weigh on rate-sensitive financial assets as equity indices slip modestly lower across the board. With the broader market down 0.3% to 0.75% and risk-off sentiment building—evidenced by chatter around potential market crashes and investor nervousness—the financials sector faces a pincer move: margin compression from sustained yields and potential loan deterioration if growth stumbles. Banks and asset managers are actively positioning for the Fed's September decision, calibrating capital deployment and capital return strategies as macro uncertainty peaks.
+Tickers: $JPM, $BAC, $USB
+Sources: Yahoo, ChartMill
 
 ## 2026-09-09
 **Rate Resilience Test: Financials Navigate Sticky Treasury Yields**
