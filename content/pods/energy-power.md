@@ -3,9 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Dividend streak under scrutiny; monitoring for capex and payout sustainability signals
-- $CVX: Venezuelan project timing risk heightened; watch for execution updates and cost guidance
-- $IMO: Up 49% YTD; potential profit-taking point amid broader sector rate pressure today
+- $XOM: Up amid market decline; 40% gain YTD suggests momentum beyond macro tailwinds
+- $CVX: At 52-week highs on Brent strength; test case for crude-linked upside durability
+- $VLO: Refiner exposure to crude dynamics; watch spread resilience in higher-rate regime
+
+## 2026-09-10
+**Oil majors rally as Brent breaches $100 amid rate resilience**
+Energy stocks are bucking today's modest broad-market selloff as Brent crude crosses the $100-per-barrel threshold, a level that historically supports upstream cash generation and dividend sustainability even as the wider market contends with a 10-year yield holding firm at 4.8%. The sector's relative outperformance suggests investors are repricing energy as both an inflation hedge and a source of stable returns in a higher-for-longer rate environment, with integrated majors like XOM and CVX posting gains despite SPY weakness. This dynamic underscores a rotation into names with pricing power and real asset backing as equity multiples face continued pressure from elevated bond yields.
+
+Watch for crude's ability to sustain above $100 and any signals on Fed policy from inflation data; a breakdown in oil would test whether current energy gains are structural or merely tactical. Equally important: monitor large-cap energy dividend yields relative to the 10-year as a signal of whether the sector is repricing on macro tailwinds or company-specific upside—sustained outperformance in declining market conditions typically favors the former thesis.
+Tickers: $XOM, $CVX, $BP
+Sources: Yahoo
 
 ## 2026-09-09
 **Energy Majors Navigate Rate Headwinds While Dividend Appeal Faces Fresh Competition**
