@@ -26,6 +26,11 @@
       .map(function (checkbox) {
         return checkbox.value;
       });
+    // Honeypot — invisible to a real visitor (see .subscribe-honeypot in
+    // style.css), so its value only ever has content when a bot filled
+    // every field it found. Forwarded as-is; api/subscribe.js does the
+    // actual check.
+    var website = form.querySelector('input[name="website"]').value;
 
     if (!email) {
       setStatus('Enter an email address.', true);
@@ -42,7 +47,7 @@
     fetch('/api/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email, pods: pods }),
+      body: JSON.stringify({ email: email, pods: pods, website: website }),
     })
       .then(function (res) {
         return res.json().then(function (data) {

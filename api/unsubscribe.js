@@ -11,6 +11,12 @@
 
 const { removeSubscriber } = require('./lib/subscribers-store');
 
+const MAX_EMAIL_LENGTH = 254;
+// Tokens are crypto.randomBytes(16).toString('hex') in subscribers-store.js
+// — always exactly 32 lowercase hex characters. Anything else can't
+// possibly match a real token, so reject it before touching the GitHub API.
+const TOKEN_RE = /^[0-9a-f]{32}$/;
+
 function page(message) {
   return `<!doctype html>
 <html lang="en">
@@ -24,7 +30,12 @@ function page(message) {
 module.exports = async function handler(req, res) {
   const { email, token } = req.query || {};
 
-  if (typeof email !== 'string' || typeof token !== 'string') {
+  if (
+    typeof email !== 'string' ||
+    email.length > MAX_EMAIL_LENGTH ||
+    typeof token !== 'string' ||
+    !TOKEN_RE.test(token)
+  ) {
     res.status(400).send(page("That unsubscribe link doesn't look right."));
     return;
   }

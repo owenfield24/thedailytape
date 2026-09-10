@@ -106,6 +106,7 @@ function renderSubscribeForm(navPods = PODS) {
         <div class="subscribe-label">Get sector briefs in your inbox</div>
         <p class="subscribe-copy">Pick what you want emailed whenever it's published on a trading day.</p>
         <form id="subscribe-form" class="subscribe-form" novalidate>
+          <input type="text" name="website" class="subscribe-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address" />
           <label class="subscribe-pod subscribe-pod-market">
             <input type="checkbox" name="pods" value="${MARKET_BRIEF_SLUG}" />

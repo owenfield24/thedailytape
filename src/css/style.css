@@ -870,6 +870,15 @@ a {
   gap: 0.9rem;
 }
 
+.subscribe-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+  left: -9999px;
+}
+
 .subscribe-form input[type="email"] {
   width: 100%;
   max-width: 320px;
