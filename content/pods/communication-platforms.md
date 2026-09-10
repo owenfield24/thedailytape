@@ -3,9 +3,15 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: Premarket jump on AI agent launch; tracking execution on infrastructure and competitive positioning
-- $GOOGL: €13bn Finland data center investment announced; watching capex guidance and power cost pressures ahead
-- $NETGEAR: Surging premarket; smaller-cap telecom infrastructure play sensitive to rate environment and demand cycles
+- $META: JPMorgan upgrade on AI agents; muse monetization breaking through
+- $GOOGL: Y Combinator partnership signals continued AI platform ecosystem expansion
+- $AAPL: Foldable iPhone launch cited amid consumer spending debate under rate regime
+
+## 2026-09-10
+**AI monetization race intensifies as rates hold, favoring mega-cap platforms**
+With the 10-year yield holding steady near 4.8% and broad equity weakness persisting across the Nasdaq (-0.29%), Communication & Platforms names are pivoting aggressively toward demonstrable AI revenue generation as a hedge against sustained higher rates. JPMorgan's upgrade of Meta on AI models and agents, coupled with reports of Meta's Muse cracking the AI-monetization wall, signals that investors are rotating capital toward platforms capable of translating AI investments into near-term earnings—a critical signal when cost of capital remains elevated and multiple compression threatens unprofitable growth stories.
+Tickers: $META, $GOOGL
+Sources: Yahoo, ChartMill
 
 ## 2026-09-09
 **AI Infrastructure Capex Surge Offsets Modest Market Headwinds**
