@@ -3,9 +3,15 @@ pod: Financials & Real Estate
 ---
 
 ## Watchlist
-- $JPM: Canadian revenue spike signals international diversification offsetting domestic margin pressure
-- $GS: 38.6% year-to-date gain reflects equity and advisory strength; valuation reset risk remains
-- $BAC: Bullish memory-chip call and preferred stock weakness show divergent signals on rate trajectory
+- $JPM: Canadian revenue momentum offset broader headwinds; watch NIM sustainability
+- $GS: Up 38.6% YTD amid sticky rates; risk of pullback if yield curve flattens
+- $BAC: Bank preferred stocks warning on rates; valuation still works near current yields
+
+## 2026-09-09
+**Rate Resilience Test: Financials Navigate Sticky Treasury Yields**
+The 10-year Treasury holding steady near 4.78% is creating a bifurcated backdrop for Financials & Real Estate. While the modest market decline (-0.55% SPY, -1.13% DIA) signals caution, preferred stocks are flashing warning signals about persistent rate risk, and the corporate bond market's recent outperformance versus Treasuries suggests investors are pricing in duration concerns. This elevated rate environment is simultaneously bolstering net interest margins at traditional banks while pressuring valuation multiples and refinancing costs across the sector—a dynamic that's sharpening the distinction between high-quality, defensive franchises and rate-sensitive names.
+Tickers: $JPM, $GS, $BAC
+Sources: Yahoo, SeekingAlpha
 
 ## 2026-09-08
 **Rising Rates Test Financials While Credit Markets Assert Independence**

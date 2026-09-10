@@ -3,9 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: 43-year dividend streak underscores income appeal in higher-rate environment
-- $CVX: Venezuela low-cost growth plan gains appeal if rates hold or rise further
-- $IMO: 49% YTD rally signals sector tailwinds; watch for profit-taking signals
+- $XOM: Dividend streak under scrutiny; monitoring for capex and payout sustainability signals
+- $CVX: Venezuelan project timing risk heightened; watch for execution updates and cost guidance
+- $IMO: Up 49% YTD; potential profit-taking point amid broader sector rate pressure today
+
+## 2026-09-09
+**Energy Majors Navigate Rate Headwinds While Dividend Appeal Faces Fresh Competition**
+With the 10-year yield holding firm at 4.78% and broad equities under modest pressure today, energy majors are caught between structural support from commodity price resilience and cyclical headwinds from persistent rates. Oil near $100 and geopolitical supply risks continue to underpin fundamentals, yet the sector's traditional dividend appeal—long a cornerstone of investor demand—is being challenged by higher-yielding alternatives elsewhere in the market. The flat-to-negative tape across large-cap indices suggests risk appetite remains muted, potentially limiting multiple expansion even as energy cash flows remain robust.
+
+Investors should monitor whether this rate environment forces a fundamental repricing of energy valuations around yield parity, particularly as capital allocation decisions around Venezuelan expansion and North American growth face heightened uncertainty. Watch for signs of dividend growth moderation or capex pullbacks if rates remain elevated; conversely, any softening in Treasury yields could reignite energy's relative attractiveness and unlock further upside in names trading on cash generation and long-duration production profiles.
+Tickers: $XOM, $CVX, $IMO
+Sources: Yahoo
 
 ## 2026-09-08
 **Energy Dividend Plays Shine as Rates Hold Steady Near 4.8%**

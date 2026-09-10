@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-09T00:42:44.942Z",
+  "asOf": "2026-09-09T13:06:18.570Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
@@ -24,8 +24,8 @@
     "unit": "%",
     "changePercent": 0.01
   },
-  "headline": "Markets slip as geopolitical tensions weigh on risk appetite",
-  "deck": "Stocks finished modestly lower today as escalating Middle East conflicts and defense-related developments overshadowed economic data, with energy concerns lurking in the headlines.",
-  "body": "Broad equity weakness marked today's session, with the Dow leading declines at -1.13% while the S&P 500 and Nasdaq held closer to flat. The divergence suggests defensive positioning, as large-cap growth held up better than industrials and financials—a typical response when geopolitical risk rises. Treasury yields barely budged at 4.78%, indicating the market isn't pricing in an imminent flight to safety but remains cautiously cautious.\n\nHeadlines paint a picture of escalating regional conflict that's directly moving markets. Multiple Reuters reports on Houthi attacks against Saudi cities, Iranian drone captures, and Ukrainian weapons procurement all point to broader Middle East and Europe tensions that traditionally support energy prices and drive tactical trading. The commentary about $100 barrel oil suggests market participants are already pricing in supply disruption scenarios, which could weigh on economic growth expectations if sustained.\n\nOn the corporate front, geopolitical exposure is a live risk for select names, particularly companies with Iran dealings like Huawei heading to trial. Meanwhile, the uptick in alternative energy stock options activity hints that some investors are hedging or positioning for energy volatility. The UK air traffic control disruption is a minor operational story, but combined with broader uncertainty, it reinforces why risk sentiment remains subdued even as absolute market moves remain contained.",
-  "sources": "Reuters, CNBC"
+  "headline": "Stocks slip as oil surge and geopolitical tensions weigh",
+  "deck": "Markets treaded water Wednesday as Middle East escalation pushed crude above $100, while Treasury officials signal fiscal tightening ahead.",
+  "body": "Equities retreated modestly across the board, with the Dow leading declines at -1.13% while the Nasdaq showed relative resilience at -0.08%. The mixed performance reflects a market grappling with competing forces: Treasury Secretary Bessent's forthcoming bond plan details suggest fiscal discipline that could support long-term growth, yet immediate uncertainty around the specifics weighed on sentiment. The 10-year yield edged slightly higher to 4.78%, a signal that bond markets are pricing in the reality of elevated rates.\n\nThe primary catalyst for weakness today was geopolitical friction intensifying across the Middle East. Brent crude surged past $100 per barrel as regional conflict escalated, with reports of oil tanker strikes in Iraqi waters and U.S.-Iran tensions raising supply concerns. This energy shock typically pressures equity markets, particularly growth-heavy sectors, though the Nasdaq's modest decline suggests tech investors viewed the move as temporary or priced it in. Traders appear caught between inflation worries from higher oil and the stabilizing effect of any fiscal restraint from Washington.\n\nWith Bessent poised to detail his bond strategy while markets digest both geopolitical risk and energy volatility, the path forward hinges on whether fiscal discipline can offset energy-driven price pressures. For now, the market's muted reaction—small declines across broad indices—suggests investors are waiting for more clarity before making major positioning moves.",
+  "sources": "CNBC, Reuters"
 }
