@@ -3,9 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Up amid market decline; 40% gain YTD suggests momentum beyond macro tailwinds
-- $CVX: At 52-week highs on Brent strength; test case for crude-linked upside durability
-- $VLO: Refiner exposure to crude dynamics; watch spread resilience in higher-rate regime
+- $CVX: Named in multiple market primers today; technical setup worth monitoring amid sector pressure
+- $NEE: Merger combination progress with Dominion announced; rate sensitivity high for utility play
+- $TOTALENERGIES: Angola discovery underscores oil upside offsetting capital cost headwinds in current rate environment
+
+## 2026-09-11
+**Higher Rates Weigh on Energy Sector Amid Mixed Market Tone**
+The broader market's retreat—with the S&P 500, Dow, and especially Nasdaq all declining—arrives as the 10-year Treasury edges higher to 4.83%, keeping the cost of capital elevated for capital-intensive energy and utility plays. Energy stocks have historically benefited from higher yields as inflation hedges, but persistent rate pressure is creating a bifurcated dynamic: traditional oil & gas explorers benefit from sustained commodity pricing (evidenced by TotalEnergies' Angola discovery and robust M&A activity in LNG infrastructure), while rate-sensitive utility and renewable energy names face pressure on their cost of capital and dividend appeal.
+
+Investors should monitor whether today's market weakness signals a demand-destruction scenario for commodities or merely reflects broader equity volatility. The appearance of dividend-focused content and continued consolidation chatter around NextEra and Dominion suggests institutional money is hunting yield in this sector despite rate headwinds—a signal to watch whether energy outperformance can persist if equity markets stabilize or if higher rates ultimately choke near-term capex cycles.
+Tickers: $CVX, $XOM, $NEE
+Sources: Yahoo, ChartMill
 
 ## 2026-09-10
 **Oil majors rally as Brent breaches $100 amid rate resilience**
