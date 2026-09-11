@@ -3,9 +3,15 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: JPMorgan upgrade on AI agents; muse monetization breaking through
-- $GOOGL: Y Combinator partnership signals continued AI platform ecosystem expansion
-- $AAPL: Foldable iPhone launch cited amid consumer spending debate under rate regime
+- $META: Launching new paid AI agent tiers; regulatory discussions underway in South Korea
+- $PLTR: Positioned as AI chip beneficiary independent of valuation regime, per Wall Street
+- $MRVL: Named major AI chip winner by Piper Sandler; benefiting from sector's AI capex cycle
+
+## 2026-09-11
+**Tech Platforms Pursue Monetization as Rate Pressure Persists**
+With the 10-year yield holding firm at 4.83% and the Nasdaq down 1.06% today, growth-oriented communication and platform names are under structural pressure to demonstrate near-term revenue generation rather than rely on long-duration growth narratives. Across the sector, companies are moving aggressively toward direct consumer monetization—from Meta's new paid AI agent tiers to SpaceX's capital-intensive AI infrastructure deals—signaling that higher interest rates are forcing a pivot from user-base expansion toward profitability and immediate cash flow contribution. This shift reflects both a defensive market posture and the real constraint that low-multiple growth has become harder to justify when risk-free rates are elevated.
+Tickers: $META, $PLTR, $MRVL
+Sources: Yahoo
 
 ## 2026-09-10
 **AI monetization race intensifies as rates hold, favoring mega-cap platforms**
