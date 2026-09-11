@@ -3,8 +3,15 @@ pod: Technology
 ---
 
 ## Watchlist
-- $AAPL: Foldable iPhone launch rhetoric suggests heavy reliance on hardware cycles amid AI saturation
-- $MSFT: Enterprise AI cloud solutions positioning to benefit from corporate capex in high-rate environment
+- $ORCL: Shipping major AI infrastructure deals; testing whether AI demand offsets rate headwinds
+- $AMZN: Bucking sector weakness; foldable/hardware cycle suggests consumer willingness to spend
+- $TSLA: New derivative markets reflect retail conviction; macro sensitivity to rates remains high
+
+## 2026-09-11
+**Tech Sector Treads Water as Rates Hold; AI Optimism Offers Lifeline**
+The Nasdaq's 1.06% decline mirrors a broader tech retreat as the 10-year Treasury holds firm at 4.83%, keeping refinancing costs elevated for capital-intensive software and cloud names. While growth multiples remain compressed in this rate environment, the sector is showing bifurcated strength: enterprise software and AI-adjacent players like Oracle—which shipped a $28.5 billion AI bill—are finding tailwinds from accelerating digital transformation, while consumer-facing and hardware-dependent names absorb margin pressure. The relative outperformance of mega-cap winners (Amazon, Apple foldable momentum) over broad indices suggests investors are rotating into names with secular AI narratives rather than abandoning tech wholesale.
+Tickers: $ORCL, $AMZN, $AAPL
+Sources: Yahoo, ChartMill, SeekingAlpha
 
 ## 2026-09-10
 **Tech Sector Pivots to Hardware Innovation Amid Persistent Rate Headwinds**
