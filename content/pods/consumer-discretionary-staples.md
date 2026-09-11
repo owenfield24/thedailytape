@@ -3,9 +3,17 @@ pod: Consumer Discretionary/Staples
 ---
 
 ## Watchlist
-- $WMT: Walmart expanding ad and fintech offerings to offset core margin pressure
-- $KR: Kroger-Albertsons integration moves signal competitive pressure in staples pricing
-- $PG: Defensive staple name; congressional buying suggests confidence amid rate uncertainty
+- $HD: Traffic declines threaten earnings; rate sensitivity elevated in discretionary segment
+- $AMZN: Mega-cap named as 60% upside target; bellwether for consumer confidence recovery
+- $PRI: International expansion into Mexico signals growth amid U.S. consumer uncertainty
+
+## 2026-09-11
+**Higher rates pressure discretionary; staples show resilience amid mixed signals**
+The 10-year Treasury climbing to 4.83% is weighing on rate-sensitive consumer discretionary names, with the Nasdaq down 1.06% and broad market weakness filtering through retail and housing-adjacent plays. Home Depot's traffic concerns and broader consumer pullback narratives suggest shoppers are becoming more cautious in an elevated rate environment, while staples and dividend-focused names continue attracting capital as defensive alternatives. This bifurcation—discretionary weakness versus staple/dividend resilience—reflects a market reassessing consumption patterns under persistent higher-for-longer financing costs.
+
+Investors should monitor whether consumer traffic data continues deteriorating across big-box retailers and whether margin pressures force discretionary names to follow mega-cap cost-cutting playbooks. Dividend raisers and international expansion plays (like Primark's Mexico entry) may see relative outperformance if U.S. consumer spending remains constrained, but any Fed pivot lower would likely reverse the sector rotation immediately.
+Tickers: $HD, $AMZN, $PRI
+Sources: Yahoo, ChartMill
 
 ## 2026-09-10
 **Consumer sector treads water as rate stability pressures margin expansion**
