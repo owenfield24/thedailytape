@@ -3,9 +3,17 @@ pod: Healthcare
 ---
 
 ## Watchlist
-- $UNH: Divesting WellMed interest to TPG; capital deployment strategy in focus
-- $JNJ: Underperforming broader Dow; monitor for relative weakness signal
-- $PTGX: Announcing $300M share repurchase amid rate and valuation pressure
+- $CVS: Margin recovery thesis under test as rates remain elevated; 2027 guidance matters
+- $UNH: TPG deal signals capital deployment strategy in higher-rate environment
+- $ELV: Recent margin miss; valuation reset ongoing amid rate pressure
+
+## 2026-09-11
+**Healthcare Navigates Rising Rates With Margin Pressure and Valuation Reset**
+The 10-year yield's climb to 4.83% is creating headwinds across healthcare, a traditionally income-sensitive sector where higher discount rates compress valuations and pressure payers' cost structures. With broad equities down 0.6–1.1% today and the Nasdaq leading the decline, rate-sensitive healthcare names—particularly insurers and benefit managers facing margin compression—are under scrutiny. The sector's recent chatter centers on margin recovery and cash flow sustainability, signaling investor concern that elevated rates will persist through 2027, forcing operators to navigate both refinancing costs and consumer spending pullback.
+
+Investors should monitor whether healthcare payers can offset rate headwinds through operational leverage and scale, or whether valuation multiples continue to normalize. Watch for updates on strategic asset sales (like UnitedHealth's WellMed restructuring) as cash-generative plays in a higher-rate environment, and track CVS and Elevance's ability to arrest margin erosion without sacrificing growth—a challenging needle to thread if the 10-year stays above 4.8%.
+Tickers: $UNH, $CVS, $ELV
+Sources: SeekingAlpha, Yahoo, ChartMill
 
 ## 2026-09-09
 **Healthcare faces headwinds as rates hold elevated and market sentiment cools**
