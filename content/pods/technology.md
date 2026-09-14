@@ -3,9 +3,17 @@ pod: Technology
 ---
 
 ## Watchlist
-- $ORCL: Shipping major AI infrastructure deals; testing whether AI demand offsets rate headwinds
-- $AMZN: Bucking sector weakness; foldable/hardware cycle suggests consumer willingness to spend
-- $TSLA: New derivative markets reflect retail conviction; macro sensitivity to rates remains high
+- $GLW: Launching $2B equity offering; capital raise signals potential valuation pressure
+- $AAPL: iPhone delivery leads contracting YoY; early demand indicator for consumer hardware
+- $MSFT: Strong growth with quality technical setup amid AI macro uncertainty
+
+## 2026-09-14
+**Tech Sector Steadies as Rate Outlook Stabilizes; Hardware Demand Signals Mixed**
+The 10-year Treasury's modest 12-basis-point climb to 4.95% reflects a market still pricing in persistent rates, a backdrop that continues to weigh on capital-intensive tech hardware businesses while supporting mega-cap software names with pricing power. Today's broad market gains across SPY, DIA, and QQQ suggest a stabilization rather than a sharp repricing, allowing hardware manufacturers and their suppliers to catch their breath—evident in iPhone delivery lead time compression noted by JPMorgan and suppliers like GLW accessing the equity markets despite pricing pressure.
+
+Investors should monitor whether this rate stability holds through the week, as any further yield moves could reignite selling pressure on capex-heavy segments like semiconductor equipment and consumer devices. Watch for clarification on AI spending discipline—recent commentary from industry leaders cooling near-term AI buildout expectations stands in tension with the sector's near-term guidance, and the pace of large tech M&A (referenced by Apple's significant capital deployment) may signal management confidence or caution about macro headwinds ahead.
+Tickers: $AAPL, $GLW, $MSFT
+Sources: Yahoo, ChartMill
 
 ## 2026-09-11
 **Tech Sector Treads Water as Rates Hold; AI Optimism Offers Lifeline**
