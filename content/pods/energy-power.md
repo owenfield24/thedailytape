@@ -3,9 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $CVX: Named in multiple market primers today; technical setup worth monitoring amid sector pressure
-- $NEE: Merger combination progress with Dominion announced; rate sensitivity high for utility play
-- $TOTALENERGIES: Angola discovery underscores oil upside offsetting capital cost headwinds in current rate environment
+- $CVX: Actively expanding LNG portfolio; guiding capex under higher-rate regime
+- $NEE: Scheduled investor meetings through early October; rate-sensitive utility exposure
+- $XOM: Major producer highlighted in yield-focused coverage; vulnerable to rate re-rating
+
+## 2026-09-14
+**Rising Rates Test Energy Majors' Capital Allocation and Growth Plans**
+The 10-year Treasury's climb to 4.95% is reshaping how Energy & Power investors assess long-cycle projects and dividend sustainability. With the broader market posting modest gains and rate expectations elevated, capital-intensive plays—particularly LNG and offshore expansions—face higher hurdle rates for returns. This environment is forcing majors to be more selective; Chevron's active pursuit of Mediterranean and Argentina gas portfolio expansion signals companies are hunting high-return opportunities to justify capex in a higher-rate regime, while dividend-focused investors are increasingly scrutinizing yields against risk-free rates.
+
+Watch how energy firms communicate project timing and return thresholds on upcoming earnings and investor meetings through September and early October. Given the 49.5 basis point move in the 10-year, any guidance reset or acceleration of lower-cost brownfield projects over greenfield development could signal management's revised view on capital efficiency. Concurrently, monitor oil pricing above $100/barrel—currently supporting cash generation—as a key variable that either validates or constrains these expansion plans in a higher-rate world.
+Tickers: $CVX, $NEE, $XOM
+Sources: Yahoo
 
 ## 2026-09-11
 **Higher Rates Weigh on Energy Sector Amid Mixed Market Tone**
