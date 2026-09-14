@@ -3,9 +3,17 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: Launching new paid AI agent tiers; regulatory discussions underway in South Korea
-- $PLTR: Positioned as AI chip beneficiary independent of valuation regime, per Wall Street
-- $MRVL: Named major AI chip winner by Piper Sandler; benefiting from sector's AI capex cycle
+- $GOOGL: Data center power advantage cited as competitive moat amid AI capex race
+- $AVGO: Broadcom named Anthropic as next major AI customer; signals chip demand concentration
+- $META: Zuckerberg claims Threads scale amid AI slowdown skepticism; capital allocation under scrutiny
+
+## 2026-09-14
+**Rate Resilience Masks Deepening AI Infrastructure Bifurcation**
+With the 10-year yield climbing to 4.95% and equities posting modest gains across the board, the Communication & Platforms sector is navigating a paradox: broad resilience masking growing fault lines in AI infrastructure spending. Rising rates typically pressure mega-cap growth names that dominate this space, yet today's flat-to-positive tone suggests investors are pricing in persistent AI capex cycles as a recession hedge. However, underlying the cheerful headlines is a bifurcation between AI winners (those with durable power/chip supply moats) and the rest—with recent AI slowdown commentary from industry leaders already rattling confidence in the unlimited-growth narrative that justified elevated multiples.
+
+Investors should monitor whether the 10-year stays anchored above 4.90% and watch for any acceleration in rates; at that level, the sector's richest names risk multiple compression despite stable earnings outlooks. Equally important is tracking the data-center power constraint and chip supply dynamics (Broadcom's Anthropic naming, Google's regulatory positioning vs. Amazon/Meta) as the real arbiters of who wins in AI capex allocation—a question the market has yet to fully price in given today's bullish tone.
+Tickers: $GOOGL, $META, $AVGO
+Sources: Yahoo, SeekingAlpha
 
 ## 2026-09-11
 **Tech Platforms Pursue Monetization as Rate Pressure Persists**
