@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-11T13:06:16.655Z",
+  "asOf": "2026-09-14T13:06:16.229Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 757.83,
-      "changePercent": -0.5994
+      "value": 764.29,
+      "changePercent": 0.8524
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 520.75,
-      "changePercent": -0.6335
+      "value": 525.79,
+      "changePercent": 0.9678
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 708.69,
-      "changePercent": -1.0638
+      "value": 714.88,
+      "changePercent": 0.8734
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 4.83,
+    "value": 4.95,
     "unit": "%",
-    "changePercent": 0.03
+    "changePercent": 0.12
   },
-  "headline": "Markets retreat as geopolitical tensions weigh on sentiment",
-  "deck": "Stocks closed modestly lower today as Middle East instability and supply chain concerns pressured investors ahead of key inflation data.",
-  "body": "All three major indices finished in negative territory, with the Nasdaq leading losses at -1.06% as tech-heavy growth names felt particular pressure. The S&P 500 and Dow declined more modestly at -0.60% and -0.63% respectively, suggesting defensive positioning across the board. Treasury yields held relatively steady at 4.83%, reflecting a wait-and-see approach from fixed income traders.\n\nGeopolitical developments appear to be the primary headwind today, with multiple reports highlighting escalating Middle East tensions. The Houthis' advance toward a strategic shipping chokepoint and Iran-backed military threats have sparked concerns about regional instability and potential disruptions to global trade routes and oil supplies. These risks are particularly acute given oil's already-tight supply dynamics, as evidenced by China's decision to limit fuel price increases for the third time since tensions began.\n\nMarkets are ultimately treading water ahead of consumer inflation data, a key report that could shape Federal Reserve expectations and bond yields in coming weeks. Until that data arrives, geopolitical risk premiums and supply chain jitters are likely to keep sentiment cautious, with investors watching both the Middle East situation and energy prices as barometers for near-term volatility.",
-  "sources": "Reuters, CNBC"
+  "headline": "Broad gains as geopolitical tensions push oil higher",
+  "deck": "Equity markets climbed across the board today as Middle East friction sent crude surging, while Treasury yields edged up on growing inflation concerns.",
+  "body": "All three major indices posted solid gains this morning, with the Dow slightly outpacing peers at +0.97% while the S&P 500 and Nasdaq both advanced roughly 0.85-0.87%. The broad-based rally reflects modest risk appetite despite a backdrop of escalating geopolitical turmoil. Treasury yields ticked up 12 basis points to 4.95%, suggesting markets are pricing in inflation pressures from supply-chain disruptions.\n\nThe day's primary driver remains the Iran-Saudi tension and Houthi attacks on shipping lanes and Saudi infrastructure. Oil prices surged 3% as pipeline attacks reduced supply, with the shipping sector hit particularly hard—AirBaltic has already filed for Chapter 11 bankruptcy citing war-related cost pressures. Energy stocks likely benefited from the crude rally, while transportation and logistics faced headwinds.\n\nMarkets appear to be treating today's geopolitical spike as a near-term volatility event rather than a systemic threat to equities. Investors are balancing higher energy costs and supply concerns against the positive backdrop of steady economic activity, resulting in modest equity gains. The broader question for the week ahead is whether escalation continues or if tensions stabilize, which will determine whether these gains hold.",
+  "sources": "CNBC, Reuters"
 }
