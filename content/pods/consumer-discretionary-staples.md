@@ -3,9 +3,17 @@ pod: Consumer Discretionary/Staples
 ---
 
 ## Watchlist
-- $HD: Traffic declines threaten earnings; rate sensitivity elevated in discretionary segment
-- $AMZN: Mega-cap named as 60% upside target; bellwether for consumer confidence recovery
-- $PRI: International expansion into Mexico signals growth amid U.S. consumer uncertainty
+- $KR: Customer behavior shift evident; watching for further margin or volume deterioration
+- $HD: Rate-sensitive housing-linked demand; dividend yield appeal amid higher yields
+- $BLDR: Building-supply proxy for housing slowdown risk in rate-hiking environment
+
+## 2026-09-14
+**Rate Sensitivity and Consumer Squeeze Pressure Discretionary Spending**
+With the 10-year yield climbing to 4.95% and the broader market posting modest gains, interest-rate-sensitive consumer stocks face a dual headwind: higher borrowing costs are weighing on discretionary purchases and home improvement projects, while wage-growth concerns and potential tariff-driven inflation are already showing up in weakening consumer behavior. Grocery and big-box retailers are reporting shifts in shopper patterns, and building-supply names are facing margin pressure, signaling that the consumer is becoming more price-conscious as real purchasing power erodes.
+
+Investors should monitor whether the current modest rally holds or whether further Treasury yield increases trigger a broader demand slowdown in discretionary categories. The next critical data point will be consumer spending and retail sales figures; any sign that tariffs or elevated rates are forcing consumers to trade down or cut back on non-essentials could accelerate multiple compression in this sector.
+Tickers: $WMT, $KR, $HD
+Sources: Yahoo
 
 ## 2026-09-11
 **Higher rates pressure discretionary; staples show resilience amid mixed signals**
