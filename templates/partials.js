@@ -180,6 +180,7 @@ function pageShell({
   <script src="${rootPrefix}js/pod-star.js?v=${BUILD_ID}" defer></script>
   <script src="${rootPrefix}js/watchlist-quotes.js?v=${BUILD_ID}" defer></script>
   ${showSubscribeForm ? `<script src="${rootPrefix}js/subscribe-form.js?v=${BUILD_ID}" defer></script>` : ''}
+  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </body>
 </html>
 `;
