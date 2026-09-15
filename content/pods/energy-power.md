@@ -3,9 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $CVX: Actively expanding LNG portfolio; guiding capex under higher-rate regime
-- $NEE: Scheduled investor meetings through early October; rate-sensitive utility exposure
-- $XOM: Major producer highlighted in yield-focused coverage; vulnerable to rate re-rating
+- $XOM: PNG LNG project expansion and Guyana production growth in focus amid higher rates
+- $CVX: LNG ambitions driving strategic positioning as energy security concerns persist
+- $NEE: Merger deal sweetening signals utility sector adapting to higher-rate financing environment
+
+## 2026-09-15
+**Energy Sector Finds Support as Rate Backdrop Shifts Strategic Priorities**
+With the 10-year yield holding steady near 5% and broad equities under modest pressure, the energy complex is showing relative resilience—a telling sign that investors are rotating into inflation-hedge and energy-security narratives. The headlines across upstream E&P, refining, and LNG infrastructure reveal a sector pivoting away from pure commodity exposure toward long-cycle, strategically critical assets: majors are doubling down on LNG capacity, refiners are benefiting from global fuel tightness, and M&A in utilities is being sweetened with customer benefits to offset rising financing costs. This shift suggests the market is pricing in a higher-for-longer rate regime where energy's dual appeal—inflation protection and geopolitical necessity—outweighs the headwinds from elevated cost of capital.
+
+Investors should monitor whether this rotation into strategic energy assets holds if rates move materially higher, or if the broad market weakness (Nasdaq down 0.80%) extends into energy names. Watch for clarity on LNG project economics in a higher-rate environment and whether utility M&A momentum—typically sensitive to refinancing risk—can sustain its current pace. The interplay between energy's defensive appeal and rising WACC will likely define near-term sector outperformance.
+Tickers: $CVX, $XOM, $NEE
+Sources: SeekingAlpha, Yahoo
 
 ## 2026-09-14
 **Rising Rates Test Energy Majors' Capital Allocation and Growth Plans**
