@@ -3,9 +3,15 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $GOOGL: Data center power advantage cited as competitive moat amid AI capex race
-- $AVGO: Broadcom named Anthropic as next major AI customer; signals chip demand concentration
-- $META: Zuckerberg claims Threads scale amid AI slowdown skepticism; capital allocation under scrutiny
+- $META: 55 analyst coverage with zero sell ratings; testing valuation vs. near-term cash generation
+- $PLTR: CEO highlighted non-AI growth drivers; relevant as macro favors capex discipline over AI hype
+- $AMD: Gaining share in cloud infrastructure; beneficiary if higher rates accelerate vendor consolidation
+
+## 2026-09-15
+**Rate Resilience Tests Platform Giants as Tech Undergoes Margin Pressure**
+With the 10-year yield holding steady near 5% and the Nasdaq leading today's modest selloff (-0.80%), the Communications & Platforms sector faces a dual headwind: higher financing costs for capital-intensive infrastructure and the need to demonstrate near-term profitability over growth-at-all-costs narratives. The broad market tone suggests investors are rotating away from richly valued unprofitable narratives, yet analyst consensus on mega-cap platforms remains remarkably bullish—a sign the sector is being repriced on fundamentals rather than sentiment alone.
+Tickers: $META, $PLTR
+Sources: Yahoo
 
 ## 2026-09-14
 **Rate Resilience Masks Deepening AI Infrastructure Bifurcation**
