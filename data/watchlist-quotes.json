@@ -1,121 +1,109 @@
 {
-  "asOf": "2026-09-14T13:06:31.351Z",
+  "asOf": "2026-09-15T13:06:33.801Z",
   "quotes": {
-    "CME": {
-      "price": 275.54,
-      "changePercent": 0.5364
-    },
-    "META": {
-      "price": 648.03,
-      "changePercent": 0.5664
+    "JPM": {
+      "price": 350.13,
+      "changePercent": -1.7124
     },
     "BAC": {
-      "price": 62.69,
-      "changePercent": 0.2078
+      "price": 59.47,
+      "changePercent": -5.1364
     },
-    "ORCL": {
-      "price": 150.28,
-      "changePercent": -1.7392
-    },
-    "AMZN": {
-      "price": 256.78,
-      "changePercent": 1.9413
-    },
-    "TSLA": {
-      "price": 365.44,
-      "changePercent": 0.5171
-    },
-    "CVS": {
-      "price": 94.66,
-      "changePercent": -0.6611
-    },
-    "UNH": {
-      "price": 379.09,
-      "changePercent": -2.3668
-    },
-    "ELV": {
-      "price": 418.72,
-      "changePercent": 0.5234
-    },
-    "HD": {
-      "price": 308.74,
-      "changePercent": 0.9977
-    },
-    "PRI": {
-      "price": 292.44,
-      "changePercent": 1.1763
-    },
-    "CVX": {
-      "price": 214.06,
-      "changePercent": 0.611
-    },
-    "NEE": {
-      "price": 82.31,
-      "changePercent": -0.1577
-    },
-    "CAT": {
-      "price": 818.57,
-      "changePercent": 1.6857
-    },
-    "ETN": {
-      "price": 425.37,
-      "changePercent": 3.9643
-    },
-    "PLTR": {
-      "price": 167.23,
-      "changePercent": 0.826
-    },
-    "MRVL": {
-      "price": 236.1,
-      "changePercent": 4.0271
-    },
-    "JPM": {
-      "price": 356.23,
-      "changePercent": 0.7552
+    "CME": {
+      "price": 280.46,
+      "changePercent": 1.7856
     },
     "GLW": {
-      "price": 166.4,
-      "changePercent": 2.0108
+      "price": 143.6,
+      "changePercent": -13.7019
     },
     "AAPL": {
-      "price": 332.27,
-      "changePercent": 1.7454
+      "price": 333.08,
+      "changePercent": 0.2438
     },
     "MSFT": {
-      "price": 495.63,
-      "changePercent": 0.6478
+      "price": 505.41,
+      "changePercent": 1.9732
+    },
+    "UNH": {
+      "price": 383.55,
+      "changePercent": 1.1765
     },
     "JNJ": {
-      "price": 265.58,
-      "changePercent": -0.2891
+      "price": 266.32,
+      "changePercent": 0.2786
     },
     "KR": {
-      "price": 58.49,
-      "changePercent": 2.7041
+      "price": 60.91,
+      "changePercent": 4.1375
+    },
+    "HD": {
+      "price": 310.87,
+      "changePercent": 0.6899
     },
     "BLDR": {
-      "price": 60.37,
-      "changePercent": 2.3741
+      "price": 60.24,
+      "changePercent": -0.2153
+    },
+    "CVX": {
+      "price": 212.17,
+      "changePercent": -0.8829
+    },
+    "NEE": {
+      "price": 81.63,
+      "changePercent": -0.8261
     },
     "XOM": {
-      "price": 165.99,
-      "changePercent": 0.46
+      "price": 165.08,
+      "changePercent": -0.5482
     },
     "DE": {
-      "price": 675.74,
-      "changePercent": -0.3245
+      "price": 681.46,
+      "changePercent": 0.8465
+    },
+    "ETN": {
+      "price": 393.16,
+      "changePercent": -7.5722
     },
     "HON": {
-      "price": 202.36,
-      "changePercent": 0.089
+      "price": 201.38,
+      "changePercent": -0.4843
     },
     "GOOGL": {
-      "price": 338.5,
-      "changePercent": 1.7739
+      "price": 349.39,
+      "changePercent": 3.2171
     },
     "AVGO": {
-      "price": 361.99,
-      "changePercent": 0.3215
+      "price": 344.72,
+      "changePercent": -4.7709
+    },
+    "META": {
+      "price": 665.6,
+      "changePercent": 2.7113
+    },
+    "AMZN": {
+      "price": 253.54,
+      "changePercent": -1.2618
+    },
+    "PYPL": {
+      "price": 54.03,
+      "changePercent": 0.5771
+    },
+    "WMT": {
+      "price": 109.08,
+      "changePercent": 1.8012
+    },
+    "CVS": {
+      "price": 95.55,
+      "changePercent": 0.9402
+    },
+    "PLTR": {
+      "price": 173.31,
+      "changePercent": 3.6357
+    },
+    "AMD": {
+      "price": 493.41,
+      "changePercent": -4.402
     }
   }
 }
