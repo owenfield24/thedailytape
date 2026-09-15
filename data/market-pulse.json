@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-14T13:06:16.229Z",
+  "asOf": "2026-09-15T13:06:20.426Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 764.29,
-      "changePercent": 0.8524
+      "value": 760.88,
+      "changePercent": -0.4462
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 525.79,
-      "changePercent": 0.9678
+      "value": 524.49,
+      "changePercent": -0.2472
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 714.88,
-      "changePercent": 0.8734
+      "value": 709.18,
+      "changePercent": -0.7973
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 4.95,
+    "value": 4.96,
     "unit": "%",
-    "changePercent": 0.12
+    "changePercent": 0.01
   },
-  "headline": "Broad gains as geopolitical tensions push oil higher",
-  "deck": "Equity markets climbed across the board today as Middle East friction sent crude surging, while Treasury yields edged up on growing inflation concerns.",
-  "body": "All three major indices posted solid gains this morning, with the Dow slightly outpacing peers at +0.97% while the S&P 500 and Nasdaq both advanced roughly 0.85-0.87%. The broad-based rally reflects modest risk appetite despite a backdrop of escalating geopolitical turmoil. Treasury yields ticked up 12 basis points to 4.95%, suggesting markets are pricing in inflation pressures from supply-chain disruptions.\n\nThe day's primary driver remains the Iran-Saudi tension and Houthi attacks on shipping lanes and Saudi infrastructure. Oil prices surged 3% as pipeline attacks reduced supply, with the shipping sector hit particularly hard—AirBaltic has already filed for Chapter 11 bankruptcy citing war-related cost pressures. Energy stocks likely benefited from the crude rally, while transportation and logistics faced headwinds.\n\nMarkets appear to be treating today's geopolitical spike as a near-term volatility event rather than a systemic threat to equities. Investors are balancing higher energy costs and supply concerns against the positive backdrop of steady economic activity, resulting in modest equity gains. The broader question for the week ahead is whether escalation continues or if tensions stabilize, which will determine whether these gains hold.",
+  "headline": "Stocks slip as Fed signals sustained rate hikes ahead",
+  "deck": "Markets retreated modestly today as geopolitical tensions and monetary policy expectations weighed on investor sentiment.",
+  "body": "Equities finished in the red across all three major indices, with the growth-heavy Nasdaq leading declines at -0.80% while the Dow held up relatively better at -0.25%. The S&P 500 fell 0.45% to close at 760.88, reflecting a risk-off tone as investors digested fresh economic signals. Treasury yields ticked up slightly to 4.96%, consistent with a market bracing for continued Federal Reserve rate increases rather than near-term relief.\n\nThe CNBC survey confirming at least two Fed hikes over the next year appears to have reset expectations for monetary policy, suggesting any near-term rate cut hopes are premature. This backdrop makes growth stocks particularly vulnerable, explaining why the Nasdaq underperformed, and keeps bond yields anchored at elevated levels. The persistent inflation concerns implied by these rate expectations likely contributed to the broad-based selling pressure today.\n\nGeopolitical developments added a secondary layer of uncertainty, with Middle East tensions affecting energy infrastructure and cloud services. AWS's outage in Bahrain following war damage and reports of intensifying attacks in the Hormuz region created supply-chain concerns, though some analysts note potential long-term commodity support if conflicts persist. These headline risks, combined with the Fed's hawkish messaging, created enough caution to keep risk appetite subdued through the session.",
   "sources": "CNBC, Reuters"
 }
