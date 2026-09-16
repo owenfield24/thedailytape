@@ -3,9 +3,15 @@ pod: Industrial & Materials
 ---
 
 ## Watchlist
-- $DE: Up 40% YTD; key test of whether gains justified or momentum trade
-- $ETN: Trading above peers on valuation metrics; watch for margin compression risk
-- $HON: Featured in aircraft lightning protection market outlook; secular growth exposure
+- $CAT: Heavy retail search interest and bull rating; order book visibility supports valuation narrative
+- $HON: Pure-play automation momentum gaining traction; testing market resilience in high-rate regime
+- $ETN: Dividend yield appeal in rising-rate environment; factory completion cycle ahead
+
+## 2026-09-16
+**Industrial Sector Holds Ground as Rate Backdrop Supports Capital-Intensive Plays**
+With the 10-year yield holding steady near 5% and broad equities down modestly, the industrial and materials sector is displaying relative resilience—a sign that investors remain confident in the durability of long-cycle capex demand despite near-term macro uncertainty. The headlines point to strength in automation and equipment manufacturing, where order books remain robust and autonomous technology adoption is accelerating, suggesting that even in a higher-rate environment, companies with pricing power and secular growth drivers are attracting investor interest.
+Tickers: $CAT, $HON, $ETN
+Sources: Yahoo
 
 ## 2026-09-14
 **Industrial sector finds footing as rates stabilize near 5 percent**
