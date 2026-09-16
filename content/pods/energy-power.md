@@ -3,9 +3,16 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: PNG LNG project expansion and Guyana production growth in focus amid higher rates
-- $CVX: LNG ambitions driving strategic positioning as energy security concerns persist
-- $NEE: Merger deal sweetening signals utility sector adapting to higher-rate financing environment
+- $XOM: Rose CCS regulatory approval signals capex commitment; watch if rate environment challenges project returns
+- $CVX: Outperforming in selloff; CEO fuel crisis commentary suggests supply-side bullish thesis
+
+## 2026-09-16
+**Energy Majors Capitalize as Rates Hold Firm, Risk Appetite Narrows**
+With the 10-year Treasury anchored near 5% and broad equity indices in the red, large-cap energy names are outperforming a risk-off market backdrop. The sector's defensive characteristics—coupled with upstream cash generation and downstream hedges against commodity volatility—are proving resilient even as growth-oriented tech stocks underperform. This relative strength suggests investors are rotating toward yield and stability; XOM and CVX's intraday resilience alongside broader market weakness reflects that flight to defensive energy exposure.
+
+As rates remain sticky and geopolitical supply concerns persist (reflected in CEO commentary on fuel crises), watch for whether energy equities can sustain this relative outperformance if the 10-year breaks above 5.00% or if risk sentiment suddenly reverses. Capital allocation decisions around LNG and carbon capture—visible in recent regulatory wins—will hinge on whether higher rates make project economics still viable or force a strategic repricing.
+Tickers: $XOM, $CVX
+Sources: Yahoo
 
 ## 2026-09-15
 **Energy Sector Finds Support as Rate Backdrop Shifts Strategic Priorities**
