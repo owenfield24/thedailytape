@@ -3,9 +3,14 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: 55 analyst coverage with zero sell ratings; testing valuation vs. near-term cash generation
-- $PLTR: CEO highlighted non-AI growth drivers; relevant as macro favors capex discipline over AI hype
-- $AMD: Gaining share in cloud infrastructure; beneficiary if higher rates accelerate vendor consolidation
+- $META: Age verification regulatory risk emerging; monitor compliance cost impact on margins
+- $GOOGL: Heaviest regulatory pressure among peers threatens cash flow; activist selling signals concern
+
+## 2026-09-16
+**Regulatory Headwinds and Rate Pressure Weigh on Big Tech Valuations**
+With the 10-year Treasury holding firm at 4.97% and broad equity weakness (-0.46% to -0.65% across major indices), the Communication & Platforms sector is facing a dual squeeze: higher rates compress valuations for growth-heavy tech names, while intensifying regulatory scrutiny threatens near-term cash flows. Evidence of this strain is visible in activist repositioning—Cathie Wood's ARK trimming GOOGL while Ackman's Pershing Square exits Alphabet entirely—suggesting even sophisticated allocators are reassessing the risk/reward in mega-cap platforms amid regulatory risks (age verification rules, antitrust pressure) and slowing AI monetization narratives.
+Tickers: $GOOGL, $META
+Sources: Yahoo
 
 ## 2026-09-15
 **Rate Resilience Tests Platform Giants as Tech Undergoes Margin Pressure**
