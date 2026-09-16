@@ -3,9 +3,15 @@ pod: Technology
 ---
 
 ## Watchlist
-- $AAPL: Emmy momentum and iPhone demand signals offer consumer strength backdrop amid rates holding
-- $AMZN: 60B Qualcomm deal signals aggressive AI cloud capex; modem in-house strategy reshapes chip demand
-- $PYPL: Top tech power ranking; cash generation and fintech positioning benefit from rate environment
+- $AAPL: Citi survey signals smartphone replacement cycle tailwinds and potential market share gains
+- $GOOGL: Heavy regulatory pressure flagged as cash flow threat versus peer; worth monitoring capital allocation
+- $QUORUM: Acquiring Ontinue in cybersecurity consolidation wave; merger arbitrage and strategic rationale worth tracking
+
+## 2026-09-16
+**Tech Sector Treads Water as Rate Persistence Weighs on Growth Multiples**
+With the 10-year Treasury holding firm at 4.97% and the Nasdaq down 0.65% in today's modest selloff, the tech sector is grappling with the reality that higher-for-longer rates remain a structural headwind to valuation expansion. The modest market decline masks a sector in flux: while large-cap mega-cap names face mounting regulatory and capital allocation pressures that threaten cash flow conversion, the M&A activity visible in cybersecurity (Quorum's Ontinue acquisition) and the persistent demand signals in smartphone replacement cycles suggest investors are tactically rotating into subsectors with more tangible near-term cash generation. Rate sensitivity remains the through-line—growth-dependent software and cloud names are particularly vulnerable if yields stabilize at these levels, while hardware and security-focused plays tied to operational necessity are holding steadier.
+Tickers: $AAPL, $GOOGL, $NVDA
+Sources: Yahoo
 
 ## 2026-09-15
 **Tech Sector Pivots to AI and Premium Services Amid Rate Stability**
