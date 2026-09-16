@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-15T13:06:20.426Z",
+  "asOf": "2026-09-16T13:06:21.520Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 760.88,
-      "changePercent": -0.4462
+      "value": 757.39,
+      "changePercent": -0.4587
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 524.49,
-      "changePercent": -0.2472
+      "value": 521.23,
+      "changePercent": -0.6216
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 709.18,
-      "changePercent": -0.7973
+      "value": 704.54,
+      "changePercent": -0.6543
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 4.96,
+    "value": 4.97,
     "unit": "%",
     "changePercent": 0.01
   },
-  "headline": "Stocks slip as Fed signals sustained rate hikes ahead",
-  "deck": "Markets retreated modestly today as geopolitical tensions and monetary policy expectations weighed on investor sentiment.",
-  "body": "Equities finished in the red across all three major indices, with the growth-heavy Nasdaq leading declines at -0.80% while the Dow held up relatively better at -0.25%. The S&P 500 fell 0.45% to close at 760.88, reflecting a risk-off tone as investors digested fresh economic signals. Treasury yields ticked up slightly to 4.96%, consistent with a market bracing for continued Federal Reserve rate increases rather than near-term relief.\n\nThe CNBC survey confirming at least two Fed hikes over the next year appears to have reset expectations for monetary policy, suggesting any near-term rate cut hopes are premature. This backdrop makes growth stocks particularly vulnerable, explaining why the Nasdaq underperformed, and keeps bond yields anchored at elevated levels. The persistent inflation concerns implied by these rate expectations likely contributed to the broad-based selling pressure today.\n\nGeopolitical developments added a secondary layer of uncertainty, with Middle East tensions affecting energy infrastructure and cloud services. AWS's outage in Bahrain following war damage and reports of intensifying attacks in the Hormuz region created supply-chain concerns, though some analysts note potential long-term commodity support if conflicts persist. These headline risks, combined with the Fed's hawkish messaging, created enough caution to keep risk appetite subdued through the session.",
-  "sources": "CNBC, Reuters"
+  "headline": "Broad market dip as geopolitical tensions weigh on sentiment",
+  "deck": "All three major indices fell between 0.46% and 0.65% as Middle East tensions and Fed expectations keep investors on edge.",
+  "body": "Equity markets retreated across the board this morning, with the Nasdaq leading losses at -0.65% followed by the Dow at -0.62% and the S&P 500 at -0.46%. The broad decline mirrors investor caution around multiple geopolitical flashpoints: ongoing US-Houthi diplomatic engagement, escalating US sanctions discussions toward Russia, and rising China-US tensions over military \"provocative acts.\" These headline risks are compounded by the Strait of Hormuz shipping slowdown, which could have supply chain implications if escalation continues.\n\nOn the fixed-income side, the 10-year Treasury held steady just below 5% at 4.97%, reflecting a market still caught between growth concerns and expectations around the Fed's next policy decision. The near-flat move in yields suggests investors are hedging bets—neither fully pricing in rate cuts nor expecting aggressive tightening, leaving bonds and equities in a holding pattern. With earnings season winding down and macro uncertainty elevated, market momentum appears subdued.\n\nOn the positive note, Boeing's finalization of a 103-aircraft order with Korean Air and a J.D. Power report showing improved passenger satisfaction at US airports provided modest tailwinds to sentiment. However, these constructive signals were insufficient to overcome the weight of geopolitical headlines and Fed uncertainty, leaving the market to close out the day in the red.",
+  "sources": "Reuters, CNBC"
 }
