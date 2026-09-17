@@ -3,9 +3,15 @@ pod: Technology
 ---
 
 ## Watchlist
-- $AAPL: Citi survey signals smartphone replacement cycle tailwinds and potential market share gains
-- $GOOGL: Heavy regulatory pressure flagged as cash flow threat versus peer; worth monitoring capital allocation
-- $QUORUM: Acquiring Ontinue in cybersecurity consolidation wave; merger arbitrage and strategic rationale worth tracking
+- $AAPL: Building proprietary AI servers with own chips; rates stable at 5% support capex thesis
+- $INTC: Analyst sees 106% upside over two years; rate environment critical to semiconductor capex cycles
+- $NVDA: Central to Apple's networking plans; AI server demand narrative underpins sector in flat rate regime
+
+## 2026-09-17
+**Tech Sector Navigates Rate Resilience as Treasury Yields Hold Firm**
+With the 10-year Treasury anchored at 5% and the broader market showing mixed conviction—the Nasdaq barely moving while the S&P and Dow both dipped—technology is being forced to prove its value proposition in a higher-for-longer rate environment. The divergence itself is telling: mega-cap tech with AI credibility (evidenced by buzz around Apple's custom silicon strategy and Intel's analyst targets) is holding ground, while the wider equity market signals caution around the rate backdrop. This suggests investors are selectively rotating toward tech names with concrete AI/capex narratives rather than bidding the sector broadly higher.
+Tickers: $AAPL, $INTC, $NVDA
+Sources: Yahoo
 
 ## 2026-09-16
 **Tech Sector Treads Water as Rate Persistence Weighs on Growth Multiples**
