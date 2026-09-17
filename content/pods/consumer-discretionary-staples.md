@@ -3,9 +3,15 @@ pod: Consumer Discretionary/Staples
 ---
 
 ## Watchlist
-- $WMT: Leading e-commerce and marketplace expansion narrative amid rate headwinds; conference focus on AI and delivery
-- $HD: Pro supply segment seen offsetting consumer discretionary weakness; 21% upside thesis contrasts sector margin pressure
-- $ULTA: Anti-theft tool backlash highlights cost-control measures creating brand risk in already-pressured environment
+- $WMT: Marketplace and advertising expansion creating margin upside if valuation gap closes
+- $HD: Supply chain and sourcing transparency concerns amid consumer caution in higher-rate environment
+- $QXO: Positioned to benefit from construction labor initiatives; cyclical exposure to macro softness
+
+## 2026-09-17
+**Consumer Discretionary Faces Headwinds as Rate Backdrop Pressures Valuations**
+With the 10-year Treasury anchored at 5% and equity markets broadly negative today (S&P down 0.44%, Dow down 1.15%), rate-sensitive consumer discretionary names are feeling particular pressure on valuations and consumer spending appetite. The sector's higher-leverage, growth-oriented names are especially vulnerable in a higher-for-longer rate environment, even as staples continue to attract flight-to-safety flows amid macro uncertainty.
+Tickers: $WMT, $HD, $QXO
+Sources: Yahoo
 
 ## 2026-09-16
 **Consumer discretionary faces margin pressure as rates hold amid competitive intensity**
