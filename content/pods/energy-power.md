@@ -3,8 +3,16 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Rose CCS regulatory approval signals capex commitment; watch if rate environment challenges project returns
-- $CVX: Outperforming in selloff; CEO fuel crisis commentary suggests supply-side bullish thesis
+- $XOM: Guyana and Permian assets central to upstream growth narrative
+- $CVX: Venezuelan expansion signal amid flat macro backdrop and equity weakness
+
+## 2026-09-17
+**Energy Majors Chase Growth Despite Flat Rate Backdrop and Market Weakness**
+With the 10-year yield holding firm at 5% and broad equities showing modest weakness—the S&P down 0.44% and Dow off 1.15%—energy majors are pursuing upstream expansion rather than retreating. The sector's current posture suggests operators view sustained higher rates and moderating growth as compatible with disciplined, high-return project development; geopolitical opportunism (Venezuela re-entry, international deal-making) is filling the void left by constrained capex elsewhere in the market.
+
+Investors should monitor whether this capital-deployment confidence holds if rates begin moving materially higher or if the broader market deteriorates further. The sector's ability to fund these initiatives while maintaining shareholder returns hinges on crude prices remaining supported—a dynamic worth tracking closely given the current neutral trading environment across equities.
+Tickers: $XOM, $CVX
+Sources: Yahoo, ChartMill
 
 ## 2026-09-16
 **Energy Majors Capitalize as Rates Hold Firm, Risk Appetite Narrows**
