@@ -3,9 +3,15 @@ pod: Healthcare
 ---
 
 ## Watchlist
-- $UNH: Earnings release date announced; barometer for consumer health and cost inflation trends
-- $JNJ: Reports stronger EGFR lung cancer survival data; near-term clinical catalyst
-- $MRK: Market debating whether $70B pipeline justifies current valuation premium in rate environment
+- $UNH: Cost structure pressures under scrutiny; rate environment pressuring margins
+- $PFE: Investor debate over new business growth offsetting legacy portfolio decline
+- $JNJ: Pipeline readiness and STELARA transition in focus amid dividend yield reassessment
+
+## 2026-09-17
+**Healthcare navigates sticky rates as dividend appeal and portfolio shifts intensify**
+The 10-year Treasury holding firm at 5% is reshaping capital allocation across healthcare, a traditionally defensive sector where yield-hungry investors have long anchored positions. With the broad market down 0.44% and the Dow particularly soft at -1.15%, rate-sensitive healthcare names are facing pressure as higher borrowing costs and opportunity costs in fixed income compete for investor dollars. The headlines suggest portfolio repositioning is underway: dividend funds are being scrutinized against passive alternatives, and large-cap pharma and medtech names are under review as investors weigh which franchises can sustain growth in this higher-rate regime.
+Tickers: $UNH, $PFE, $JNJ
+Sources: ChartMill, Yahoo
 
 ## 2026-09-16
 **Healthcare Sector Treads Water as Rate Uncertainty Weighs on Valuations**
