@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-16T13:06:21.520Z",
+  "asOf": "2026-09-17T13:06:20.772Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 757.39,
-      "changePercent": -0.4587
+      "value": 754.05,
+      "changePercent": -0.441
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 521.23,
-      "changePercent": -0.6216
+      "value": 515.22,
+      "changePercent": -1.153
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 704.54,
-      "changePercent": -0.6543
+      "value": 704.72,
+      "changePercent": 0.0255
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 4.97,
+    "value": 5,
     "unit": "%",
-    "changePercent": 0.01
+    "changePercent": 0.03
   },
-  "headline": "Broad market dip as geopolitical tensions weigh on sentiment",
-  "deck": "All three major indices fell between 0.46% and 0.65% as Middle East tensions and Fed expectations keep investors on edge.",
-  "body": "Equity markets retreated across the board this morning, with the Nasdaq leading losses at -0.65% followed by the Dow at -0.62% and the S&P 500 at -0.46%. The broad decline mirrors investor caution around multiple geopolitical flashpoints: ongoing US-Houthi diplomatic engagement, escalating US sanctions discussions toward Russia, and rising China-US tensions over military \"provocative acts.\" These headline risks are compounded by the Strait of Hormuz shipping slowdown, which could have supply chain implications if escalation continues.\n\nOn the fixed-income side, the 10-year Treasury held steady just below 5% at 4.97%, reflecting a market still caught between growth concerns and expectations around the Fed's next policy decision. The near-flat move in yields suggests investors are hedging bets—neither fully pricing in rate cuts nor expecting aggressive tightening, leaving bonds and equities in a holding pattern. With earnings season winding down and macro uncertainty elevated, market momentum appears subdued.\n\nOn the positive note, Boeing's finalization of a 103-aircraft order with Korean Air and a J.D. Power report showing improved passenger satisfaction at US airports provided modest tailwinds to sentiment. However, these constructive signals were insufficient to overcome the weight of geopolitical headlines and Fed uncertainty, leaving the market to close out the day in the red.",
+  "headline": "Mixed signals as geopolitical tensions weigh on equities",
+  "deck": "Stocks turn choppy amid Middle East concerns and diplomatic uncertainties, with the Nasdaq holding steady while broader indices slide.",
+  "body": "The market's mild pullback reflects elevated geopolitical risk, particularly around Iran, the Strait of Hormuz, and regional instability. Headlines detailing UN findings on potential war crimes, Houthi threats to shipping lanes, and the collapse of transit traffic through the Strait of Hormuz have heightened concerns about energy security and global supply chains. These friction points are likely pressuring cyclical sectors, evident in the Dow's steeper 1.15% decline versus the S&P 500's more modest 0.44% drop.\n\nMeanwhile, international policy uncertainty is creating a bifurcated market response. Tech stocks in the Nasdaq are nearly flat, suggesting investors are rotating away from traditional value plays into defensive growth. The Treasury market's steady 5% yield indicates bond investors are pricing in ongoing geopolitical tail risks while the Fed holds course, though the Bank of England's anticipated divergence from rate-hike leadership could introduce additional currency and inflation dynamics to watch.\n\nWith shipping disruptions mounting and diplomatic tensions around Taiwan and Iran adding to the risk backdrop, markets appear to be adopting a cautious stance heading into the session. The lack of enthusiasm even as yields stabilize suggests investors are waiting for clearer signals on both geopolitical resolution and central bank policy divergence.",
   "sources": "Reuters, CNBC"
 }
