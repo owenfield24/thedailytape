@@ -2,10 +2,13 @@
 pod: Industrial & Materials
 ---
 
-## Watchlist
-- $CAT: Quarry automation expansion and truck rollout under scrutiny amid rate environment
-- $GE: Booked work and backlog provide visibility, but exposure to discretionary capex cycles remains
-- $IONQ: Record revenue and growth narrative tested against broader industrial capex caution
+## 2026-09-18
+**Industrial Sector Gains Traction as Rate Stability Supports Capital-Intensive Names**
+With the 10-year Treasury holding steady near 5% and the S&P 500 rallying moderately (+1.13%), capital-intensive industrials are benefiting from a stabilizing rate backdrop that reduces refinancing anxiety without derailing growth momentum. The sector's modest outperformance—evidenced by broad interest in cyclicals like CAT, PWR, and EME—suggests investors are rotating into names that benefit from infrastructure spending and data center buildout, areas where moderating rate volatility makes long-term project economics more predictable. The Nasdaq's stronger gain (+1.73%) alongside industrial strength hints that growth-oriented manufacturing and power equipment plays are capturing both AI tailwinds and traditional capex cycles.
+
+Monitor whether the 10-year yield can hold below 5.05% without triggering renewed duration anxiety; a sustained move higher could test the current appetite for equipment-heavy names that rely on financing-dependent end-markets. Watch for signals from upcoming earnings and data center infrastructure commentary—the Generac-Amazon deal noted in headlines suggests the AI-driven power demand narrative remains a key catalyst, but sector breadth will ultimately depend on whether macro conditions support broad industrial spending or narrowly favor tech-adjacent names.
+Tickers: $CAT, $HON, $LIN
+Sources: Yahoo, ChartMill
 
 ## 2026-09-17
 **Higher Rates Pressure Capital-Intensive Industrial Projects and Growth Timelines**
