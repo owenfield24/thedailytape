@@ -3,9 +3,15 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $GOOG: Massive capex plans under scrutiny as rates remain elevated; margin sustainability key
-- $TTD: Ad-tech margin compression as Google, Meta, Amazon gain share in competitive environment
-- $META: High capex demands amid regulatory headwinds on youth engagement and user growth
+- $META: Balancing AI capex expansion against payback velocity scrutiny; watch guidance
+- $GOOGL: Antitrust ruling implications for ad business and capex strategy clarity needed
+- $AAPL: Chip strategy efficiency and capex discipline positioning as rate-resilient alternative
+
+## 2026-09-18
+**Tech Giants Face Capex Payback Pressure as Rates Hold Above 5 Percent**
+With the 10-year Treasury holding steady near 5 percent and the Nasdaq outperforming today by 1.73 percent, Communication & Platforms names are caught in a familiar tension: mega-cap tech must justify massive AI infrastructure spending while capital costs remain elevated. The sector's largest players are being tested on capex discipline and ROI velocity, as evidenced by widening debate around whether AI investments will generate returns fast enough to justify current valuations in a higher-for-longer rate environment. Smaller, nimbler platforms and emerging names like Manus are simultaneously attracting fresh capital at strong valuations, signaling that investors are willing to fund growth stories outside the "Magnificent Seven" incumbents facing scrutiny on capex efficiency.
+Tickers: $META, $GOOGL, $AAPL
+Sources: Yahoo, SeekingAlpha, ChartMill
 
 ## 2026-09-17
 **Rising Rates and Capital Competition Squeeze Platform Economics**
