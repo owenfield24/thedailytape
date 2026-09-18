@@ -3,8 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Guyana and Permian assets central to upstream growth narrative
-- $CVX: Venezuelan expansion signal amid flat macro backdrop and equity weakness
+- $XOM: CFO commentary on oil supply risk signals near-term volatility outlook
+- $COP: Buyback strategy directly tied to capital allocation in rising-rate regime
+- $VTSAX: Dividend sustainability discussion in high-rate environment affects dividend-focused portfolios
+
+## 2026-09-18
+**Oil Majors Navigate Higher Rates With Capital Discipline Focus**
+With the 10-year Treasury holding firm at 5.01% and equities broadly higher, energy investors are reassessing the tradeoff between shareholder returns and balance-sheet strength in a sustained higher-rate environment. Oil majors' emphasis on buyback programs and dividend sustainability—evident across recent commentary—reflects investor anxiety that elevated borrowing costs will force trade-offs between growth investment and cash returns, particularly as companies face volatility in commodity-linked cash flows.
+
+Watch for earnings guidance updates and capex resets as the sector signals how it's adapting to terminal rates above 5%; any shift toward buyback discipline or dividend policy changes could indicate management confidence (or lack thereof) in sustained cash generation. Upstream M&A activity like Vitesse's basin acquisition may also accelerate if rates remain elevated, as smaller operators consolidate rather than finance independently.
+Tickers: $XOM, $COP
+Sources: Yahoo, SeekingAlpha, ChartMill
 
 ## 2026-09-17
 **Energy Majors Chase Growth Despite Flat Rate Backdrop and Market Weakness**
