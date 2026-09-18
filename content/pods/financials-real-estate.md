@@ -3,9 +3,16 @@ pod: Financials & Real Estate
 ---
 
 ## Watchlist
-- $JPM: CEO commentary on inflation and small business momentum signals sector health; trading strength evident
-- $BAC: Fee warning and utility bill inflation call suggest margin headwinds; potential valuation reset underway
-- $SFTUF: Sumitomo positioned as value play; international bank exposure offers rate/inflation hedge diversification
+- $BAC: Unrealized bond losses mounting; largest daily decline signals market repricing of duration exposure
+- $JPM: Major housing commitment and international expansion signal conviction despite rate headwinds; earnings implications unclear
+
+## 2026-09-18
+**Rising Yields Test Rate-Sensitive Financials as Margin Pressures Mount**
+The 10-year Treasury holding above 5% is creating a bifurcated story across Financials & Real Estate: while higher rates typically support bank net interest margins, the sharp rise in yields has inflated unrealized losses on bond portfolios—Bank of America's potential $90B+ loss exemplifies the duration risk now front-and-center for large institutions. Meanwhile, the modest S&P 500 gain (+1.13%) suggests a cautious market still pricing in sticky rates, which should theoretically benefit deposit-heavy banks but is instead triggering visible stress in equity prices for large cap names.
+
+Investors should monitor how the sector responds to any signals on Fed policy persistence at these yield levels; dividend-paying banks have become defensive plays amid volatility (reflected in recent hike announcements), but mark-to-market pain on legacy securities may continue to weigh on valuations and capital deployment. Watch whether JPMorgan's $750B housing commitment and India conference signal confidence in sustained lending demand, or if these moves are offset by deteriorating net wealth effects from higher rates.
+Tickers: $JPM, $BAC
+Sources: Yahoo, ChartMill
 
 ## 2026-09-17
 **Banking sector navigates sticky rates and resilient loan demand**
