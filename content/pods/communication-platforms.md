@@ -3,9 +3,14 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: Balancing AI capex expansion against payback velocity scrutiny; watch guidance
-- $GOOGL: Antitrust ruling implications for ad business and capex strategy clarity needed
-- $AAPL: Chip strategy efficiency and capex discipline positioning as rate-resilient alternative
+- $GOOGL: GDPR fine signals regulatory cost creep; earnings next quarter will reflect capex vs. margin trade-off
+- $META: Elevated in geopolitical AI talks; watch for guidance on capex sustainability given current rate regime
+
+## 2026-09-21
+**AI Capital Intensity Tests Valuations as Rates Hold Firm Above 4.9%**
+With the 10-year Treasury holding near 4.94% and the Nasdaq outperforming slightly (+0.63%) while broad equities lag, the sector faces a bifurcated reality: mega-cap cloud and AI infrastructure players are spending heavily to maintain competitive moats, but elevated financing costs are making that capex math tougher to justify. The headlines reveal the tension—debate over which Mag 7 member faces extinction, cloud earnings stress-testing premium valuations, and forward-looking concerns about 2027 AI spending all point to a market repricing the durability of current margins under higher rates. Premium valuations in this space can only survive if revenue growth and margin expansion justify the cost of capital; right now, rates aren't cooperating.
+Tickers: $GOOGL, $META
+Sources: Yahoo, ChartMill
 
 ## 2026-09-18
 **Tech Giants Face Capex Payback Pressure as Rates Hold Above 5 Percent**
