@@ -3,9 +3,15 @@ pod: Consumer Discretionary/Staples
 ---
 
 ## Watchlist
-- $WMT: Presented at GS conference today; watch for commentary on pricing power and capital discipline amid rate backdrop
-- $CVS: Margin recovery at Aetna under investor focus; assess whether cost synergies offset higher financing costs
-- $HD: Recently paid $2.3B in dividends while ROIC slipped; watch for strategic shift in capital allocation
+- $SYF: Reaffirmed receivables growth outlook; credit resilience signals macro health
+- $DG: CEO commentary flags $100k earners under spending pressure; gauge of consumer health
+- $AMZN: BofA reset forecast on delivery economics; sensitive to consumer spending elasticity
+
+## 2026-09-21
+**Consumer Spending Resilience Tested as Rate Pressure Persists**
+The 10-year Treasury holding firm at 4.94% continues to weigh on rate-sensitive consumer discretionary segments, while inflation's lingering effects are visibly reshaping purchasing power across income bands. Evidence from credit trends and consumer commentary suggests a bifurcated market: affluent shoppers remain resilient (per Synchrony's receivables growth outlook), but middle-income consumers—even those earning six figures—are tightening discretion due to persistent cost pressures on energy and essentials. The Nasdaq's modest outperformance today masks underlying strain in traditional consumer names, signaling that the sector remains vulnerable to further yield moves.
+Tickers: $SYF, $DG, $AMZN
+Sources: Yahoo, SeekingAlpha, ChartMill
 
 ## 2026-09-18
 **Consumer Staples and Discretionary Diverge as Rates Hold Steady Near Five Percent**
