@@ -3,9 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: CFO commentary on oil supply risk signals near-term volatility outlook
-- $COP: Buyback strategy directly tied to capital allocation in rising-rate regime
-- $VTSAX: Dividend sustainability discussion in high-rate environment affects dividend-focused portfolios
+- $CVX: Supercharging Venezuela exposure; key test of upstream conviction amid rate uncertainty
+- $XOM: LNG and Venezuela plays signal long-cycle confidence; monitor capex sustainability
+- $TRGP: Recently upgraded by TD Cowen; midstream beneficiary of production growth thesis
+
+## 2026-09-21
+**Oil Majors Pivot Upstream Despite Rate Headwinds and Market Skepticism**
+With the 10-year yield holding firm at 4.94% and broad equities treading water (SPY -0.12%), the energy sector is navigating a backdrop of persistent financing costs that would ordinarily pressure capital-intensive projects. Yet major producers are doubling down on high-conviction, long-cycle bets—particularly in geopolitically sensitive zones like Venezuela and LNG infrastructure—suggesting management confidence that oil fundamentals and supply tightness justify the near-term rate environment. This contrarian posture implies operators believe current macro conditions support continued elevated pricing power despite equity market caution.
+
+Investors should monitor whether this conviction holds through Q1 earnings and whether any material shift in the 10-year yield (particularly upside moves toward 5.25%+) forces a recalibration of capex guidance. Watch also for signals on global LNG demand and Venezuela sanctions risk, as these projects anchor the sector's growth narrative in a moderating-rate or stagflationary scenario.
+Tickers: $CVX, $XOM, $TRGP
+Sources: Yahoo
 
 ## 2026-09-18
 **Oil Majors Navigate Higher Rates With Capital Discipline Focus**
