@@ -3,8 +3,15 @@ pod: Financials & Real Estate
 ---
 
 ## Watchlist
-- $BAC: Unrealized bond losses mounting; largest daily decline signals market repricing of duration exposure
-- $JPM: Major housing commitment and international expansion signal conviction despite rate headwinds; earnings implications unclear
+- $BAC: CEO comments spooked investors last week; watching for follow-through selloff or stabilization
+- $JPM: Anchoring sector optimism on deal pipeline and capital deployment; key barometer for M&A health
+- $BMA: Emerging market financials diverging; analysts split on momentum amid regional volatility
+
+## 2026-09-21
+**Rate Hold Steadies Financials While Deal Pipeline Accelerates**
+The 10-year Treasury's modest pullback to 4.94% is providing modest relief to rate-sensitive financials after weeks of pressure, though yields remain elevated enough to keep net interest margin dynamics in focus for banks. The mixed equity tape—with large-cap defensiveness (Dow -0.48%) offset by tech resilience (Nasdaq +0.63%)—suggests investor caution, yet dealmaking momentum remains buoyant; JPMorgan's commentary on record deal activity and strategic partnerships like the QIA asset management alliance signal that fee-driven revenue streams are compensating for NIM headwinds in a still-uncertain rate environment.
+Tickers: $JPM, $BAC
+Sources: Yahoo, Benzinga
 
 ## 2026-09-18
 **Rising Yields Test Rate-Sensitive Financials as Margin Pressures Mount**
