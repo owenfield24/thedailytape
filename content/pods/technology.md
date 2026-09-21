@@ -3,9 +3,15 @@ pod: Technology
 ---
 
 ## Watchlist
-- $AAPL: Building proprietary AI servers with own chips; rates stable at 5% support capex thesis
-- $INTC: Analyst sees 106% upside over two years; rate environment critical to semiconductor capex cycles
-- $NVDA: Central to Apple's networking plans; AI server demand narrative underpins sector in flat rate regime
+- $AAPL: Foldable iPhone and private network adoption suggest premiumization traction amid rate stability
+- $MSFT: Dividend quality narrative aligns with sector's income-driven resilience in stable rate environment
+- $QQQ: Outperforming index; tracks sector's relative strength and rate sensitivity in real-time
+
+## 2026-09-21
+**Tech Sector Navigates Resilience Amid Stable Rate Environment and Mixed Signals**
+With the 10-year yield holding steady near 4.94% and the Nasdaq outperforming the broader market (+0.63% vs. S&P flat), the Technology sector is displaying selective strength despite modest macro headwinds elsewhere. The divergence between the Nasdaq and Dow suggests growth and capital-intensive tech names are finding footing in a regime where rates aren't accelerating—key for valuations of long-duration assets. Against this backdrop, evidence of continued capex deployment in cloud infrastructure, dividend resilience from mature tech names, and premiumization strategies (including high-price-point hardware) suggest investors remain willing to deploy capital in the sector even as broader market sentiment wavers.
+Tickers: $MSFT, $AAPL, $QQQ
+Sources: Yahoo, ChartMill
 
 ## 2026-09-17
 **Tech Sector Navigates Rate Resilience as Treasury Yields Hold Firm**
