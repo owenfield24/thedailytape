@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-18T13:06:14.795Z",
+  "asOf": "2026-09-21T13:06:15.189Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 762.6,
-      "changePercent": 1.1339
+      "value": 761.69,
+      "changePercent": -0.1193
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 518.35,
-      "changePercent": 0.6075
+      "value": 515.88,
+      "changePercent": -0.4765
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 716.92,
-      "changePercent": 1.7312
+      "value": 721.45,
+      "changePercent": 0.6319
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 5.01,
+    "value": 4.94,
     "unit": "%",
-    "changePercent": 0.01
+    "changePercent": -0.07
   },
-  "headline": "Tech-led rally pushes market higher amid geopolitical uncertainty",
-  "deck": "Nasdaq outperforms as energy concerns ease, but Middle East tensions and asset seizures keep investors cautious.",
-  "body": "Markets opened with broad gains today, with the tech-heavy Nasdaq leading the charge at +1.73% while the S&P 500 and Dow followed with more modest gains of +1.13% and +0.61% respectively. The 10-year Treasury held steady at 5.01%, suggesting investors remain somewhat balanced between growth and safety bets despite ongoing international tensions.\n\nGeopolitical headlines continue to dominate sentiment, though recent market moves suggest some stabilization in energy markets. While Iran tensions briefly rattled jet financiers and pushed fuel costs higher, actual shipping data shows Hormuz traffic below recent averages and China's fuel exports hitting record highs—signals that energy supply concerns may be easing. This relief appears to be supporting equities, particularly in the more rate-sensitive tech sector.\n\nThe positive tone is tempered by longer-term risks including Putin's targeting of Nestle's Russian operations and Trump facing skeptical world leaders at the UN. These headlines underscore that while markets are finding footing today, underlying geopolitical and corporate exposure issues remain live stories worth monitoring.",
-  "sources": "CNBC, Reuters"
+  "headline": "Tech lifts market as geopolitical tensions weigh on commodities",
+  "deck": "Nasdaq gains on AI strength while bonds rally and energy markets absorb Middle East uncertainty.",
+  "body": "Tech stocks drove today's modest gains, with the Nasdaq climbing 0.63% as AI-focused equities attracted investor interest despite broader market caution. The S&P 500 and Dow Jones both edged lower, suggesting a rotation into growth names rather than broad market conviction. Treasury yields fell 7 basis points to 4.94%, indicating demand for safe-haven assets amid persistent geopolitical concerns.\n\nMiddle East tensions continue to complicate the energy outlook. Ongoing conflict near the Strait of Hormuz has vessels trickling through at elevated costs, though oil prices slid today alongside the broader market weakness. Meanwhile, the global diesel shortage is expected to persist into 2027 as storage inventories drain, creating a structural supply challenge independent of immediate headlines.\n\nInternational developments provided mixed signals for investor sentiment. Trade tensions between the US and China remain in focus as Xi prepares summit discussions, while German political uncertainty and Iran-US rhetoric add layers of geopolitical risk. Indian equities stabilized after recent losses, suggesting some stabilization in emerging markets despite the complex macro environment.",
+  "sources": "Reuters"
 }
