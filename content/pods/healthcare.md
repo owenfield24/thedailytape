@@ -3,9 +3,15 @@ pod: Healthcare
 ---
 
 ## Watchlist
-- $UNH: Multiple analyst notes flag potential entry point; watch for rate sensitivity in earnings revisions
-- $NVO: Down 5.6% on guidance; macro backdrop for specialty pharma remains rate-dependent
-- $CMPS: Psychedelic approval pathway accelerating; timing tied to risk appetite and biotech sentiment shifts
+- $UNH: Subject to pre-earnings valuation reassessment ahead of Oct. 13
+- $JNJ: Caplyta bipolar approval and orthopedics divestiture signal portfolio optimization
+- $ICBK: J&J acquisition continues integration momentum in specialty psychiatry
+
+## 2026-09-22
+**Healthcare navigates rate resilience as biotech M&A momentum accelerates**
+The 10-year yield holding firm at 5.01% is creating a bifurcated backdrop for healthcare: while rising rates typically pressure high-multiple biotech and growth-oriented names, today's Nasdaq surge (+2.77%) alongside modest treasury yield movement suggests investors are rotating into quality within the sector rather than rotating out entirely. Mega-cap healthcare—represented by defensive dividend payers and large-cap pharma—is showing relative resilience in this environment, as evidenced by activity in dividend-focused healthcare names and large-cap restructuring announcements, which signal confidence in cash-generative assets amid persistent rate pressure.
+Tickers: $UNH, $JNJ
+Sources: ChartMill, Yahoo, SeekingAlpha
 
 ## 2026-09-21
 **Healthcare navigates rate-sensitive dynamics as yields stabilize near 5 percent**
