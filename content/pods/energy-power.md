@@ -3,9 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $CVX: Supercharging Venezuela exposure; key test of upstream conviction amid rate uncertainty
-- $XOM: LNG and Venezuela plays signal long-cycle confidence; monitor capex sustainability
-- $TRGP: Recently upgraded by TD Cowen; midstream beneficiary of production growth thesis
+- $XOM: Down despite market gains; Venezuela upside offset by macro headwinds
+- $CVX: Down despite market gains; broader sector divergence worth tracking
+- $XLE: Energy ETF with composition risk; 91% oil/gas exposure lower than expected
+
+## 2026-09-22
+**Energy Sector Diverges as Rate Hold Bolsters Equities, Oil Outlook Murky**
+The broader market rally—led by Nasdaq strength on AI optimism and a 1.55% S&P 500 gain—has left traditional energy names behind despite the 10-year yield holding firm at 5.01%. XOM and CVX both declined today despite the market's broad advance, signaling that energy equities are responding to sector-specific headwinds rather than macro tailwinds. Higher rates typically support energy companies' balance sheets, but sustained elevated yields can also temper demand expectations and keep capital allocation tilted toward growth names, leaving cyclical energy stocks in a squeeze.
+
+Investors should monitor whether today's divergence persists or reverses as crude fundamentals and Fed rate expectations become clearer. The potential for geopolitical relief (Venezuela return) and sector composition risks (energy ETFs like XLE carrying less true oil exposure than assumed) suggest volatility will remain elevated until macro clarity returns on inflation, growth, and rate trajectory.
+Tickers: $XOM, $CVX, $XLE
+Sources: ChartMill, Yahoo
 
 ## 2026-09-21
 **Oil Majors Pivot Upstream Despite Rate Headwinds and Market Skepticism**
