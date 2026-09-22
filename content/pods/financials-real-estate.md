@@ -3,9 +3,15 @@ pod: Financials & Real Estate
 ---
 
 ## Watchlist
-- $BAC: CEO comments spooked investors last week; watching for follow-through selloff or stabilization
-- $JPM: Anchoring sector optimism on deal pipeline and capital deployment; key barometer for M&A health
-- $BMA: Emerging market financials diverging; analysts split on momentum amid regional volatility
+- $JPM: Announced $20bn QIA investment and dividend raise; tests dividend sustainability amid macro volatility
+- $BAC: Under valuation scrutiny as new debt deals test pricing power in higher-rate environment
+- $LSCC: Soaring amid hyperscaler capex cycle commentary; reflects broader tech-driven financial services demand
+
+## 2026-09-22
+**Higher Rates Boost Finance Sector Even as Growth Concerns Linger**
+The 10-year Treasury's climb to 5.01% is providing a tailwind for traditional financial institutions, with wider net interest margins offsetting recession worries signaled by CEO commentary on consumer stress. Equity markets are broadly positive despite rate headwinds—the Nasdaq's 2.77% surge suggests tech-enabled financial services and capital deployment remain in favor, as evidenced by major capital moves like JPMorgan's $20bn strategic investment and dividend raises. The sector is balancing near-term NIM benefits against longer-term questions about consumer health and loan growth.
+Tickers: $JPM, $BAC
+Sources: Yahoo
 
 ## 2026-09-21
 **Rate Hold Steadies Financials While Deal Pipeline Accelerates**
