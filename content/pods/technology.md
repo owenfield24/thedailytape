@@ -3,9 +3,15 @@ pod: Technology
 ---
 
 ## Watchlist
-- $AAPL: Foldable iPhone and private network adoption suggest premiumization traction amid rate stability
-- $MSFT: Dividend quality narrative aligns with sector's income-driven resilience in stable rate environment
-- $QQQ: Outperforming index; tracks sector's relative strength and rate sensitivity in real-time
+- $MSFT: Cloud infrastructure play; sector beneficiary of stable rates and AI capex cycle
+- $GOOGL: AI narrative expansion; monitoring whether Muse and AI initiatives justify current valuation
+- $AMZN: Cloud and infrastructure exposure; rate-sensitive growth name to watch on yield moves
+
+## 2026-09-22
+**Tech Rally Extends as Rate Stability Fuels AI and Capital Intensity Narrative**
+The Nasdaq's outperformance today—up 2.77% versus the S&P's 1.55%—signals sustained investor appetite for growth and tech despite the 10-year yield holding firm near 5%. With the broader market posting solid gains and rate expectations stabilizing rather than spiking further, capital-intensive tech names tied to AI infrastructure and domestic semiconductor buildout are benefiting from improved visibility on financing costs. The sector's relative strength suggests investors are pricing in a rate environment supportive enough for high-growth names to deploy capital aggressively, as evidenced by the narrative around trillion-dollar valuations and AI-driven semiconductor demand reaching $330 billion by 2035.
+Tickers: $MSFT, $GOOGL, $AMZN
+Sources: Yahoo
 
 ## 2026-09-21
 **Tech Sector Navigates Resilience Amid Stable Rate Environment and Mixed Signals**
