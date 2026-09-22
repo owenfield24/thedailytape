@@ -3,8 +3,17 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $GOOGL: GDPR fine signals regulatory cost creep; earnings next quarter will reflect capex vs. margin trade-off
-- $META: Elevated in geopolitical AI talks; watch for guidance on capex sustainability given current rate regime
+- $META: Muse leading iOS apps; driving commerce partnerships with Shopify; core growth momentum
+- $SHOP: Embracing Meta's Muse across all stores; strategic AI infrastructure bet at inflection point
+- $AMZN: Blocking Muse; competitive positioning in AI commerce and cloud infrastructure under pressure
+
+## 2026-09-22
+**AI-Driven Commerce and Infrastructure Capture Risk-On Momentum as Rates Stabilize**
+The Nasdaq's outperformance today (+2.77% vs SPY +1.55%) reflects sustained appetite for high-beta growth names, even as the 10-year yield edges higher to 5.01%. Within Communications & Platforms, this risk-on backdrop is fueling a visible shift toward AI-native commerce and infrastructure plays—companies embedding generative agents into consumer workflows (shopping, checkout, content) are capturing disproportionate flows. The sector's largest players are consolidating competitive advantages through AI partnerships and post-quantum security investments, signaling that market participants believe rate stability near current levels is compatible with sustained tech spending.
+
+Investors should monitor whether the 10-year yield holds above 5% or rolls over; a sustained move higher could pressure valuations in unprofitable AI infrastructure plays, while a dip back below 5% would likely accelerate flows into growth-oriented platform names. Watch also for evidence that AI commerce adoption is translating to material top-line contribution rather than speculative positioning—the Shopify-Meta integration and Muse's app-store traction are early signals, but Q3 earnings will be critical to validate whether the agent-native consumer shift is real or priced ahead of fundamentals.
+Tickers: $META, $SHOP, $AMZN
+Sources: Yahoo
 
 ## 2026-09-21
 **AI Capital Intensity Tests Valuations as Rates Hold Firm Above 4.9%**
