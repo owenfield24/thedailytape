@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-21T13:06:15.189Z",
+  "asOf": "2026-09-22T13:06:16.508Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 761.69,
-      "changePercent": -0.1193
+      "value": 773.5,
+      "changePercent": 1.5505
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 515.88,
-      "changePercent": -0.4765
+      "value": 519.78,
+      "changePercent": 0.756
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 721.45,
-      "changePercent": 0.6319
+      "value": 741.47,
+      "changePercent": 2.775
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 4.94,
+    "value": 5.01,
     "unit": "%",
-    "changePercent": -0.07
+    "changePercent": 0.07
   },
-  "headline": "Tech lifts market as geopolitical tensions weigh on commodities",
-  "deck": "Nasdaq gains on AI strength while bonds rally and energy markets absorb Middle East uncertainty.",
-  "body": "Tech stocks drove today's modest gains, with the Nasdaq climbing 0.63% as AI-focused equities attracted investor interest despite broader market caution. The S&P 500 and Dow Jones both edged lower, suggesting a rotation into growth names rather than broad market conviction. Treasury yields fell 7 basis points to 4.94%, indicating demand for safe-haven assets amid persistent geopolitical concerns.\n\nMiddle East tensions continue to complicate the energy outlook. Ongoing conflict near the Strait of Hormuz has vessels trickling through at elevated costs, though oil prices slid today alongside the broader market weakness. Meanwhile, the global diesel shortage is expected to persist into 2027 as storage inventories drain, creating a structural supply challenge independent of immediate headlines.\n\nInternational developments provided mixed signals for investor sentiment. Trade tensions between the US and China remain in focus as Xi prepares summit discussions, while German political uncertainty and Iran-US rhetoric add layers of geopolitical risk. Indian equities stabilized after recent losses, suggesting some stabilization in emerging markets despite the complex macro environment.",
-  "sources": "Reuters"
+  "headline": "Tech leads broad rally as geopolitical tensions simmer",
+  "deck": "Markets climbed Tuesday with the Nasdaq surging 2.77% while geopolitical risks around Iran, Ukraine, and the Strait of Hormuz kept investors cautious on traditional sectors.",
+  "body": "The Nasdaq's outperformance reflects renewed appetite for growth stocks, while the S&P 500 and Dow posted more modest gains, suggesting a flight to quality in an uncertain environment. The 7-basis-point jump in 10-year Treasury yields signals modest inflation concerns or expectations of sustained higher rates, though the modest move indicates limited panic among bond traders.\n\nGeopolitical headlines dominated the newswire, with tensions escalating around the Strait of Hormuz and upcoming Trump-led UN meetings on Iran and Ukraine. Vessel traffic data showing a dramatic drop to just two ships underscores real supply chain risk, while Iran's conditional offer to reopen the passage and Russia's continued drone warfare suggest these flashpoints remain unresolved. Such headline risk typically pressures defensive sectors and energy markets, though today's equity gains suggest investors are betting on containment rather than escalation.\n\nOperational disruptions like the Newark and Philadelphia flight outages served as a minor reminder of infrastructure vulnerabilities, while regulatory pushback from the ECB on stablecoin bank deposits adds friction to crypto-adjacent trades. For now, the market's risk-on bias—especially in tech—implies confidence that geopolitical risks won't derail growth, though Treasury yields bear watching as a potential recession indicator if they climb further.",
+  "sources": "CNBC, Reuters"
 }
