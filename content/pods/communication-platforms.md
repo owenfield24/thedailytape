@@ -3,9 +3,17 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: Muse leading iOS apps; driving commerce partnerships with Shopify; core growth momentum
-- $SHOP: Embracing Meta's Muse across all stores; strategic AI infrastructure bet at inflection point
-- $AMZN: Blocking Muse; competitive positioning in AI commerce and cloud infrastructure under pressure
+- $META: Muse AI agent momentum; key test of platform distribution advantage
+- $GOOGL: Regulatory headwinds on Android/Chrome; competitive pressure from Meta's AI
+- $VZ: 2027 spectrum auction; infrastructure capital intensity amid rate environment
+
+## 2026-09-23
+**AI Capital Intensity Battles Modest Rate Relief in Platform Valuations**
+With the 10-year yield ticking down just 5 basis points to 4.96% and the Nasdaq outperforming modestly (+0.81%), the Communication & Platforms sector faces competing pressures typical of a capital-heavy, growth-dependent cohort. The macro backdrop suggests lingering rate concerns haven't fully abated, yet declining yields are beginning to offer modest tailwinds for high-growth, cash-burn-intensive AI plays. Headlines signal intensifying competition around AI agent distribution—Meta's Muse reaching No. 1 while Google faces regulatory pressure—underscoring that while capital requirements remain steep, investor appetite for platforms claiming AI dominance remains robust despite the sector's profitability headwinds.
+
+As the 10-year holds near 5%, investors should monitor whether further rate declines unlock repricing of long-duration tech bets or whether cash flow expectations for the $2 trillion capex cycle dampen sentiment. Regulatory scrutiny (UK Android/Chrome choice screens, spectrum auctions) and capital allocation priorities (Buffett's successor reportedly favoring specific tech bets) will signal whether platforms can justify near-term cash burn through credible AI-driven revenue inflection. Watch for any signals in earnings/guidance cycles that the AI narrative is translating to measurable cash flow improvement rather than continued capex treadmill.
+Tickers: $META, $GOOGL, $VZ
+Sources: Yahoo
 
 ## 2026-09-22
 **AI-Driven Commerce and Infrastructure Capture Risk-On Momentum as Rates Stabilize**
