@@ -3,9 +3,16 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Down despite market gains; Venezuela upside offset by macro headwinds
-- $CVX: Down despite market gains; broader sector divergence worth tracking
-- $XLE: Energy ETF with composition risk; 91% oil/gas exposure lower than expected
+- $XOM: Record output and 2030 LNG target signal confidence in sustained commodity environment
+- $CVX: 50% exploration capex surge suggests conviction on long-cycle project returns at current rates
+
+## 2026-09-23
+**Energy Majors Double Down on Production as Rate Environment Stabilizes**
+With the 10-year Treasury holding steady near 5% and broad equity indices showing resilience despite modest losses, energy majors are signaling confidence in a constructive operating environment. The sector's largest players—integrated oils and LNG producers—are responding by raising capital deployment targets, suggesting management believes current macro conditions support aggressive near-term spending on exploration and output expansion rather than capital discipline. This contrasts sharply with the volatility of 2023 and reflects expectations that geopolitical tensions and supply constraints will sustain commodity pricing power even as rate expectations stabilize.
+
+Investors should monitor whether oil prices hold support around current levels as peace negotiations cool near-term risk premiums; any material pullback in WTI/Brent could force a rapid repricing of capex guidance. Watch also for yield-focused investors rotating into high-dividend energy names if Treasury yields remain pinned near 5%, as the sector's cash generation at current prices creates attractive income relative to risk-free rates.
+Tickers: $XOM, $CVX
+Sources: SeekingAlpha, Yahoo
 
 ## 2026-09-22
 **Energy Sector Diverges as Rate Hold Bolsters Equities, Oil Outlook Murky**
