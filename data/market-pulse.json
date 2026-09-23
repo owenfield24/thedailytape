@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-22T13:06:16.508Z",
+  "asOf": "2026-09-23T13:06:16.233Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 773.5,
-      "changePercent": 1.5505
+      "value": 773.38,
+      "changePercent": -0.0155
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 519.78,
-      "changePercent": 0.756
+      "value": 518,
+      "changePercent": -0.3425
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 741.47,
-      "changePercent": 2.775
+      "value": 747.46,
+      "changePercent": 0.8079
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 5.01,
+    "value": 4.96,
     "unit": "%",
-    "changePercent": 0.07
+    "changePercent": -0.05
   },
-  "headline": "Tech leads broad rally as geopolitical tensions simmer",
-  "deck": "Markets climbed Tuesday with the Nasdaq surging 2.77% while geopolitical risks around Iran, Ukraine, and the Strait of Hormuz kept investors cautious on traditional sectors.",
-  "body": "The Nasdaq's outperformance reflects renewed appetite for growth stocks, while the S&P 500 and Dow posted more modest gains, suggesting a flight to quality in an uncertain environment. The 7-basis-point jump in 10-year Treasury yields signals modest inflation concerns or expectations of sustained higher rates, though the modest move indicates limited panic among bond traders.\n\nGeopolitical headlines dominated the newswire, with tensions escalating around the Strait of Hormuz and upcoming Trump-led UN meetings on Iran and Ukraine. Vessel traffic data showing a dramatic drop to just two ships underscores real supply chain risk, while Iran's conditional offer to reopen the passage and Russia's continued drone warfare suggest these flashpoints remain unresolved. Such headline risk typically pressures defensive sectors and energy markets, though today's equity gains suggest investors are betting on containment rather than escalation.\n\nOperational disruptions like the Newark and Philadelphia flight outages served as a minor reminder of infrastructure vulnerabilities, while regulatory pushback from the ECB on stablecoin bank deposits adds friction to crypto-adjacent trades. For now, the market's risk-on bias—especially in tech—implies confidence that geopolitical risks won't derail growth, though Treasury yields bear watching as a potential recession indicator if they climb further.",
+  "headline": "Tech leads modest gains as dollar strength weighs on commodities",
+  "deck": "Nasdaq outperforms on quantum computing optimism while Treasury yields slip and geopolitical talks take center stage.",
+  "body": "The market opened with a cautiously bullish lean, with the Nasdaq climbing 0.81% on the back of IonQ's quantum computing breakthrough, while the S&P 500 and Dow remained essentially flat. The modest broad-market performance reflects competing forces: strength in growth-oriented tech stocks contrasting with headwinds from a stronger dollar and hawkish Fed commentary that's reinforcing tightening expectations.\n\nA stronger greenback at two-month highs is pressuring commodities and emerging market currencies, with gold retreating as investors price in continued Fed policy tightness despite the 10-year Treasury yield ticking down 5 basis points. The dollar's tailwind from Fed rate expectations is keeping international assets under pressure, evident in weakness across commodity-linked currencies like the Indian rupee.\n\nGeopolitical developments are simmering in the background, with potential Trump-Xi trade talks and diplomatic efforts around Korea and Gaza recovery plans adding an uncertain but potentially market-moving element. These headline risks remain secondary to the day's primary driver—the tension between tech momentum and broader macro headwinds from dollar strength and Fed positioning.",
   "sources": "CNBC, Reuters"
 }
