@@ -3,9 +3,17 @@ pod: Technology
 ---
 
 ## Watchlist
-- $MSFT: Cloud infrastructure play; sector beneficiary of stable rates and AI capex cycle
-- $GOOGL: AI narrative expansion; monitoring whether Muse and AI initiatives justify current valuation
-- $AMZN: Cloud and infrastructure exposure; rate-sensitive growth name to watch on yield moves
+- $NVDA: Valuation compression despite AI tailwinds; watch for demand sustainability
+- $META: Muse AI integration at Connect 2024; capex trajectory implications
+- $AAPL: New all-time highs amid sector rotation; defensive positioning signal
+
+## 2026-09-23
+**Tech Sector Diverges as Rate Hold Sustains Concentration Risk**
+With the 10-year Treasury holding near 5% and the Nasdaq outperforming the broader market by 83 basis points today, the technology sector continues to exhibit the bifurcation plaguing growth-dependent names: mega-cap winners with fortress balance sheets and durable cash flows are pulling away, while rate-sensitive plays face renewed pressure. The market's willingness to push Treasury yields lower by 5 basis points signals lingering uncertainty about economic resilience, a dynamic that typically favors the largest, most profitable tech names over smaller innovators dependent on cheap capital.
+
+Investors should monitor whether this concentration deepens or begins to mean-revert as macro clarity emerges. The trillion-dollar capital requirements now underpinning AI infrastructure—evident in commentary around Big Tech's need to triple cash flow generation—creates a structural advantage for companies already generating massive free cash flow, potentially widening the valuation gap further if rates stay elevated. Watch for any signals from earnings or guidance that suggest smaller-cap tech is successfully navigating this environment, as that would signal the sector's breadth is stabilizing.
+Tickers: $NVDA, $AAPL, $META
+Sources: Yahoo
 
 ## 2026-09-22
 **Tech Rally Extends as Rate Stability Fuels AI and Capital Intensity Narrative**
