@@ -3,9 +3,15 @@ pod: Consumer Discretionary/Staples
 ---
 
 ## Watchlist
-- $HD: CFO warned of frozen housing market; metric at historic low
-- $DG: Benefiting from consumer trade-down amid rate-driven economic pressure
-- $COST: Under rate-hike scrutiny; essential to watch for margin resilience
+- $HD: Trading below broader market; balance sheet health critical amid rate persistence
+- $WMT: Staples dividend play highlighted amid discretionary weakness; watch Q4 guidance
+- $COST: High-quality payout strategy in focus; bellwether for consumer spending durability
+
+## 2026-09-24
+**Consumer Discretionary Caught Between Rate Stagnation and Consumer Resilience**
+With the 10-year Treasury holding steady at 4.96% and equities down modestly across the board, consumer-facing sectors face a dual headwind: persistent higher rates are pressuring balance sheets and discretionary spending, while a flat rate environment removes any near-term tailwind for relief. Home Depot's underperformance relative to the broader market suggests housing-adjacent discretionary spending remains under pressure, even as staples-oriented retailers like Walmart and Costco are explicitly highlighted for their dividend stability—a tell that investors are rotating toward defensive cash-generation. The lack of yield movement signals markets expect rates to remain elevated, keeping consumer financing costs sticky and favoring lower-leverage, stable-payout stories over growth or balance-sheet-leveraged plays.
+Tickers: $WMT, $HD, $COST
+Sources: Yahoo
 
 ## 2026-09-22
 **Consumer Sector Splits as Rate Pressure Widens the Discount-Premium Gap**
