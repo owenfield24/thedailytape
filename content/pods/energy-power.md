@@ -3,8 +3,14 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Record output and 2030 LNG target signal confidence in sustained commodity environment
-- $CVX: 50% exploration capex surge suggests conviction on long-cycle project returns at current rates
+- $XOM: Balance sheet strength cited as hedge against volatility; test of dividend sustainability
+- $CVX: Valuation debate ongoing; growth opportunity thesis contested in flat-rate environment
+
+## 2026-09-24
+**Energy Majors Navigate Flat Rates While Defending Dividend Appeal**
+With the 10-year Treasury holding steady at 4.96% and broad equities sliding 0.7-0.8%, the energy sector faces a familiar tension: stable yields remove the refinancing pressure that once plagued capital-intensive names, yet the flat rate environment offers no tailwind for multiple expansion. That backdrop has sharpened focus on what energy companies can actually deliver—particularly cash generation and shareholder returns—rather than balance sheet engineering or growth multiple re-ratings. Market chatter around dividend resilience and assertions that investors are 'not paying for growth plans' underscore how investors are pricing energy stocks on yield and capital discipline rather than macro uplift.
+Tickers: $XOM, $CVX
+Sources: Yahoo, SeekingAlpha, ChartMill
 
 ## 2026-09-23
 **Energy Majors Double Down on Production as Rate Environment Stabilizes**
