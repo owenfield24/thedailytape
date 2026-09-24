@@ -3,9 +3,17 @@ pod: Technology
 ---
 
 ## Watchlist
-- $NVDA: Valuation compression despite AI tailwinds; watch for demand sustainability
-- $META: Muse AI integration at Connect 2024; capex trajectory implications
-- $AAPL: New all-time highs amid sector rotation; defensive positioning signal
+- $MSFT: Goldman Sachs doubles down on conviction; rate-sensitive mega-cap bellwether
+- $META: Launching new hardware while macro uncertain; signaling spend confidence
+- $QCOM: Apple patent renewal suggests durable licensing revenue amid tech reset
+
+## 2026-09-24
+**Tech sector treads water as rates hold, deal activity signals selective optimism**
+With the 10-year Treasury flat at 4.96% and the Nasdaq down 0.84% alongside modest broad-market weakness, the technology sector is holding its breath in a range-bound environment. The lack of directional rate movement is leaving mega-cap and growth-dependent names without a clear catalyst, though selective M&A activity and licensing renewals—like Qualcomm's Apple patent deal and agency consolidation moves—suggest pockets of confidence that the duration of elevated rates may be manageable. Companies are still investing in new product categories and partnerships, indicating conviction that the current macro backdrop, while restrictive, hasn't derailed longer-term strategic positioning.
+
+Investors should monitor whether today's flat Treasury yield anchors here or breaks higher, as a move above 5% could pressure valuations further; simultaneously, watch for earnings guidance revisions and free cash flow commentary from mega-cap names like Microsoft and Meta to assess whether tech incumbents are pricing in more sustained margin pressure or seeing stabilization. If rate expectations stabilize or drift lower, the relative underperformance of the Nasdaq versus the Dow today could quickly reverse, rewarding the most capital-intensive and AI-exposed names that have been waiting for validation.
+Tickers: $MSFT, $META, $QCOM
+Sources: Yahoo
 
 ## 2026-09-23
 **Tech Sector Diverges as Rate Hold Sustains Concentration Risk**
