@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-23T13:06:16.233Z",
+  "asOf": "2026-09-24T13:06:17.823Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 773.38,
-      "changePercent": -0.0155
+      "value": 767.81,
+      "changePercent": -0.7202
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 518,
-      "changePercent": -0.3425
+      "value": 514.3,
+      "changePercent": -0.7143
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 747.46,
-      "changePercent": 0.8079
+      "value": 741.21,
+      "changePercent": -0.8362
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
     "value": 4.96,
     "unit": "%",
-    "changePercent": -0.05
+    "changePercent": 0
   },
-  "headline": "Tech leads modest gains as dollar strength weighs on commodities",
-  "deck": "Nasdaq outperforms on quantum computing optimism while Treasury yields slip and geopolitical talks take center stage.",
-  "body": "The market opened with a cautiously bullish lean, with the Nasdaq climbing 0.81% on the back of IonQ's quantum computing breakthrough, while the S&P 500 and Dow remained essentially flat. The modest broad-market performance reflects competing forces: strength in growth-oriented tech stocks contrasting with headwinds from a stronger dollar and hawkish Fed commentary that's reinforcing tightening expectations.\n\nA stronger greenback at two-month highs is pressuring commodities and emerging market currencies, with gold retreating as investors price in continued Fed policy tightness despite the 10-year Treasury yield ticking down 5 basis points. The dollar's tailwind from Fed rate expectations is keeping international assets under pressure, evident in weakness across commodity-linked currencies like the Indian rupee.\n\nGeopolitical developments are simmering in the background, with potential Trump-Xi trade talks and diplomatic efforts around Korea and Gaza recovery plans adding an uncertain but potentially market-moving element. These headline risks remain secondary to the day's primary driver—the tension between tech momentum and broader macro headwinds from dollar strength and Fed positioning.",
-  "sources": "CNBC, Reuters"
+  "headline": "Equities slip as geopolitical tensions overshadow steady rates",
+  "deck": "All three major indices declined modestly today as Middle East uncertainty and political developments weighed on sentiment, with Treasury yields holding steady.",
+  "body": "The S&P 500, Dow, and Nasdaq all posted small losses today, ranging from -0.71% to -0.84%, suggesting broad-based weakness with no clear sector escape. The slight but uniform selloff points to investor caution rather than panic, reflecting ongoing geopolitical headwinds that continue to cloud the near-term outlook. With the 10-year Treasury holding flat at 4.96%, the decline wasn't driven by rate expectations shifting sharply higher.\n\nGeopolitical tensions remain a key driver of market sentiment, with headlines dominating around US-Iran relations, the Israel-Palestine conflict, and Middle East instability. Netanyahu's visit to New York and related diplomatic friction, combined with ongoing Houthi activities in Yemen, underscore regional volatility that investors are monitoring closely. These developments create an overhang of uncertainty that typically encourages defensive positioning and modest risk reduction.\n\nOn the monetary policy front, New York Fed President Williams signaled that another rate hike by year-end remains reasonable, adding some pressure to equity valuations despite stable Treasury yields today. This hawkish messaging, combined with the geopolitical noise, likely explains why investors are taking chips off the table despite no major economic surprise. The market's modest reaction suggests participants are in a holding pattern until clearer signals emerge on both policy and global tensions.",
+  "sources": "Reuters, CNBC"
 }
