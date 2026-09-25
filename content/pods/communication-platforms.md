@@ -3,9 +3,15 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: JPMorgan raises PT to $920 post-Muse; multiple AI catalysts in flight
-- $GOOGL: Tigress raises PT to $485 on AI growth; Zacks tracking earnings momentum
-- $WMT: AI shopping expansion shows Platform AI spreading beyond pure-play tech stocks
+- $META: Trading at significant discount to SPY; AI monetization breadth being tested across products
+- $GOOGL: P/E of 17x vs SPY 25x; AI search transition volatility creating accumulation window
+- $BRK.B: Recent large-scale position building suggests institutional confidence in sector valuation floor
+
+## 2026-09-25
+**Rate-Sensitive Tech Platforms Find Value as Treasury Yields Stabilize**
+With the 10-year yield holding firm at 5.11% and broad market momentum subdued across equities, mega-cap communication platforms are displaying relative resilience and attracting value recognition. The sector's large-cap names—which have historically compressed valuations under rising-rate regimes—are now trading at meaningful discounts to broader market multiples, creating an inflection point where their cash generation capacity and diversified revenue streams (including AI-driven monetization) are being repriced. This backdrop has sparked institutional accumulation, evidenced by conviction builds and analyst upgrades centered on cash flow sustainability rather than speculative growth narratives.
+Tickers: $META, $GOOGL
+Sources: Yahoo, SeekingAlpha
 
 ## 2026-09-24
 **Yield Hold Fuels Platform AI Bets Despite Broad Market Weakness**
