@@ -1,97 +1,101 @@
 {
-  "asOf": "2026-09-24T13:06:33.097Z",
+  "asOf": "2026-09-25T13:06:33.371Z",
   "quotes": {
     "JPM": {
-      "price": 337.53,
-      "changePercent": -0.7265
+      "price": 338.56,
+      "changePercent": 0.3052
     },
     "BAC": {
-      "price": 56,
-      "changePercent": -0.3559
-    },
-    "NVDA": {
-      "price": 225.51,
-      "changePercent": -1.4681
-    },
-    "META": {
-      "price": 744.1,
-      "changePercent": 1.0189
-    },
-    "AAPL": {
-      "price": 337.02,
-      "changePercent": -0.8035
-    },
-    "UNH": {
-      "price": 371.29,
-      "changePercent": -0.4451
-    },
-    "ACHC": {
-      "price": 28.51,
-      "changePercent": -2.9282
-    },
-    "ISRG": {
-      "price": 398.3,
-      "changePercent": -0.9426
-    },
-    "HD": {
-      "price": 296.72,
-      "changePercent": -2.8263
-    },
-    "DG": {
-      "price": 120.6,
-      "changePercent": -1.6554
-    },
-    "COST": {
-      "price": 904.7,
-      "changePercent": 0.5882
-    },
-    "XOM": {
-      "price": 161.23,
-      "changePercent": 1.5878
-    },
-    "CVX": {
-      "price": 205.51,
-      "changePercent": 1.5315
-    },
-    "CAT": {
-      "price": 812.02,
-      "changePercent": 0.4963
-    },
-    "HON": {
-      "price": 212.57,
-      "changePercent": 0.3399
-    },
-    "APG": {
-      "price": 37.82,
-      "changePercent": 0.1589
-    },
-    "GOOGL": {
-      "price": 337.83,
-      "changePercent": -3.796
-    },
-    "VZ": {
-      "price": 46.52,
-      "changePercent": 0.1507
+      "price": 56.03,
+      "changePercent": 0.0536
     },
     "C": {
-      "price": 131.93,
-      "changePercent": -0.4076
+      "price": 132.1,
+      "changePercent": 0.1289
     },
     "MSFT": {
-      "price": 500.59,
-      "changePercent": 0.5201
+      "price": 497.93,
+      "changePercent": -0.5314
+    },
+    "META": {
+      "price": 777.59,
+      "changePercent": 4.5007
     },
     "QCOM": {
-      "price": 197.24,
-      "changePercent": -0.5195
+      "price": 194.26,
+      "changePercent": -1.5108
+    },
+    "UNH": {
+      "price": 375.01,
+      "changePercent": 1.0019
+    },
+    "ISRG": {
+      "price": 399.52,
+      "changePercent": 0.3063
     },
     "ABBV": {
-      "price": 265.08,
-      "changePercent": -0.049
+      "price": 265.12,
+      "changePercent": 0.0151
+    },
+    "HD": {
+      "price": 292.18,
+      "changePercent": -1.5301
     },
     "WMT": {
-      "price": 110.53,
-      "changePercent": 0.3723
+      "price": 107.59,
+      "changePercent": -2.6599
+    },
+    "COST": {
+      "price": 896.48,
+      "changePercent": -0.9086
+    },
+    "XOM": {
+      "price": 162.14,
+      "changePercent": 0.5644
+    },
+    "CVX": {
+      "price": 205.65,
+      "changePercent": 0.0681
+    },
+    "HON": {
+      "price": 211.79,
+      "changePercent": -0.3669
+    },
+    "CAT": {
+      "price": 805.25,
+      "changePercent": -0.8337
+    },
+    "GOOGL": {
+      "price": 342.36,
+      "changePercent": 1.3409
+    },
+    "AAPL": {
+      "price": 335.92,
+      "changePercent": -0.3264
+    },
+    "CVS": {
+      "price": 85.05,
+      "changePercent": -0.9434
+    },
+    "JNJ": {
+      "price": 270.68,
+      "changePercent": 0.561
+    },
+    "TTE": {
+      "price": 91.89,
+      "changePercent": 0.24
+    },
+    "GE": {
+      "price": 319.78,
+      "changePercent": -0.0063
+    },
+    "GEHC": {
+      "price": 66.38,
+      "changePercent": 0.4388
+    },
+    "BRK.B": {
+      "price": 505.18,
+      "changePercent": -0.3924
     }
   }
 }
