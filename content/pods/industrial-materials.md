@@ -3,9 +3,17 @@ pod: Industrial & Materials
 ---
 
 ## Watchlist
-- $HON: Investor conference Thursday; recent defense/marine wins show diversification
-- $CAT: Renewed market focus; bellwether for capex and equipment demand
-- $3M: Consumer business weakness signals broader retail and discretionary slowdown
+- $GE: GE Vernova cited in data center infrastructure gap; capital intensity under rate scrutiny
+- $GEHC: GE Aerospace mentioned; monitor if margin resilience holds amid financing cost pressure
+- $HON: Profiled in predictive maintenance growth thesis; asset-light software exposure favored in high-rate regime
+
+## 2026-09-25
+**Rising Rates Pressure Industrials as Capital Intensity Meets Tighter Financing**
+The 10-year Treasury's move to 5.11% signals persistent rate pressure at a time when capital-heavy industrial and materials companies face elevated financing costs. Today's broad market flatness—with the Dow notably weaker at -0.32%—reflects caution in cyclical sectors most sensitive to borrowing conditions. Headlines around Caterpillar, Eaton, and GE Vernova suggest investors are actively reassessing which players can sustain profitability and growth investments in this environment, particularly those with meaningful capex requirements or long-cycle project dependencies.
+
+The silver lining appears in high-margin, efficiency-focused segments: the predictive maintenance market's projected 71% growth through 2031 is being priced in for names like ABB, Honeywell, and Schneider Electric—suppliers of software and monitoring solutions that help end-users cut costs without heavy capital deployment. Watch whether the next leg of rate moves validates this two-speed thesis, and whether large industrials begin guiding down capex or extending project timelines in response to financing headwinds.
+Tickers: $CAT, $GE, $ETN
+Sources: Yahoo, ChartMill
 
 ## 2026-09-24
 **Industrial sector treads water as yields hold, defensive positioning takes hold**
