@@ -3,8 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Balance sheet strength cited as hedge against volatility; test of dividend sustainability
-- $CVX: Valuation debate ongoing; growth opportunity thesis contested in flat-rate environment
+- $XOM: Long-term funding and dividend sustainability questioned amid rate pressure
+- $TTE: LNG growth thesis under scrutiny as project economics face higher discount rates
+- $CVX: Dividend comparison highlight; positioned amid geopolitical premium and rate headwinds
+
+## 2026-09-25
+**Rising Rates Pressure Energy Capex and Long-Term Funding Strategy**
+The 10-year Treasury climbing 15 basis points to 5.11% is reshaping how integrated energy majors approach both capital allocation and debt markets. Higher borrowing costs are forcing companies like ExxonMobil to recalibrate their funding playbooks—evidenced by recent floating-rate note issuances and strategic scrutiny around mega-deals—while also pressuring returns on long-cycle LNG and offshore projects that depend on low discount rates. Meanwhile, equities broadly are treading water (SPY -0.08%), suggesting investors are pricing in a less certain growth picture where energy's traditional dividend growth story faces headwinds from elevated cost of capital.
+
+Watch for dividend coverage stress and M&A deal reassessments as the 500+ basis-point yield environment persists. If rates remain sticky at current levels, expect more cautious guidance on capex growth and a rotation toward higher-yielding, lower-leverage peers versus those carrying large debt burdens tied to transformational projects. Near-term catalysts include earnings calls where management addresses the confluence of higher financing costs and geopolitical risk premiums (Iran tensions, supply disruptions) that are simultaneously widening energy spreads.
+Tickers: $XOM, $TTE, $CVX
+Sources: Yahoo
 
 ## 2026-09-24
 **Energy Majors Navigate Flat Rates While Defending Dividend Appeal**
