@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-24T13:06:17.823Z",
+  "asOf": "2026-09-25T13:06:17.959Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 767.81,
-      "changePercent": -0.7202
+      "value": 767.18,
+      "changePercent": -0.0821
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 514.3,
-      "changePercent": -0.7143
+      "value": 512.68,
+      "changePercent": -0.315
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 741.21,
-      "changePercent": -0.8362
+      "value": 741.1,
+      "changePercent": -0.0148
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 4.96,
+    "value": 5.11,
     "unit": "%",
-    "changePercent": 0
+    "changePercent": 0.15
   },
-  "headline": "Equities slip as geopolitical tensions overshadow steady rates",
-  "deck": "All three major indices declined modestly today as Middle East uncertainty and political developments weighed on sentiment, with Treasury yields holding steady.",
-  "body": "The S&P 500, Dow, and Nasdaq all posted small losses today, ranging from -0.71% to -0.84%, suggesting broad-based weakness with no clear sector escape. The slight but uniform selloff points to investor caution rather than panic, reflecting ongoing geopolitical headwinds that continue to cloud the near-term outlook. With the 10-year Treasury holding flat at 4.96%, the decline wasn't driven by rate expectations shifting sharply higher.\n\nGeopolitical tensions remain a key driver of market sentiment, with headlines dominating around US-Iran relations, the Israel-Palestine conflict, and Middle East instability. Netanyahu's visit to New York and related diplomatic friction, combined with ongoing Houthi activities in Yemen, underscore regional volatility that investors are monitoring closely. These developments create an overhang of uncertainty that typically encourages defensive positioning and modest risk reduction.\n\nOn the monetary policy front, New York Fed President Williams signaled that another rate hike by year-end remains reasonable, adding some pressure to equity valuations despite stable Treasury yields today. This hawkish messaging, combined with the geopolitical noise, likely explains why investors are taking chips off the table despite no major economic surprise. The market's modest reaction suggests participants are in a holding pattern until clearer signals emerge on both policy and global tensions.",
-  "sources": "Reuters, CNBC"
+  "headline": "Markets tread water as Treasury yields climb on rate expectations",
+  "deck": "Stocks open flat while bond yields rise, with geopolitical tensions and corporate deal-making competing for investor attention.",
+  "body": "U.S. equities showed little conviction this morning, with the S&P 500 and Nasdaq barely budging while the Dow dipped slightly. The modest selling pressure contrasts with a more notable move in fixed income, where the 10-year Treasury yield jumped 15 basis points to 5.11%, suggesting investors are pricing in firmer interest rate expectations ahead. This yield move typically weighs on growth stocks but hasn't triggered a broad market selloff yet.\n\nGeopolitical developments are adding uncertainty to the backdrop, with reports on Middle East diplomatic efforts and regional tensions affecting aviation. Qatar Airways' pivot to retirement and pilot deployment signals real operational strain from the Iran situation, while airlines' preemptive fee waivers ahead of the nor'easter show companies managing near-term demand risks. These structural headwinds in transportation haven't cascaded into broad equity weakness, but they reflect a cautious undertone.\n\nOn the positive side, a pharma stock's 150% surge on a Novo Nordisk injectables partnership shows dealmaking momentum remains alive in healthcare. Gold's resilience despite rising rate expectations underscores investor hedging behavior, even as the metal tracks toward a weekly loss. Overall, markets appear to be consolidating between competing forces: sticky yields, scattered geopolitical concerns, and pockets of M&A activity.",
+  "sources": "CNBC, Reuters"
 }
