@@ -3,9 +3,17 @@ pod: Technology
 ---
 
 ## Watchlist
-- $MSFT: Goldman Sachs doubles down on conviction; rate-sensitive mega-cap bellwether
-- $META: Launching new hardware while macro uncertain; signaling spend confidence
-- $QCOM: Apple patent renewal suggests durable licensing revenue amid tech reset
+- $META: Muse agent narrative rallying stock; key test of AI spend-to-value conversion thesis
+- $MSFT: Bearish thesis flagged today; AI spending sustainability questions need addressing
+- $AAPL: Quality candidate cited despite premium valuation; rate sensitivity in consumer tech watch
+
+## 2026-09-25
+**Tech Sector Caught Between AI Spending Euphoria and Rising Rate Headwinds**
+The 10-year Treasury's climb to 5.11% is pressuring the entire technology complex at a critical inflection point: mega-cap firms are doubling down on capital-intensive AI infrastructure while cost-of-capital signals tightening. The flat-to-negative tape across indices masks divergent narratives within tech—mega-cap AI leaders like Meta are rallying on AI narrative strength (Muse agent momentum), but the sector-wide question centers on whether accelerating deployment spending justifies valuations as borrowing costs stay elevated. Rate-sensitive infrastructure and software plays face particular headwind, evident in commentary questioning whether AI capex cycles will generate sufficient returns to offset massive future write-offs.
+
+Investors should monitor whether the current divergence—euphoria around AI breakthroughs offset by rising rates and profitability concerns—signals a valuation reset or temporary consolidation. Watch for any shifts in corporate guidance on AI spending payoff timelines and early warning signs of capital discipline, especially from firms with elevated leverage or lower FCF conversion relative to their capex burn.
+Tickers: $META, $MSFT, $NET
+Sources: ChartMill, Yahoo, SeekingAlpha
 
 ## 2026-09-24
 **Tech sector treads water as rates hold, deal activity signals selective optimism**
