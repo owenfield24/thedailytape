@@ -3,9 +3,15 @@ pod: Consumer Discretionary/Staples
 ---
 
 ## Watchlist
-- $HD: Trading below broader market; balance sheet health critical amid rate persistence
-- $WMT: Staples dividend play highlighted amid discretionary weakness; watch Q4 guidance
-- $COST: High-quality payout strategy in focus; bellwether for consumer spending durability
+- $HD: Gig delivery cost questions raise near-term profitability concerns amid rate headwinds
+- $WMT: Tariff refund strategy signals pricing power despite current economic slump
+- $COST: Emerging as preferred discretionary play relative to traditional retailers in high-rate regime
+
+## 2026-09-25
+**Rising Rates Pressure Consumer Discretionary; Staples Show Pricing Power**
+The 10-year Treasury's climb to 5.11% is weighing on rate-sensitive consumer discretionary names, particularly in housing and big-ticket retail where financing costs matter most. The slight negative tone across equities today (SPY -0.08%, DIA -0.32%) reflects broader economic uncertainty, yet the sector's bifurcation is stark: discretionary retailers like Home Depot face near-term headwinds with consumer pullback concerns, while staples and mega-cap platforms (Amazon, Costco, Walmart) are leveraging scale and pricing leverage to offset margin pressure—though notably, only 15% of firms plan to pass tariff refunds to consumers, suggesting firms are choosing profit over volume in a higher-rate environment.
+Tickers: $HD, $WMT, $COST
+Sources: Yahoo, SeekingAlpha
 
 ## 2026-09-24
 **Consumer Discretionary Caught Between Rate Stagnation and Consumer Resilience**
