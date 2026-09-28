@@ -3,9 +3,15 @@ pod: Industrial & Materials
 ---
 
 ## Watchlist
-- $GE: GE Vernova cited in data center infrastructure gap; capital intensity under rate scrutiny
-- $GEHC: GE Aerospace mentioned; monitor if margin resilience holds amid financing cost pressure
-- $HON: Profiled in predictive maintenance growth thesis; asset-light software exposure favored in high-rate regime
+- $ITRI: Software margin transition thesis plays well into higher-rate environment
+- $AESI: AI power infrastructure demand positioned to offset rate-driven capex headwinds
+- $VMI: 2029 EPS guidance visibility tests market's appetite for utility infrastructure capex
+
+## 2026-09-28
+**Rising Yields Reshape Capital Intensity Across Industrial and Infrastructure**
+The 10-year Treasury's climb to 5.18% is reshaping how this sector deploys capital, with yield-sensitive infrastructure and utilities infrastructure plays bearing the brunt of higher financing costs. Yet the broader market's resilience—Dow up 0.94%, SPY +0.54%—suggests investors are selectively rotating into higher-margin, software-enabled industrial names and energy transition plays that can offset rising debt service. Rate-sensitive CEFs are yielding 8%+, signaling that traditional dividend infrastructure is pricing in sustained elevation, while forward-looking infrastructure-focused guidance (Valmont's 2029 EPS target, Itron's software transition) points to a sector bifurcating between capital-heavy legacy assets and capital-light, recurring-revenue models.
+Tickers: $ITRI, $AESI
+Sources: SeekingAlpha, Yahoo
 
 ## 2026-09-25
 **Rising Rates Pressure Industrials as Capital Intensity Meets Tighter Financing**
