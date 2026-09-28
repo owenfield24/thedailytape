@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-25T13:06:17.959Z",
+  "asOf": "2026-09-28T13:06:19.534Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 767.18,
-      "changePercent": -0.0821
+      "value": 771.35,
+      "changePercent": 0.5435
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 512.68,
-      "changePercent": -0.315
+      "value": 517.49,
+      "changePercent": 0.9382
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 741.1,
-      "changePercent": -0.0148
+      "value": 744.5,
+      "changePercent": 0.4588
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 5.11,
+    "value": 5.18,
     "unit": "%",
-    "changePercent": 0.15
+    "changePercent": 0.07
   },
-  "headline": "Markets tread water as Treasury yields climb on rate expectations",
-  "deck": "Stocks open flat while bond yields rise, with geopolitical tensions and corporate deal-making competing for investor attention.",
-  "body": "U.S. equities showed little conviction this morning, with the S&P 500 and Nasdaq barely budging while the Dow dipped slightly. The modest selling pressure contrasts with a more notable move in fixed income, where the 10-year Treasury yield jumped 15 basis points to 5.11%, suggesting investors are pricing in firmer interest rate expectations ahead. This yield move typically weighs on growth stocks but hasn't triggered a broad market selloff yet.\n\nGeopolitical developments are adding uncertainty to the backdrop, with reports on Middle East diplomatic efforts and regional tensions affecting aviation. Qatar Airways' pivot to retirement and pilot deployment signals real operational strain from the Iran situation, while airlines' preemptive fee waivers ahead of the nor'easter show companies managing near-term demand risks. These structural headwinds in transportation haven't cascaded into broad equity weakness, but they reflect a cautious undertone.\n\nOn the positive side, a pharma stock's 150% surge on a Novo Nordisk injectables partnership shows dealmaking momentum remains alive in healthcare. Gold's resilience despite rising rate expectations underscores investor hedging behavior, even as the metal tracks toward a weekly loss. Overall, markets appear to be consolidating between competing forces: sticky yields, scattered geopolitical concerns, and pockets of M&A activity.",
+  "headline": "Equities edge higher as oil tensions overshadow steady open",
+  "deck": "Markets post modest gains despite geopolitical friction pushing crude prices higher and weighing on futures.",
+  "body": "The broader market kicked off the week in the green, with the S&P 500 climbing 0.54%, the Nasdaq up 0.46%, and the Dow outpacing both at 0.94%. The broad-based rally suggests investor appetite remains intact despite headline risks, though the divergence in sector performance hints at selective positioning ahead of what could be a volatile week.\n\nOil price spikes tied to Trump's rejection of Iran peace proposals are creating cross-currents for equities. Energy stocks like Tullow Oil are benefiting from higher crude, while the broader market faces headwinds from elevated fuel costs—with Wall Street futures already reflecting weakness as geopolitical tensions flare. The standoff between the US and Iran is adding uncertainty to an already complex macro backdrop.\n\nMeanwhile, the 10-year Treasury ticked up 7 basis points to 5.18%, signaling renewed inflation concerns and potentially limiting further gains in growth stocks. Supply shocks, from Qatar's delayed gas deliveries to Iran-linked disruptions, are reinforcing stagflationary risks that could keep momentum limited despite today's opening gains.",
   "sources": "CNBC, Reuters"
 }
