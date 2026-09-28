@@ -3,9 +3,14 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Long-term funding and dividend sustainability questioned amid rate pressure
-- $TTE: LNG growth thesis under scrutiny as project economics face higher discount rates
-- $CVX: Dividend comparison highlight; positioned amid geopolitical premium and rate headwinds
+- $XOM: Technical strength alignment with dividend yield appeal as rates hold firm
+- $CVX: Iran tensions and new analyst price target driving geopolitical oil premium
+
+## 2026-09-28
+**Energy Dividend Plays Gain Traction as Rates Hold Above 5 Percent**
+With the 10-year Treasury anchored near 5.18% and the broader market climbing modestly on a firm macro backdrop, income-focused energy and power names are attracting renewed attention from yield-conscious investors. The combination of elevated rates, a stable equity market, and geopolitical risk premiums around global oil supply—evidenced by HSBC's Chevron price target amid Iran tensions—is creating tailwinds for dividend aristocrats and stable cash-generative energy names. Analysts are actively highlighting dividend-yielding oil majors and nuclear operators as defensive positioning against economic uncertainty, a shift that reflects confidence in sector fundamentals despite the higher-for-longer rate environment.
+Tickers: $XOM, $CVX
+Sources: ChartMill, Yahoo, SeekingAlpha, CNBC
 
 ## 2026-09-25
 **Rising Rates Pressure Energy Capex and Long-Term Funding Strategy**
