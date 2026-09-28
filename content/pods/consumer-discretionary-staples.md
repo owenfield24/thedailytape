@@ -3,9 +3,17 @@ pod: Consumer Discretionary/Staples
 ---
 
 ## Watchlist
-- $HD: Gig delivery cost questions raise near-term profitability concerns amid rate headwinds
-- $WMT: Tariff refund strategy signals pricing power despite current economic slump
-- $COST: Emerging as preferred discretionary play relative to traditional retailers in high-rate regime
+- $HD: Trading 32% below all-time high; housing slowdown headwind amid elevated rates
+- $ULTA: Beauty retail battleground with Walmart; discretionary sensitivity in rate-sensitive environment
+- $KHC: Consumer staple facing margin pressure; proxy for inflation pass-through sustainability
+
+## 2026-09-28
+**Defensive Rotation Gains Traction as Rates Hold Near Cycle Highs**
+With the 10-year Treasury holding firm at 5.18% and equity market momentum decidedly modest across the board, consumer staples are outperforming discretionary as investors rotate toward stability. The weekly leadership of cost-conscious retailers like Costco, Dollar General, and Walmart reflects a classic defensive posture—households appear to be gravitating toward resilience over growth, a shift consistent with yield-sensitive sectors bracing for sustained higher rates. This sector-wide repricing suggests investors are pricing in a softer consumer backdrop rather than near-term rate relief.
+
+Monitor whether staple equities can sustain this relative outperformance if Treasury yields begin to compress, or if higher rates continue to pressure discretionary-tilted plays like Home Depot and beauty-focused retailers moving forward. Any data suggesting consumer spending stress—or conversely, signs of disinflation that could unlock Fed pivot expectations—will likely be the next inflection point for this sector's relative positioning.
+Tickers: $WMT, $COST, $DG
+Sources: Yahoo
 
 ## 2026-09-25
 **Rising Rates Pressure Consumer Discretionary; Staples Show Pricing Power**
