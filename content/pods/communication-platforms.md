@@ -3,9 +3,15 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: Trading at significant discount to SPY; AI monetization breadth being tested across products
-- $GOOGL: P/E of 17x vs SPY 25x; AI search transition volatility creating accumulation window
-- $BRK.B: Recent large-scale position building suggests institutional confidence in sector valuation floor
+- $META: Stock drops despite AI investments; monitors whether narrative reverses or continues weakening
+- $AMZN: AI capex positioned as accretive; key test of thesis that spending pays off near-term
+- $AAVE: Tokenized collateral expansion signals sector pivoting to alternative revenue models amid rate pressure
+
+## 2026-09-28
+**Higher Rates Test Platforms' AI Capex Bets and Growth Narratives**
+With the 10-year yield climbing to 5.18% and broad equities posting modest gains, the Communication & Platforms sector faces a familiar headwind: elevated borrowing costs are pressuring the narrative that justified outsized AI infrastructure spending. The sector's heavyweights—from cloud platforms ramping capex for AI to fintech and crypto protocols experimenting with tokenized collateral—are all implicitly betting on sustained growth to justify near-term margin compression. Today's tape shows that conviction is wavering; Meta's retreat despite "Muse" investment and selective weakness in Q3 AI gainers suggest investors are increasingly skeptical that AI spending will outpace the cost of capital without near-term earnings inflection.
+Tickers: $META, $AMZN, $AAVE
+Sources: ChartMill, Yahoo
 
 ## 2026-09-25
 **Rate-Sensitive Tech Platforms Find Value as Treasury Yields Stabilize**
