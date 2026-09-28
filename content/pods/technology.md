@@ -3,9 +3,17 @@ pod: Technology
 ---
 
 ## Watchlist
-- $META: Muse agent narrative rallying stock; key test of AI spend-to-value conversion thesis
-- $MSFT: Bearish thesis flagged today; AI spending sustainability questions need addressing
-- $AAPL: Quality candidate cited despite premium valuation; rate sensitivity in consumer tech watch
+- $NVDA: TSMC demand signals from Apple, Nvidia orders support near-term momentum
+- $AMZN: AI capex thesis under scrutiny; watch for guidance on cloud ROI expectations
+- $ORCL: Positioned to capture AI enterprise spending; Jefferies sees 51% upside
+
+## 2026-09-28
+**Tech Capex Surge Meets Rate Headwinds as AI Economics Face Scrutiny**
+With the 10-year yield climbing to 5.18% and broad equities showing modest gains, the tech sector is navigating a challenging backdrop for its AI-driven capex cycle. Higher rates compress returns on the massive infrastructure investments required for generative AI—a dynamic underscored by reports of softer near-term demand signals and growing skepticism about AI's economic ROI. Yet mega-cap tech names are doubling down on capex regardless, betting that scale and first-mover advantage will justify the near-term burn, even as regulatory and consumer headwinds (UK lawsuits, marketplace scrutiny) add friction to cash generation.
+
+Investors should watch whether the market begins to differentiate between near-term capex cycles and longer-term unit economics as rates hold elevated. Any further rise in Treasury yields could amplify pressure on names most reliant on balance sheet strength to fund AI buildouts, while any signal of demand acceleration in large language models or enterprise AI adoption could validate the bull thesis. The next 30 days will be critical for assessing whether Q3/Q4 guidance from mega-cap names supports a continuation of this capex narrative or forces a reset on AI ROI assumptions.
+Tickers: $AAPL, $NVDA, $AMZN
+Sources: Yahoo
 
 ## 2026-09-25
 **Tech Sector Caught Between AI Spending Euphoria and Rising Rate Headwinds**
