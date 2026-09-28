@@ -3,9 +3,16 @@ pod: Financials & Real Estate
 ---
 
 ## Watchlist
-- $JPM: Cash distribution announcements amid higher yield environment signal asset management priorities
-- $BAC: 1,000 apprentice hiring and $150M workforce investment indicate pivot toward competition for talent
-- $C: Competitive rate-push on client assets reflects deposit and AUM pressure in higher-rate regime
+- $JPM: Deposit trends and net interest margin management under higher-rate regime
+- $BAC: Trading 13% below highs; path to recovery hinges on rate stability through 2028
+
+## 2026-09-28
+**Rate Resilience Tests Financials as Treasury Yields Hold Near Multi-Year Highs**
+The 10-year Treasury's climb to 5.18% is keeping net interest margin conditions favorable for banks, but the stubborn level also signals persistent inflation concerns that could weigh on economic growth and borrower health. Today's modest equity rally across the market suggests investors are digesting this rate environment without panic, yet the sector headlines reveal underlying tension: major financial institutions are actively managing deposit flows and positioning for sustained higher rates, even as market breadth remains uneven. The rate backdrop is creating a bifurcated narrative where large-cap banks benefit from wider spreads, but valuation pressure and growth uncertainty linger.
+
+Investors should monitor whether this 5%+ Treasury regime persists through Q4 earnings season, as that will determine whether net interest income gains can offset softening loan demand and potential credit deterioration. Watch for any signals that deposit competition is intensifying or that banks are forced to pass through higher rates to corporate clients faster than expected, which could pressure forward guidance and validate the current cautious tone in bank equities despite near-term rate support.
+Tickers: $JPM, $BAC
+Sources: Yahoo, SeekingAlpha
 
 ## 2026-09-24
 **Higher Yields Pressure Financials As Rate Environment Tests Earnings**
