@@ -3,9 +3,17 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: Stock drops despite AI investments; monitors whether narrative reverses or continues weakening
-- $AMZN: AI capex positioned as accretive; key test of thesis that spending pays off near-term
-- $AAVE: Tokenized collateral expansion signals sector pivoting to alternative revenue models amid rate pressure
+- $META: Cited as potential buy or dip target; rate sensitivity and profitability under scrutiny
+- $GOOGL: Facing EU data-sharing appeals; regulatory risk amplified in higher-rate environment
+- $RDDT: Premarket strength despite sector headwinds; growth narrative being tested today
+
+## 2026-09-29
+**Tech Platforms Face Margin Pressure as Rate Backdrop Shifts Risk Calculus**
+With the 10-year yield holding firm at 5.17% and the Nasdaq underperforming broader indices (-1.07% vs. -0.74% for the S&P), growth-oriented Communication & Platforms names are repricing in an environment where higher financing costs and persistent discount rates compress valuations for companies dependent on future earnings. The sector's giants—from search and social to semiconductor enablers—are caught between defending near-term profitability against competitive pressures (friction-based moats eroding as AI agents proliferate) and justifying premium multiples in a higher-for-longer rate regime that favors near-term cash generation over speculative growth.
+
+Investors should monitor whether this yield stability forces a rotation within the sector toward cash-generative, lower-duration plays (META, GOOGL) or whether antitrust/regulatory headwinds (Google's EU appeals) and structural competitive threats (AI agent displacement of platform friction) begin to dominate price action. Watch for any signals that companies are pivoting capex or buyback timing in response to real financing cost pressures rather than temporary market volatility.
+Tickers: $META, $GOOGL, $NVDA
+Sources: Yahoo
 
 ## 2026-09-28
 **Higher Rates Test Platforms' AI Capex Bets and Growth Narratives**
