@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-28T13:06:19.534Z",
+  "asOf": "2026-09-29T13:06:17.032Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 771.35,
-      "changePercent": 0.5435
+      "value": 765.61,
+      "changePercent": -0.7441
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 517.49,
-      "changePercent": 0.9382
+      "value": 514.02,
+      "changePercent": -0.6705
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 744.5,
-      "changePercent": 0.4588
+      "value": 736.53,
+      "changePercent": -1.0705
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 5.18,
+    "value": 5.17,
     "unit": "%",
-    "changePercent": 0.07
+    "changePercent": -0.01
   },
-  "headline": "Equities edge higher as oil tensions overshadow steady open",
-  "deck": "Markets post modest gains despite geopolitical friction pushing crude prices higher and weighing on futures.",
-  "body": "The broader market kicked off the week in the green, with the S&P 500 climbing 0.54%, the Nasdaq up 0.46%, and the Dow outpacing both at 0.94%. The broad-based rally suggests investor appetite remains intact despite headline risks, though the divergence in sector performance hints at selective positioning ahead of what could be a volatile week.\n\nOil price spikes tied to Trump's rejection of Iran peace proposals are creating cross-currents for equities. Energy stocks like Tullow Oil are benefiting from higher crude, while the broader market faces headwinds from elevated fuel costs—with Wall Street futures already reflecting weakness as geopolitical tensions flare. The standoff between the US and Iran is adding uncertainty to an already complex macro backdrop.\n\nMeanwhile, the 10-year Treasury ticked up 7 basis points to 5.18%, signaling renewed inflation concerns and potentially limiting further gains in growth stocks. Supply shocks, from Qatar's delayed gas deliveries to Iran-linked disruptions, are reinforcing stagflationary risks that could keep momentum limited despite today's opening gains.",
+  "headline": "Markets slip as geopolitical tensions and bond uncertainty weigh",
+  "deck": "Broad equity declines across all three major indices reflect investor caution amid escalating international tensions and shifting interest rate expectations.",
+  "body": "Equities finished in the red across the board today, with the Nasdaq leading losses at 1.07% while the S&P 500 and Dow Jones fell 0.74% and 0.67% respectively. The widespread weakness suggests risk-off sentiment as geopolitical headlines continue to dominate headlines, from Iraq troop withdrawals and Iranian rhetoric to Middle East military operations and diplomatic tensions with the UK. Treasury yields remained relatively stable with the 10-year holding near 5.17%, offering little relief to equity investors already grappling with macro uncertainty.\n\nGeopolitical risk premiums appear to be weighing on market sentiment more than economic data today. Multiple developments spanning US military positioning in the Middle East, escalating US-Iran rhetoric, and an unspecified UK airbase incident have created a backdrop of uncertainty that typically pressures risk assets. The tension between diplomatic overtures and hostile statements from Tehran adds another layer of unpredictability for markets already pricing in persistent interest rate levels.\n\nOn the earnings and company-specific front, Alaska Airlines' premium cabin overhaul announcement offers a bright spot for investors focused on travel and hospitality sectors navigating a competitive landscape. However, isolated positive news appears insufficient to counter the broader headwinds from geopolitical concerns and investor anxiety around the \"new era of interest rates\" that bond markets are bracing for according to reporting. Watch for any policy shifts or de-escalation signals that could ease near-term market tension.",
   "sources": "CNBC, Reuters"
 }
