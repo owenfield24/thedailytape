@@ -3,8 +3,14 @@ pod: Financials & Real Estate
 ---
 
 ## Watchlist
-- $JPM: Deposit trends and net interest margin management under higher-rate regime
-- $BAC: Trading 13% below highs; path to recovery hinges on rate stability through 2028
+- $JPM: Central to sector narrative; deposit strategy and AI positioning both in focus today
+- $BAC: Rate-sensitive plays and quantum/tech exposure highlight bifurcated macro hedging strategy
+
+## 2026-09-29
+**Banking sector navigates flat rates while positioning for AI-driven growth**
+The 10-year Treasury holding steady near 5.17% amid a modestly negative market tone (S&P -0.74%, Nasdaq -1.07%) is creating a mixed backdrop for financials: deposit dynamics remain pressured without fresh rate tailwinds, yet mega-cap banks are actively pivoting toward capturing upside from emerging technology trends. The sector's largest players are clearly responding to this constraint by shifting focus—from traditional deposit strategies to alternative revenue streams like global asset management partnerships and AI-driven equity research positioning—signaling that neutral rates may force banks to compete harder on non-traditional fronts.
+Tickers: $JPM, $BAC
+Sources: Yahoo
 
 ## 2026-09-28
 **Rate Resilience Tests Financials as Treasury Yields Hold Near Multi-Year Highs**
