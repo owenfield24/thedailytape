@@ -3,9 +3,17 @@ pod: Industrial & Materials
 ---
 
 ## Watchlist
-- $ITRI: Software margin transition thesis plays well into higher-rate environment
-- $AESI: AI power infrastructure demand positioned to offset rate-driven capex headwinds
-- $VMI: 2029 EPS guidance visibility tests market's appetite for utility infrastructure capex
+- $CAT: Data center backlog commentary suggests demand resilience despite rate headwinds
+- $VALM: $35 EPS 2029 target hinges on utility infrastructure cycle; margin sustainability key
+- $GE: Aerospace margin compression amid growth push signals broader industrial pricing pressure
+
+## 2026-09-29
+**Rising Rates Pressure Industrial Capex, but Infrastructure Demand Offsets Weakness**
+With the 10-year yield holding firm at 5.17% and broad equity weakness across all three major indices, capital-intensive industrials face a familiar headwind: higher borrowing costs for projects and equipment. Yet the sector is showing resilience where it matters most. Infrastructure-focused names are benefiting from structural tailwinds—data center buildouts, utility modernization, and energy-efficiency mandates are offsetting macro softness, as evidenced by CAT's $72B backlog commentary and Valmont's ambitious 2029 EPS targets tied to utility infrastructure booms.
+
+The divergence between rate-sensitive industrials and those riding secular infrastructure/AI trends will likely widen if yields remain elevated. Watch for Q3 earnings calls to parse whether companies are maintaining margins amid higher financing costs or sacrificing profitability for revenue growth—GE Aerospace's margin-versus-growth trade-off is a canary in the coal mine. Equally important: any signs that tariff-driven supply chain reshuffling (evidenced in phase-change materials and semiconductor manufacturing) is forcing capex reallocation away from traditional industrial equipment toward automation and edge processing.
+Tickers: $CAT, $VALM, $GE
+Sources: Yahoo, SeekingAlpha
 
 ## 2026-09-28
 **Rising Yields Reshape Capital Intensity Across Industrial and Infrastructure**
