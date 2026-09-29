@@ -3,8 +3,15 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Technical strength alignment with dividend yield appeal as rates hold firm
-- $CVX: Iran tensions and new analyst price target driving geopolitical oil premium
+- $XOM: Balance sheet strength and cash flow growth story amid sticky rates
+- $CVX: Vietnam energy agreement signals strategic capital deployment confidence
+- $CRIP: Trading higher today; proxy for whether sector momentum sustains
+
+## 2026-09-29
+**Energy Majors Capitalize as Rate Environment Stabilizes Near Highs**
+With the 10-year yield holding firm at 5.17% and broad equities under pressure (S&P 500 -0.74%, Nasdaq -1.07%), the energy sector is displaying relative resilience as a cash-generative, less rate-sensitive alternative to growth names. The headlines paint a picture of strengthening fundamentals: oil majors are entering 2027 with their strongest balance sheets in years, XOM is seeing cash flow growth unlock value even at modest valuations, and integrated producers are actively deploying capital on geopolitical opportunities like Chevron's Vietnam deal. In a higher-for-longer rate environment, energy's combination of near-term cash yield and capital discipline is proving attractive versus rate-sensitive infrastructure or utilities.
+Tickers: $XOM, $CVX, $IMO
+Sources: Yahoo, SeekingAlpha
 
 ## 2026-09-28
 **Energy Dividend Plays Gain Traction as Rates Hold Above 5 Percent**
