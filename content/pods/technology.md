@@ -3,9 +3,15 @@ pod: Technology
 ---
 
 ## Watchlist
-- $NVDA: TSMC demand signals from Apple, Nvidia orders support near-term momentum
-- $AMZN: AI capex thesis under scrutiny; watch for guidance on cloud ROI expectations
-- $ORCL: Positioned to capture AI enterprise spending; Jefferies sees 51% upside
+- $AAPL: New CEO signaling cost structure overhaul; margin story critical in elevated rate regime
+- $NVDA: AI capex cycle commentary clash with efficiency pressure; monitor guidance for margin implications
+- $QCOM: Positioned as operational efficiency play versus higher-growth peers; relative valuation shift watch
+
+## 2026-09-30
+**Tech Sector Pivots to Operational Efficiency as Rate Backdrop Pressures Valuations**
+With the 10-year yield climbing to 5.24% and the Nasdaq barely holding positive ground, technology investors are recalibrating around cash flow and margin discipline rather than pure growth narratives. The sector's mega-cap heavyweights—which now command concentrated positions in passive vehicles—are signaling structural cost controls and operational rightsizing, a telling shift when capital is no longer cheap. Leadership is tightening organizational structures and prioritizing near-term execution over expansion, a defensive posture that suggests the market is pricing in a sustained higher-for-longer rate environment.
+Tickers: $AAPL, $NVDA, $QCOM
+Sources: Yahoo
 
 ## 2026-09-28
 **Tech Capex Surge Meets Rate Headwinds as AI Economics Face Scrutiny**
