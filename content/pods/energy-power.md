@@ -3,9 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Balance sheet strength and cash flow growth story amid sticky rates
-- $CVX: Vietnam energy agreement signals strategic capital deployment confidence
-- $CRIP: Trading higher today; proxy for whether sector momentum sustains
+- $XOM: Facing Kazakhstan fine exposure; valuation scrutiny amid rising rates
+- $RDSA: Directly exposed to $5.2B Kazakhstan fine alongside TotalEnergies and ExxonMobil
+- $TTE: Co-defendant in Kazakhstan fine; test of capital discipline under rate pressure
+
+## 2026-09-30
+**Rising Rates Pressuring Energy Majors Amid Geopolitical and Regulatory Headwinds**
+The 10-year Treasury climbing to 5.24% is creating a dual squeeze on the energy sector: higher discount rates crimp the present value of long-cycle capex projects, while elevated debt servicing costs weigh on cash generation for supermajors managing massive transition investments. This backdrop is amplifying sector vulnerability to regulatory and geopolitical shocks—witness the $5.2B Kazakhstan fine facing Shell, TotalEnergies, and ExxonMobil, along with UK refinery shutdowns that signal tightening margins in downstream operations. With the broader market flat and risk sentiment cautious, energy equities are caught between the pull of higher yields (which can make dividend stocks attractive) and the push of rising funding costs that threaten long-term project returns.
+
+Investors should monitor whether the energy sector can maintain resilience if Treasury yields stabilize here or move higher, as another 25-50bps of yield expansion could force repricing of capital-intensive names. Watch for upstream producers to accelerate cash returns and defer sanctioning of marginal projects, and track refiner margins as supply tightness competes with demand signals from a slowing macro backdrop. Any material shift in inflation expectations or Fed rate guidance will reset the valuation floor for both integrated majors and smaller exploration players.
+Tickers: $XOM, $RDSA, $TTE
+Sources: Yahoo, ChartMill
 
 ## 2026-09-29
 **Energy Majors Capitalize as Rate Environment Stabilizes Near Highs**
