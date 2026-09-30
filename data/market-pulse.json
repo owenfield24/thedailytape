@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-29T13:06:17.032Z",
+  "asOf": "2026-09-30T13:06:17.509Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 765.61,
-      "changePercent": -0.7441
+      "value": 764.2,
+      "changePercent": -0.1842
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 514.02,
-      "changePercent": -0.6705
+      "value": 512.88,
+      "changePercent": -0.2218
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 736.53,
-      "changePercent": -1.0705
+      "value": 737.93,
+      "changePercent": 0.1901
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 5.17,
+    "value": 5.24,
     "unit": "%",
-    "changePercent": -0.01
+    "changePercent": 0.07
   },
-  "headline": "Markets slip as geopolitical tensions and bond uncertainty weigh",
-  "deck": "Broad equity declines across all three major indices reflect investor caution amid escalating international tensions and shifting interest rate expectations.",
-  "body": "Equities finished in the red across the board today, with the Nasdaq leading losses at 1.07% while the S&P 500 and Dow Jones fell 0.74% and 0.67% respectively. The widespread weakness suggests risk-off sentiment as geopolitical headlines continue to dominate headlines, from Iraq troop withdrawals and Iranian rhetoric to Middle East military operations and diplomatic tensions with the UK. Treasury yields remained relatively stable with the 10-year holding near 5.17%, offering little relief to equity investors already grappling with macro uncertainty.\n\nGeopolitical risk premiums appear to be weighing on market sentiment more than economic data today. Multiple developments spanning US military positioning in the Middle East, escalating US-Iran rhetoric, and an unspecified UK airbase incident have created a backdrop of uncertainty that typically pressures risk assets. The tension between diplomatic overtures and hostile statements from Tehran adds another layer of unpredictability for markets already pricing in persistent interest rate levels.\n\nOn the earnings and company-specific front, Alaska Airlines' premium cabin overhaul announcement offers a bright spot for investors focused on travel and hospitality sectors navigating a competitive landscape. However, isolated positive news appears insufficient to counter the broader headwinds from geopolitical concerns and investor anxiety around the \"new era of interest rates\" that bond markets are bracing for according to reporting. Watch for any policy shifts or de-escalation signals that could ease near-term market tension.",
+  "headline": "Mixed signals as tech gains ground while bonds rise",
+  "deck": "Nasdaq edges higher while equities broadly tread water as Treasury yields climb on retail strength expectations.",
+  "body": "U.S. markets remained largely flat today, with the Nasdaq's modest 0.19% gain offsetting declines in the S&P 500 and Dow Jones, reflecting a flight to growth amid broader uncertainty. The 10-year Treasury yield climbed 7 basis points to 5.24%, suggesting investors are pricing in sustained economic resilience—particularly as holiday retail sales are expected to exceed $1 trillion, indicating inflation-driven consumer spending remains robust. This bond market repricing could pressure equity valuations heading into year-end.\n\nCorporate newsflow provided mixed catalysts with little clear market impact. Mattel's CEO transition to Roger Lynch and Micron's after-hours earnings report drew investor attention, though these represent routine corporate events. Meanwhile, geopolitical developments—including the flydubai incident, U.S. military withdrawal from Iraq, and Iran's ongoing negotiations with Washington—dominated headlines but appear to have registered as background noise for equity traders today.\n\nThe tepid market action suggests investors are digesting conflicting signals: strong consumer spending and tech momentum versus rising yields and geopolitical tension. With earnings season ongoing and Treasury yields climbing, traders appear to be waiting for clearer conviction before making larger moves, leaving indices in a holding pattern.",
   "sources": "CNBC, Reuters"
 }
