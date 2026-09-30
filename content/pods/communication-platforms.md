@@ -3,9 +3,17 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: Cited as potential buy or dip target; rate sensitivity and profitability under scrutiny
-- $GOOGL: Facing EU data-sharing appeals; regulatory risk amplified in higher-rate environment
-- $RDDT: Premarket strength despite sector headwinds; growth narrative being tested today
+- $META: Up 25% in September amid AI capex cycle; tax strategy signals confidence in long-term data center ROI
+- $NVDA: CEO commentary on 1M job creation from data centers frames capex as macro stimulus, not discretionary
+- $GOOGL: Expanding enterprise AI integrations and White House accord participation suggest sustained infrastructure demand
+
+## 2026-09-30
+**AI Infrastructure Boom Shelters Comms Sector From Rate Headwinds**
+With the 10-year yield climbing to 5.24% and broad market sentiment mixed, traditional rate-sensitive communication stocks face headwinds—yet mega-cap platform and chip names are shrugging off the rise, driven by institutional conviction in AI capex cycles that now appear recession-resistant. The sector's narrative has decisively shifted from profitability concerns to productive asset deployment: executives across Meta, Nvidia, Google, and OpenAI are publicly coordinating on infrastructure buildout, tax optimization for data centers, and regulatory alignment, signaling that the Fed's higher-for-longer regime is being priced as a catalyst rather than a constraint for this cohort.
+
+Investors should monitor whether this AI-driven repricing holds as real rates stabilize, or whether a fresh leg higher in yields begins to differentiate capex-heavy infrastructure players from ad-driven revenue models. Watch also for any signs that the coordinated government engagement (White House accord on superintelligence) translates into policy tailwinds—or regulatory friction—that could reset valuation multiples across the sector's winners and laggards.
+Tickers: $META, $NVDA, $GOOGL
+Sources: Yahoo
 
 ## 2026-09-29
 **Tech Platforms Face Margin Pressure as Rate Backdrop Shifts Risk Calculus**
