@@ -3,9 +3,17 @@ pod: Industrial & Materials
 ---
 
 ## Watchlist
-- $CAT: Data center backlog commentary suggests demand resilience despite rate headwinds
-- $VALM: $35 EPS 2029 target hinges on utility infrastructure cycle; margin sustainability key
-- $GE: Aerospace margin compression amid growth push signals broader industrial pricing pressure
+- $CAT: Valuation debate ongoing; watch if rate environment reshapes capex demand thesis
+- $HON: Refinery project acceleration signals energy infrastructure tailwinds offsetting macro headwinds
+- $GE: Margins vs. growth tradeoff under scrutiny; rate sensitivity differs across segments
+
+## 2026-09-30
+**Rising Rates Pressure Industrial Capex Cycle as Valuations Face Headwinds**
+The 10-year yield's climb to 5.24% is creating crosswinds for Industrial & Materials stocks, which depend on corporate and infrastructure capex to drive demand. While data-center infrastructure buildout and energy projects (evident in Honeywell's refinery accelerator deal) are offsetting some cyclical weakness, the broader market's flat tone—SPY down 0.18%, DIA down 0.22%—signals investor caution on rate-sensitive investments. Elevated yields are raising the hurdle rate for long-cycle industrial projects, potentially dampening near-term order momentum even as mega-projects like hyperscale data centers proceed.
+
+Investors should monitor whether the recent enthusiasm around AI-driven power demand for equipment makers (Caterpillar's 75% YTD surge, now debated as "reasonably priced") can sustain if Treasury yields stabilize above 5.2%. Watch for guidance resets or margin-growth tradeoffs in upcoming earnings calls, particularly from diversified industrials where capex sensitivity varies by end market. A continued rise in real rates could force a repricing of high-valuation names already pricing in multi-year capex cycles.
+Tickers: $CAT, $HON, $GE
+Sources: Yahoo, ChartMill
 
 ## 2026-09-29
 **Rising Rates Pressure Industrial Capex, but Infrastructure Demand Offsets Weakness**
