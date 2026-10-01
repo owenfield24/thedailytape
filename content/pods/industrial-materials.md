@@ -3,9 +3,15 @@ pod: Industrial & Materials
 ---
 
 ## Watchlist
-- $CAT: Valuation debate ongoing; watch if rate environment reshapes capex demand thesis
-- $HON: Refinery project acceleration signals energy infrastructure tailwinds offsetting macro headwinds
-- $GE: Margins vs. growth tradeoff under scrutiny; rate sensitivity differs across segments
+- $CAT: Announced $1B North Carolina plant expansion; bellwether for sector capex sentiment
+- $ROCK: Named in smart manufacturing growth forecast; positioned for automation wave
+- $SNPS: Indirect play on ICS security growth; semiconductor demand from industrial automation
+
+## 2026-10-01
+**Industrial capex surges as power demand fuels manufacturing expansion**
+With the 10-year yield holding firm at 5.26% and broader equities mixed, industrial companies are pushing forward on major capacity investments despite elevated borrowing costs. The smart manufacturing market is projected to nearly double from $233B to $479B by 2029, while industrial control system security is set to grow from $18B to $38B by 2031—signaling that end-users view infrastructure modernization and automation as essential enough to justify capital deployment in a higher-rate environment. This spending impulse reflects confidence that operational efficiency gains and AI-driven demand for power infrastructure will outpace financing headwinds.
+Tickers: $CAT, $ROCK, $ABB
+Sources: Yahoo, ChartMill
 
 ## 2026-09-30
 **Rising Rates Pressure Industrial Capex Cycle as Valuations Face Headwinds**
