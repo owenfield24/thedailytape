@@ -3,9 +3,16 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Facing Kazakhstan fine exposure; valuation scrutiny amid rising rates
-- $RDSA: Directly exposed to $5.2B Kazakhstan fine alongside TotalEnergies and ExxonMobil
-- $TTE: Co-defendant in Kazakhstan fine; test of capital discipline under rate pressure
+- $CVX: 3Q 2026 earnings conference call scheduled; guidance on capex and returns critical in high-rate environment
+- $XOM: Diesel strength and refining margins offer near-term support; watch for margin sustainability as demand softens
+
+## 2026-10-01
+**Energy Sector Resilience Tested as Rates Hold Firm, Demand Signals Mixed**
+With the 10-year yield holding elevated at 5.26% and broader equities showing weakness across the Dow, the energy sector faces competing currents: higher financing costs pressure capital-intensive projects and valuations, yet commodity-linked names benefit from structural support tied to supply constraints and geopolitical risk. Recent chatter around diesel surges, strategic reserve depletion, and trade leverage over energy-adjacent sectors suggests markets are pricing in persistent inflation and tighter physical supply, even as macro growth signals soften internationally—a backdrop that typically anchors energy stocks despite rate headwinds.
+
+Investors should monitor whether the Fed's next move on rates accelerates or pauses, as sustained 5%+ yields could further de-rate long-cycle capex plays while benefiting cash-generative producers with quick payback profiles. Watch earnings season (Chevron's 3Q call is forthcoming) for management commentary on project ROI thresholds and dividend sustainability; if rates climb further or equities roll over, even historically defensive energy names could face multiple compression despite commodity resilience.
+Tickers: $XOM, $CVX
+Sources: Yahoo
 
 ## 2026-09-30
 **Rising Rates Pressuring Energy Majors Amid Geopolitical and Regulatory Headwinds**
