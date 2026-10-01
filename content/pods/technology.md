@@ -3,9 +3,17 @@ pod: Technology
 ---
 
 ## Watchlist
-- $AAPL: New CEO signaling cost structure overhaul; margin story critical in elevated rate regime
-- $NVDA: AI capex cycle commentary clash with efficiency pressure; monitor guidance for margin implications
-- $QCOM: Positioned as operational efficiency play versus higher-growth peers; relative valuation shift watch
+- $TSMC: Multibillion Texas expansion signals capex confidence despite rate backdrop
+- $MSFT: Best quarter since 1998 highlights AI-driven growth offsetting rate headwinds
+- $MU: Earnings beat and raised guidance; bellwether for demand amid rate uncertainty
+
+## 2026-10-01
+**Tech Sector Resilience Tested as Rates Hold Firm Amid Inflation Signals**
+The Nasdaq's modest outperformance today masks underlying tension in the Technology sector as the 10-year Treasury holds near 5.26%, signaling that rate-cut expectations remain subdued despite softer inflation rhetoric. With the Dow underperforming and the S&P 500 barely moving, investors are rotating selectively within Tech—favoring mega-cap AI beneficiaries and capital-intensive hardware plays (TSMC expanding Texas capacity, Micron beating estimates) while broader growth names face headwinds from persistent yields. The sector's relative strength appears concentrated in companies with secular tailwinds strong enough to overcome rising financing costs.
+
+Watch whether today's Treasury stability holds or yields begin climbing further—any move higher would pressure valuation multiples across the sector, particularly in software and less-profitable growth names. Conversely, if inflation data truly softens and the Fed pauses, Technology could see a significant re-rating, but that requires tangible macro confirmation beyond this morning's mixed signals. The real test will be whether capital expenditure guidance from semis and cloud infrastructure players signals companies are confident enough in growth to spend through a higher-rate regime.
+Tickers: $TSMC, $INTC, $MSFT
+Sources: Yahoo, ChartMill
 
 ## 2026-09-30
 **Tech Sector Pivots to Operational Efficiency as Rate Backdrop Pressures Valuations**
