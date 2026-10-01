@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-09-30T13:06:17.509Z",
+  "asOf": "2026-10-01T13:06:18.250Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 764.2,
-      "changePercent": -0.1842
+      "value": 762.63,
+      "changePercent": -0.2054
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 512.88,
-      "changePercent": -0.2218
+      "value": 508.55,
+      "changePercent": -0.8443
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 737.93,
-      "changePercent": 0.1901
+      "value": 739.77,
+      "changePercent": 0.2493
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 5.24,
+    "value": 5.26,
     "unit": "%",
-    "changePercent": 0.07
+    "changePercent": 0.02
   },
-  "headline": "Mixed signals as tech gains ground while bonds rise",
-  "deck": "Nasdaq edges higher while equities broadly tread water as Treasury yields climb on retail strength expectations.",
-  "body": "U.S. markets remained largely flat today, with the Nasdaq's modest 0.19% gain offsetting declines in the S&P 500 and Dow Jones, reflecting a flight to growth amid broader uncertainty. The 10-year Treasury yield climbed 7 basis points to 5.24%, suggesting investors are pricing in sustained economic resilience—particularly as holiday retail sales are expected to exceed $1 trillion, indicating inflation-driven consumer spending remains robust. This bond market repricing could pressure equity valuations heading into year-end.\n\nCorporate newsflow provided mixed catalysts with little clear market impact. Mattel's CEO transition to Roger Lynch and Micron's after-hours earnings report drew investor attention, though these represent routine corporate events. Meanwhile, geopolitical developments—including the flydubai incident, U.S. military withdrawal from Iraq, and Iran's ongoing negotiations with Washington—dominated headlines but appear to have registered as background noise for equity traders today.\n\nThe tepid market action suggests investors are digesting conflicting signals: strong consumer spending and tech momentum versus rising yields and geopolitical tension. With earnings season ongoing and Treasury yields climbing, traders appear to be waiting for clearer conviction before making larger moves, leaving indices in a holding pattern.",
-  "sources": "CNBC, Reuters"
+  "headline": "Mixed signals as geopolitical tensions weigh on markets",
+  "deck": "Equity markets struggle with Middle East risks and UK gilt volatility while tech stocks find modest support.",
+  "body": "U.S. equities opened with mixed momentum as geopolitical tensions dominate the headline risk. The S&P 500 and Dow both posted modest declines—down 0.21% and 0.84% respectively—while the Nasdaq managed a slight gain of 0.25%, suggesting defensive positioning in large-cap tech. Escalating risks across the Middle East, including tanker attacks in the Hormuz Strait, Israeli-Hamas tensions, and Iranian retaliation threats, are creating headwinds for broad equity sentiment and likely supporting the 5.26% 10-year Treasury yield.\n\nBond markets are telling a particularly sharp story. UK 30-year gilt yields breached 6% for the first time since 1998, signaling investor concern about fiscal sustainability and inflation persistence abroad. This development could pressure U.S. Treasuries and reinforce expectations around interest rate policy, especially as Japan's prime minister signals efforts to support the yen after previous U.S. intervention fell short. These cross-border yield movements suggest capital is pricing in a more hawkish global environment.\n\nOn the positive side, SpaceX's push into space-based data centers with Google AI chips and the Nasdaq's resilience point to sustained interest in growth and innovation themes. However, the predominance of geopolitical headlines and bond market stress indicates investors are treading cautiously, with risk-off sentiment offsetting optimism in select sectors. Expect continued volatility if Middle East developments escalate further.",
+  "sources": "Reuters, CNBC"
 }
