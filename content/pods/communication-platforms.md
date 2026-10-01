@@ -3,9 +3,17 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: Up 25% in September amid AI capex cycle; tax strategy signals confidence in long-term data center ROI
-- $NVDA: CEO commentary on 1M job creation from data centers frames capex as macro stimulus, not discretionary
-- $GOOGL: Expanding enterprise AI integrations and White House accord participation suggest sustained infrastructure demand
+- $META: AI capex thesis tested; market watching for revenue payoff credibility
+- $GOOG: Gemini 4 positioning against rivals; AI ROI narrative under scrutiny
+- $VST: Power infrastructure play; leveraged to AI buildout thesis; rate-sensitive valuation
+
+## 2026-10-01
+**Rate-Sensitive Tech Platforms Face Funding Pressure Amid Sticky Yields**
+With the 10-year Treasury holding firm at 5.26% and the Nasdaq eking out modest gains despite broader market weakness, capital-intensive communication and platform names are caught in a structural squeeze. The sector's heaviest investors—those betting on AI infrastructure buildouts and long-duration cash flow stories—face rising hurdle rates just as absolute borrowing costs remain elevated. This backdrop is forcing a reckoning: companies with near-term revenue translation from capex (like Meta's emerging AI revenue streams) are attracting capital, while pure-play infrastructure or high-leverage plays face valuation pressure and refinancing headwinds.
+
+Watch for divergence to widen as earnings seasons progresses and management teams signal capex discipline versus continued spending appetite. If yields tick higher or broader rate expectations shift, expect a rotation away from companies requiring extended runway to profitability toward those demonstrating near-term monetization of their infrastructure bets. The market's tone—mixed equity flows, defensive index weakness—suggests investors will increasingly penalize patient-capital stories in favor of those with visible returns on marginal capex.
+Tickers: $META, $GOOG, $VST
+Sources: Yahoo
 
 ## 2026-09-30
 **AI Infrastructure Boom Shelters Comms Sector From Rate Headwinds**
