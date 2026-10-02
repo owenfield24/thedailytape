@@ -3,8 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $CVX: 3Q 2026 earnings conference call scheduled; guidance on capex and returns critical in high-rate environment
-- $XOM: Diesel strength and refining margins offer near-term support; watch for margin sustainability as demand softens
+- $MPC: Refiner outperformance theme; up 5% as spreads widen
+- $VLO: Refiner outperformance theme; up 4% as spreads widen
+- $XOM: Integrated major underperforming refiners; capital return focus near-term
+
+## 2026-10-02
+**Refiners Outpace Integrated Majors as Oil Holds Above $100**
+With Brent crude back above $100/barrel on geopolitical supply concerns and the 10-year yield holding firm at 5.29%, energy equities are bifurcating sharply along the value chain. Refiners—which benefit from crude price strength without the upstream cyclicality—are gaining ground against integrated majors like ExxonMobil, which remain anchored by capital return expectations and dividend sustainability concerns at elevated rates. The sector's resilience despite flat-to-modest broad market gains suggests energy is holding its defensive/commodity-driven appeal in a rate-sticky environment.
+
+Investors should monitor whether the geopolitical premium in oil persists and how it shifts the downstream/upstream return calculus; sustained $100+ crude may eventually favor exploration-heavy names like Devon Energy over refiners, but near-term the carry trade favors simpler, cash-generative refining margins. Watch the 10-year closely—any meaningful yield decline could trigger rotation back into capital-intensive upstream projects, while a further rise would cement the refiner outperformance story.
+Tickers: $MPC, $VLO, $XOM
+Sources: Yahoo, SeekingAlpha
 
 ## 2026-10-01
 **Energy Sector Resilience Tested as Rates Hold Firm, Demand Signals Mixed**
