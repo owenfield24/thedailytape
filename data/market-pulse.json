@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-10-01T13:06:18.250Z",
+  "asOf": "2026-10-02T13:06:16.611Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 762.63,
-      "changePercent": -0.2054
+      "value": 763.99,
+      "changePercent": 0.1783
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 508.55,
-      "changePercent": -0.8443
+      "value": 508.62,
+      "changePercent": 0.0138
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 739.77,
-      "changePercent": 0.2493
+      "value": 742.03,
+      "changePercent": 0.3055
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 5.26,
+    "value": 5.29,
     "unit": "%",
-    "changePercent": 0.02
+    "changePercent": 0.03
   },
-  "headline": "Mixed signals as geopolitical tensions weigh on markets",
-  "deck": "Equity markets struggle with Middle East risks and UK gilt volatility while tech stocks find modest support.",
-  "body": "U.S. equities opened with mixed momentum as geopolitical tensions dominate the headline risk. The S&P 500 and Dow both posted modest declines—down 0.21% and 0.84% respectively—while the Nasdaq managed a slight gain of 0.25%, suggesting defensive positioning in large-cap tech. Escalating risks across the Middle East, including tanker attacks in the Hormuz Strait, Israeli-Hamas tensions, and Iranian retaliation threats, are creating headwinds for broad equity sentiment and likely supporting the 5.26% 10-year Treasury yield.\n\nBond markets are telling a particularly sharp story. UK 30-year gilt yields breached 6% for the first time since 1998, signaling investor concern about fiscal sustainability and inflation persistence abroad. This development could pressure U.S. Treasuries and reinforce expectations around interest rate policy, especially as Japan's prime minister signals efforts to support the yen after previous U.S. intervention fell short. These cross-border yield movements suggest capital is pricing in a more hawkish global environment.\n\nOn the positive side, SpaceX's push into space-based data centers with Google AI chips and the Nasdaq's resilience point to sustained interest in growth and innovation themes. However, the predominance of geopolitical headlines and bond market stress indicates investors are treading cautiously, with risk-off sentiment offsetting optimism in select sectors. Expect continued volatility if Middle East developments escalate further.",
+  "headline": "Tech leads modest gains as energy markets absorb geopolitical shifts",
+  "deck": "Markets inch higher on thin volume as Middle East tensions and energy supply disruptions keep investors cautious ahead of the jobs report.",
+  "body": "The market posted a subdued performance today, with the Nasdaq outpacing the S&P 500 and Dow as tech stocks found modest footing while broader indices barely moved. Treasury yields edged higher to 5.29%, reflecting investor positioning ahead of the critical September jobs data that could influence Federal Reserve policy. The mixed momentum—strength in growth stocks offset by weakness in cyclicals—suggests investors are weighing multiple competing narratives about economic resilience.\n\nGeopolitical developments in the Middle East and oil markets dominated the news flow, creating cross-currents in energy and macro sentiment. OPEC+ delayed its oil capacity review following Iran-related disruptions, while reports of potential European diesel releases and record LNG shipments through Hormuz signal supply flexibility despite regional tensions. These developments may be supporting energy markets without yet triggering the broader inflation concerns that would typically derail equities.\n\nWith the jobs report looming and bond market technicals showing potential stabilization signals, investors appear to be taking a wait-and-see posture rather than making aggressive directional bets. The muted moves in the Dow and S&P 500 suggest caution is winning the day, even as the tech-heavy Nasdaq shows slightly more conviction. Energy stocks remain a key pivot point between geopolitical risk and market resilience narratives.",
   "sources": "Reuters, CNBC"
 }
