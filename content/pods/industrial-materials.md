@@ -3,9 +3,17 @@ pod: Industrial & Materials
 ---
 
 ## Watchlist
-- $CAT: Announced $1B North Carolina plant expansion; bellwether for sector capex sentiment
-- $ROCK: Named in smart manufacturing growth forecast; positioned for automation wave
-- $SNPS: Indirect play on ICS security growth; semiconductor demand from industrial automation
+- $CAT: Announced $1B Sanford manufacturing investment; tracking capex appetite in high-rate regime
+- $HON: Outpacing market; featured in smart HVAC controls outlook as efficiency-play beneficiary
+- $GE: GE Aerospace coverage spike suggests investor reassessment; monitor for rate-sensitive guidance
+
+## 2026-10-02
+**Industrial capex momentum persists despite sticky rates and subdued equity tone**
+With the 10-year yield holding firm at 5.29% and broad equities treading water—the S&P up just 0.18% and the Dow essentially flat—the industrial and materials sector is showing surprising resilience through forward-looking capital deployment. Equipment manufacturers and building systems players are announcing major manufacturing investments and expansions, suggesting corporate confidence in end-market demand remains intact even as higher financing costs weigh on the broader market. This divergence hints that industrial companies are willing to lock in growth now rather than wait for a rate cut, betting on sustained infrastructure and equipment demand despite macro uncertainty.
+
+Investors should monitor whether this capex momentum can persist if rates remain elevated or climb further, and watch for any softening in guidance tied to financing headwinds or end-market weakness. Additionally, track whether smart building and HVAC control upgrades—positioned as efficiency plays in a high-rate environment—continue to gain traction as a way for end-users to offset higher borrowing costs through operational savings.
+Tickers: $CAT, $HON, $CARR
+Sources: Yahoo, ChartMill
 
 ## 2026-10-01
 **Industrial capex surges as power demand fuels manufacturing expansion**
