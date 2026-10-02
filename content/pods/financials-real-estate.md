@@ -3,9 +3,15 @@ pod: Financials & Real Estate
 ---
 
 ## Watchlist
-- $JPM: Dimon trade pact proposal signals macro positioning; Europe vs US growth thesis in play
-- $BAC: Paylocity upgrade reflects confidence in fintech models under sustained higher rates
-- $BK: Nordnet coverage split suggests platform consolidation risk in rate-sensitive European markets
+- $JPM: M&A chief retiring after 30 years; signals potential shift in dealmaking posture
+- $NOAH: JPMorgan target cut reflects analyst repricing amid higher rates and volatility
+- $STAN: Fair value lift from analyst targets suggests selective opportunities in international banking
+
+## 2026-10-02
+**Rising Rates Pressure Valuations Across Financials and Real Estate**
+The 10-year Treasury's climb to 5.29% is creating a dual headwind for the Financials & Real Estate sector: while net interest margins may benefit banks' core lending spreads, higher discount rates are compressing valuations across the board, as evidenced by analyst downgrades flowing through wealth managers and specialty financials. The modest broad-market rally masks underlying caution—Wall Street strategists are bracing for greater volatility and risk-off positioning, which typically pressures rate-sensitive real estate and depresses M&A advisory fees at major investment banks.
+Tickers: $JPM, $NOAH
+Sources: Yahoo
 
 ## 2026-09-30
 **Financials Navigate Rate Plateau as Growth Strategies Diverge Globally**
