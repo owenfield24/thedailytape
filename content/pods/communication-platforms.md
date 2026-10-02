@@ -3,9 +3,15 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: AI capex thesis tested; market watching for revenue payoff credibility
-- $GOOG: Gemini 4 positioning against rivals; AI ROI narrative under scrutiny
-- $VST: Power infrastructure play; leveraged to AI buildout thesis; rate-sensitive valuation
+- $NVDA: Taking victory lap on chip durability; sentiment barometer for AI infrastructure durability
+- $GOOGL: Anthropic IPO beneficiary thesis; watch for capex guidance amid higher funding costs
+- $MRVL: Custom AI silicon deals with hyperscalers; proxy for diversification away from Nvidia monopoly
+
+## 2026-10-02
+**AI capex race fuels platform valuations despite rising rate headwinds**
+With the 10-year yield holding steady near 5.29% and broad market momentum muted across equities, Communication & Platforms names are trading on the durability of hyperscaler AI spending rather than multiple expansion. The sector's narrative has shifted decisively toward custom silicon partnerships, proprietary model IP, and infrastructure capacity commitments—evidence that investors are pricing in a structural, capex-driven demand cycle that can withstand higher rates. Accenture's recent beat and Nike's caution suggest selective strength among those capturing AI monetization, while weaker breadth elsewhere implies rate sensitivity is still a real undercurrent.
+Tickers: $NVDA, $GOOGL, $AMZN
+Sources: Yahoo, ChartMill
 
 ## 2026-10-01
 **Rate-Sensitive Tech Platforms Face Funding Pressure Amid Sticky Yields**
