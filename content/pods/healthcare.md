@@ -3,9 +3,15 @@ pod: Healthcare
 ---
 
 ## Watchlist
-- $UNH: Underperforming broader market; faces litigation headwind and rate sensitivity
-- $JNJ: Defensive dividend play gaining traction as rates hold elevated
-- $MDT: Long-term dividend consideration in rate-constrained healthcare environment
+- $UNH: Rolling out 2027 Medicare plans with zero premiums and copays; signals aggressive pricing in rate-sensitive segment
+- $CVS: Subject of downside analysis today; integrated payer model under pressure in higher-rate regime
+- $ISRG: Valuation scrutiny versus peers as capital costs rise; watch for margin compression signals
+
+## 2026-10-02
+**Healthcare Navigates Rate Headwinds While Insurers Compete on Affordability**
+With the 10-year yield holding elevated at 5.29% and broad equities showing muted conviction, healthcare faces crosswinds between capital cost pressures and structural tailwinds from aging demographics. The sector's mixed tone—Nasdaq slightly outpacing the Dow—reflects bifurcation: capital-intensive names like surgical device makers face higher funding costs, while payers are doubling down on cost-control strategies to remain competitive in a rate-sensitive environment where consumers are more price-conscious.
+Tickers: $UNH, $CVS, $ISRG
+Sources: Yahoo, ChartMill, Benzinga
 
 ## 2026-10-01
 **Healthcare Treads Water as Rate Backdrop Pressures Valuations**
