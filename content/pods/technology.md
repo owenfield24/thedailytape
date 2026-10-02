@@ -3,9 +3,17 @@ pod: Technology
 ---
 
 ## Watchlist
-- $TSMC: Multibillion Texas expansion signals capex confidence despite rate backdrop
-- $MSFT: Best quarter since 1998 highlights AI-driven growth offsetting rate headwinds
-- $MU: Earnings beat and raised guidance; bellwether for demand amid rate uncertainty
+- $MSFT: Azure growth fueling best quarter since 1998; rate stability supports margin defense
+- $NVDA: Buyback leadership shifting capital allocation narrative; watch for payout guidance updates
+- $MRVL: Custom AI silicon deals with hyperscalers; smaller-cap FCF generation under rate pressure
+
+## 2026-10-02
+**Tech Sector Pivots to Cash Returns as Rate Cycle Stabilizes**
+With the 10-year Treasury holding firm at 5.29% and broad market momentum muted across large caps, technology companies are shifting capital allocation strategies away from pure growth reinvestment toward shareholder returns. The Nasdaq's modest outperformance (+0.31% vs. S&P's +0.18%) masks a bifurcation: mega-cap names are increasingly defending valuations through buybacks and dividends, while the sector grapples with rate-sensitive cash flow dynamics that make near-term distributions more attractive than before. This rebalancing is visible across the Magnificent 7 hierarchy, where investors are now scrutinizing free cash flow generation and payout discipline as primary valuation inputs rather than topline growth alone.
+
+Watch for earnings revisions and FCF guidance updates in coming weeks as management teams signal conviction on stabilized rates; Azure's recent strength suggests cloud infrastructure remains resilient, but margin expansion narratives will hinge on whether current rate levels persist. Monitor whether smaller-cap chip and software names (facing higher financing costs) can compete on cash return metrics, as a sustained 5%+ 10-year yield could widen the valuation gap between capital-efficient mega-caps and capital-intensive challengers.
+Tickers: $MSFT, $NVDA, $MRVL
+Sources: Yahoo
 
 ## 2026-10-01
 **Tech Sector Resilience Tested as Rates Hold Firm Amid Inflation Signals**
