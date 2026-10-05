@@ -3,9 +3,17 @@ pod: Technology
 ---
 
 ## Watchlist
-- $MSFT: Azure growth fueling best quarter since 1998; rate stability supports margin defense
-- $NVDA: Buyback leadership shifting capital allocation narrative; watch for payout guidance updates
-- $MRVL: Custom AI silicon deals with hyperscalers; smaller-cap FCF generation under rate pressure
+- $MSFT: Hyperscaler capex cycle accelerating; mentioned as AI/hybrid cloud driver through 2030
+- $NVDA: 24/7 onchain trading approval signals institutional confidence in sustained demand cycle
+- $MP: Pentagon-backed rare earth play; supply-chain de-risking tailwind supports AI infrastructure buildout
+
+## 2026-10-05
+**Tech Sector Bifurcates as Rate Environment Tilts Toward Infrastructure and AI Capital Intensity**
+The 10-year yield holding steady near 5.24% continues to create a divergence within technology: capital-light software and consumer-facing platforms face margin pressure, while infrastructure-heavy segments—cloud hyperscalers, semiconductor equipment, and AI-enabling hardware—attract outsized investment flows seeking durable returns on massive capex outlays. The Nasdaq's outperformance (+1.02% vs. S&P 500's +0.74%) signals continued risk-on appetite for growth, but the real story is a reallocation toward companies with defensible moats built on physical assets and long-contract visibility rather than narrative-driven valuations.
+
+Investors should monitor whether this structural tilt toward capex-intensive tech accelerates as enterprise AI deployments move from proof-of-concept to production scale. Watch for softening in smaller, unprofitable consumer and SaaS names, and track whether mega-cap cloud providers and specialty hardware makers sustain their momentum through Q4 earnings—any sign of a slowdown in enterprise AI spending or margin compression at hyperscalers could reverse the sector's current bifurcation.
+Tickers: $MSFT, $NVDA, $AMZN
+Sources: Yahoo
 
 ## 2026-10-02
 **Tech Sector Pivots to Cash Returns as Rate Cycle Stabilizes**
