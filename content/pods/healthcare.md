@@ -3,9 +3,16 @@ pod: Healthcare
 ---
 
 ## Watchlist
-- $UNH: Rolling out 2027 Medicare plans with zero premiums and copays; signals aggressive pricing in rate-sensitive segment
-- $CVS: Subject of downside analysis today; integrated payer model under pressure in higher-rate regime
-- $ISRG: Valuation scrutiny versus peers as capital costs rise; watch for margin compression signals
+- $UNH: Reports October 13; market watching valuation inflection amid MA expansion
+- $JNJ: Phase 3 skin clearance data; pipeline strength test in defensive environment
+
+## 2026-10-05
+**Healthcare Investors Hunt Yield as Rate Pressure Persists**
+The 10-year Treasury holding firm near 5.24% continues to reshape healthcare investor behavior, particularly among income-focused portfolios. With the broader market gaining modestly on tech strength but long rates still elevated, rate-sensitive healthcare names—especially insurers and dividend payers—are drawing fresh attention as alternatives to fixed income. Recent commentary on dividend ETF allocation and municipal bond comparisons signals that yield-starved investors are increasingly viewing healthcare's stable cash flows as a hedge against persistent rate uncertainty.
+
+As earnings season accelerates, watch whether healthcare names can defend valuations amid refinancing pressure and margin headwinds from higher cost of capital. The sector's ability to deliver earnings growth that justifies current multiples in a 5%+ rate environment will likely determine whether this yield hunt reflects fundamental repricing or mere rotation between asset classes.
+Tickers: $UNH, $JNJ
+Sources: SeekingAlpha, Yahoo
 
 ## 2026-10-02
 **Healthcare Navigates Rate Headwinds While Insurers Compete on Affordability**
