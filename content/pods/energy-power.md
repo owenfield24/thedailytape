@@ -3,9 +3,14 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $MPC: Refiner outperformance theme; up 5% as spreads widen
-- $VLO: Refiner outperformance theme; up 4% as spreads widen
-- $XOM: Integrated major underperforming refiners; capital return focus near-term
+- $XOM: Announced October dividend increase; economic moat thesis under investor scrutiny
+- $CVX: Passed momentum screen ahead of technical breakout; test of institutional demand
+
+## 2026-10-05
+**Energy Stocks Rally as Rates Stabilize, Dividend Appeal Resurges**
+With the 10-year Treasury holding steady at 5.24% and broad equities grinding higher, energy names are catching bid as the sector's cash-generation story becomes increasingly attractive relative to duration risk. Despite a 49% year-to-date gain, Wall Street consensus suggests energy remains underowned—a classic signal that macro conditions are finally aligning with fundamentals. The modest decline in Treasury yields today removes near-term rate headwinds that had pressured high-yielding assets, while a stable-to-positive equity backdrop validates the sector's ability to compound cash flows through commodity cycles.
+Tickers: $XOM, $CVX
+Sources: Yahoo, SeekingAlpha, ChartMill
 
 ## 2026-10-02
 **Refiners Outpace Integrated Majors as Oil Holds Above $100**
