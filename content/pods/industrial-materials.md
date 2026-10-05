@@ -3,9 +3,17 @@ pod: Industrial & Materials
 ---
 
 ## Watchlist
-- $CAT: Announced $1B Sanford manufacturing investment; tracking capex appetite in high-rate regime
-- $HON: Outpacing market; featured in smart HVAC controls outlook as efficiency-play beneficiary
-- $GE: GE Aerospace coverage spike suggests investor reassessment; monitor for rate-sensitive guidance
+- $CAT: Valuation debate intensifying; watch for guidance on infrastructure capex sustainability
+- $URI: Sell-off seen as buying opportunity by MS; monitor rental demand trends
+- $HON: Recently spun out three entities; tracking sum-of-parts premium/discount versus market
+
+## 2026-10-05
+**Steady Rates Keep Industrial Capex Appetite Intact Despite Valuation Scrutiny**
+The 10-year treasury holding near 5.24% and broad market strength (SPY +0.74%, Nasdaq +1.02%) suggest the Fed's pause is giving capital-intensive sectors room to breathe. With rates no longer accelerating higher, equipment manufacturers and industrial service providers face a more stable financing backdrop—one that's supporting both M&A activity and shareholder returns, as evidenced by dividend announcements and strategic breakups aimed at unlocking shareholder value. The modest treasury decline signals inflation concerns may be easing, which typically supports industrial demand without crushing margins.
+
+Investors should monitor whether this goldilocks rate environment holds through earnings season and Q4 guidance, particularly around cyclical capex spending and rental utilization rates. A fresh leg down in yields could reignite multiple expansion, while any pivot back toward tightening would immediately test these valuations—especially for levered operators trading at stretched multiples like CAT. Watch for margin commentary and order backlogs as real-time proxies for underlying demand durability.
+Tickers: $CAT, $URI, $HON
+Sources: Yahoo, ChartMill, SeekingAlpha
 
 ## 2026-10-02
 **Industrial capex momentum persists despite sticky rates and subdued equity tone**
