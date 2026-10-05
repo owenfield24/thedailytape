@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-10-02T13:06:16.611Z",
+  "asOf": "2026-10-05T13:06:16.627Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 763.99,
-      "changePercent": 0.1783
+      "value": 769.64,
+      "changePercent": 0.7395
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 508.62,
-      "changePercent": 0.0138
+      "value": 511.1,
+      "changePercent": 0.4876
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 742.03,
-      "changePercent": 0.3055
+      "value": 749.58,
+      "changePercent": 1.0175
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 5.29,
+    "value": 5.24,
     "unit": "%",
-    "changePercent": 0.03
+    "changePercent": -0.05
   },
-  "headline": "Tech leads modest gains as energy markets absorb geopolitical shifts",
-  "deck": "Markets inch higher on thin volume as Middle East tensions and energy supply disruptions keep investors cautious ahead of the jobs report.",
-  "body": "The market posted a subdued performance today, with the Nasdaq outpacing the S&P 500 and Dow as tech stocks found modest footing while broader indices barely moved. Treasury yields edged higher to 5.29%, reflecting investor positioning ahead of the critical September jobs data that could influence Federal Reserve policy. The mixed momentum—strength in growth stocks offset by weakness in cyclicals—suggests investors are weighing multiple competing narratives about economic resilience.\n\nGeopolitical developments in the Middle East and oil markets dominated the news flow, creating cross-currents in energy and macro sentiment. OPEC+ delayed its oil capacity review following Iran-related disruptions, while reports of potential European diesel releases and record LNG shipments through Hormuz signal supply flexibility despite regional tensions. These developments may be supporting energy markets without yet triggering the broader inflation concerns that would typically derail equities.\n\nWith the jobs report looming and bond market technicals showing potential stabilization signals, investors appear to be taking a wait-and-see posture rather than making aggressive directional bets. The muted moves in the Dow and S&P 500 suggest caution is winning the day, even as the tech-heavy Nasdaq shows slightly more conviction. Energy stocks remain a key pivot point between geopolitical risk and market resilience narratives.",
-  "sources": "Reuters, CNBC"
+  "headline": "Tech leads modest gains as investors hunt bargains",
+  "deck": "The Nasdaq outpaced broader indices today while Treasury yields dipped, as market observers signal selective buying opportunities despite ongoing uncertainty.",
+  "body": "The Nasdaq's 1.02% gain led a broadly positive session, with the S&P 500 and Dow adding 0.74% and 0.49% respectively. The tech-heavy outperformance suggests investors remain willing to rotate into growth names, while the 10-year Treasury's modest 5-basis-point decline hints at cautious optimism on the rate outlook. Taken together, the moves reflect a market searching for conviction amid what observers are describing as an \"ugly\" environment ripe for selective deployment of cash.\n\nHeadline commentary from major outlets underscores the selective nature of current opportunities. Coverage around airline profitability challenges despite higher fares and calls for strategic buying in a weak market tone suggest investors are hunting for quality at discount valuations rather than making blanket bets. Meanwhile, noise around regulatory developments—including Justice Alito's retirement considerations—adds a layer of political backdrop, though today's moves indicate equities remain focused on earnings fundamentals and valuations over macro headlines.\n\nAI-related concerns also surfaced with news of an OpenAI safety employee's departure, yet this failed to derail tech's relative outperformance, suggesting the sector's growth narrative still commands investor attention. The mixed signals across headlines reinforce that today's market is less about broad risk-on sentiment and more about disciplined picking amid uncertainty.",
+  "sources": "CNBC, Bloomberg"
 }
