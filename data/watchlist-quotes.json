@@ -1,129 +1,113 @@
 {
-  "asOf": "2026-10-02T13:06:31.940Z",
+  "asOf": "2026-10-05T13:06:32.023Z",
   "quotes": {
     "JPM": {
-      "price": 333.18,
-      "changePercent": 0.7103
-    },
-    "BAC": {
-      "price": 53.73,
-      "changePercent": -1.2861
-    },
-    "BK": {
-      "price": 150.17,
-      "changePercent": -2.4173
-    },
-    "MSFT": {
-      "price": 512.8,
-      "changePercent": -0.0195
-    },
-    "MU": {
-      "price": 1097.39,
-      "changePercent": 3.0307
-    },
-    "UNH": {
-      "price": 365.2,
-      "changePercent": -0.5121
-    },
-    "JNJ": {
-      "price": 258.66,
-      "changePercent": -2.2966
-    },
-    "MDT": {
-      "price": 86.44,
-      "changePercent": 0.1738
-    },
-    "TGT": {
-      "price": 156.7,
-      "changePercent": 0.0064
-    },
-    "HD": {
-      "price": 282.46,
-      "changePercent": -0.7136
-    },
-    "KDP": {
-      "price": 30.69,
-      "changePercent": 1.1536
-    },
-    "CVX": {
-      "price": 207.1,
-      "changePercent": 1.4152
-    },
-    "XOM": {
-      "price": 163.82,
-      "changePercent": 0.6575
-    },
-    "CAT": {
-      "price": 826.35,
-      "changePercent": 1.9191
-    },
-    "ROCK": {
-      "price": 39.73,
-      "changePercent": 0.3283
-    },
-    "SNPS": {
-      "price": 490.54,
-      "changePercent": 12.7834
-    },
-    "META": {
-      "price": 725.93,
-      "changePercent": 0.1034
-    },
-    "GOOG": {
-      "price": 334.93,
-      "changePercent": -1.7051
-    },
-    "VST": {
-      "price": 139.75,
-      "changePercent": 1.0119
+      "price": 332.38,
+      "changePercent": -0.2401
     },
     "NOAH": {
-      "price": 7.78,
-      "changePercent": -1.6435
+      "price": 7.79,
+      "changePercent": 0.1285
+    },
+    "MSFT": {
+      "price": 517.53,
+      "changePercent": 0.9224
     },
     "NVDA": {
-      "price": 230.86,
-      "changePercent": 1.0859
+      "price": 233.95,
+      "changePercent": 1.3385
     },
     "MRVL": {
-      "price": 268.08,
-      "changePercent": 1.4647
+      "price": 272.29,
+      "changePercent": 1.5704
+    },
+    "UNH": {
+      "price": 371.9,
+      "changePercent": 1.8346
     },
     "CVS": {
-      "price": 85.2,
-      "changePercent": -0.5718
+      "price": 86.46,
+      "changePercent": 1.4789
     },
     "ISRG": {
-      "price": 401.24,
-      "changePercent": -1.3255
+      "price": 391.95,
+      "changePercent": -2.3153
     },
     "AMZN": {
-      "price": 248.23,
-      "changePercent": -0.3693
+      "price": 251.52,
+      "changePercent": 1.3254
     },
     "EBAY": {
-      "price": 105.89,
-      "changePercent": -0.1509
+      "price": 106.4,
+      "changePercent": 0.4816
     },
     "MPC": {
-      "price": 420.15,
-      "changePercent": 6.2541
+      "price": 422.33,
+      "changePercent": 0.5189
     },
     "VLO": {
-      "price": 408.46,
-      "changePercent": 5.3791
+      "price": 406.3,
+      "changePercent": -0.5288
+    },
+    "XOM": {
+      "price": 164.01,
+      "changePercent": 0.116
+    },
+    "CAT": {
+      "price": 845.42,
+      "changePercent": 2.3077
     },
     "HON": {
-      "price": 213.8,
-      "changePercent": 1.3558
+      "price": 213.99,
+      "changePercent": 0.0889
     },
     "GE": {
-      "price": 312.39,
-      "changePercent": 0.032
+      "price": 309.56,
+      "changePercent": -0.9059
     },
     "GOOGL": {
-      "price": 338.24,
-      "changePercent": -1.6973
+      "price": 343.5,
+      "changePercent": 1.5551
+    },
+    "SBUX": {
+      "price": 94.71,
+      "changePercent": -0.1792
+    },
+    "JPUS": {
+      "price": 137.24,
+      "changePercent": 0.6675
+    },
+    "MP": {
+      "price": 46.97,
+      "changePercent": 1.9093
+    },
+    "JNJ": {
+      "price": 256.03,
+      "changePercent": -1.0168
+    },
+    "WMT": {
+      "price": 104.26,
+      "changePercent": 0
+    },
+    "HD": {
+      "price": 282.85,
+      "changePercent": 0.1381
+    },
+    "TSCO": {
+      "price": 31.09,
+      "changePercent": -2.017
+    },
+    "CVX": {
+      "price": 206.69,
+      "changePercent": -0.198
+    },
+    "URI": {
+      "price": 1081.04,
+      "changePercent": 4.5382
+    },
+    "META": {
+      "price": 728.08,
+      "changePercent": 0.2962
     }
   }
 }
