@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-10-05T13:06:16.627Z",
+  "asOf": "2026-10-06T13:06:15.880Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 769.64,
-      "changePercent": 0.7395
+      "value": 774.83,
+      "changePercent": 0.6743
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 511.1,
-      "changePercent": 0.4876
+      "value": 512.11,
+      "changePercent": 0.1976
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 749.58,
-      "changePercent": 1.0175
+      "value": 756.2,
+      "changePercent": 0.8832
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 5.24,
+    "value": 5.28,
     "unit": "%",
-    "changePercent": -0.05
+    "changePercent": 0.04
   },
-  "headline": "Tech leads modest gains as investors hunt bargains",
-  "deck": "The Nasdaq outpaced broader indices today while Treasury yields dipped, as market observers signal selective buying opportunities despite ongoing uncertainty.",
-  "body": "The Nasdaq's 1.02% gain led a broadly positive session, with the S&P 500 and Dow adding 0.74% and 0.49% respectively. The tech-heavy outperformance suggests investors remain willing to rotate into growth names, while the 10-year Treasury's modest 5-basis-point decline hints at cautious optimism on the rate outlook. Taken together, the moves reflect a market searching for conviction amid what observers are describing as an \"ugly\" environment ripe for selective deployment of cash.\n\nHeadline commentary from major outlets underscores the selective nature of current opportunities. Coverage around airline profitability challenges despite higher fares and calls for strategic buying in a weak market tone suggest investors are hunting for quality at discount valuations rather than making blanket bets. Meanwhile, noise around regulatory developments—including Justice Alito's retirement considerations—adds a layer of political backdrop, though today's moves indicate equities remain focused on earnings fundamentals and valuations over macro headlines.\n\nAI-related concerns also surfaced with news of an OpenAI safety employee's departure, yet this failed to derail tech's relative outperformance, suggesting the sector's growth narrative still commands investor attention. The mixed signals across headlines reinforce that today's market is less about broad risk-on sentiment and more about disciplined picking amid uncertainty.",
-  "sources": "CNBC, Bloomberg"
+  "headline": "Tech strength lifts market as Nasdaq outpaces broader indices",
+  "deck": "Growth stocks lead a modest rally as investors digest AI momentum and corporate buyback strategies.",
+  "body": "The market opened with a cautiously optimistic tone, with the Nasdaq climbing 0.88% to lead the three major indices—outpacing the S&P 500's 0.67% gain and the Dow's more modest 0.20% advance. This tech-heavy performance reflects sustained investor enthusiasm around artificial intelligence, with coverage of Microsoft's continued AI pivot and Nvidia's record-high potential suggesting that mega-cap technology remains the market's primary driver. Meanwhile, the 10-Year Treasury ticked up 4 basis points to 5.28%, a move that typically weighs on growth stocks but hasn't derailed today's rally.\n\nThe headlines point to a market increasingly focused on AI narratives and corporate capital allocation decisions. Wall Street's bullish stance on Microsoft's AI strategy, paired with close attention to Nvidia's massive buyback program, underscores how investors are parsing both fundamental business shifts and shareholder-friendly actions in the tech sector. SpaceX's resurgence also suggests investor appetite for innovation-driven stories beyond traditional software and semiconductors.\n\nWith multiple segments of the market in focus—from transportation stocks to AI plays—today's gains reflect selective strength rather than broad-based enthusiasm. The modest overall index moves mask underlying momentum in growth names, while the Dow's lagging performance hints that value and traditional industrial exposure remain less favored in the current environment.",
+  "sources": "CNBC"
 }
