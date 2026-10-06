@@ -3,9 +3,17 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $META: September surge of 27%; watch for October seasonality reversal or continuation
-- $MSFT: Implicit in 'hyperscaler' narrative; key indicator of AI capex/rate sensitivity
-- $NVDA: Overweight in rate-sensitive chip ETF thesis; rate moves directly impact valuation
+- $AMD: Crossed $1 trillion market cap on AI agent CPU demand acceleration
+- $CEG: 20-year Google nuclear deal signals long-term AI power infrastructure bet
+- $GOOG: 4.3B nuclear deal underscores magnitude of energy capex for AI scaling
+
+## 2026-10-06
+**AI Infrastructure Demand Overrides Rate Headwinds in Communications Sector**
+With the 10-year yield climbing to 5.28% and equities broadly flat to modestly positive, rate-sensitive communications and platform stocks face headwinds — yet the sector is being lifted by an offsetting structural tailwind: explosive AI infrastructure needs. The urgency to secure computing power and energy for AI agents is driving capex cycles across semiconductors, cloud platforms, and energy infrastructure, effectively creating a bifurcated market where growth stories tied to AI adoption are outpacing macro concerns about rising discount rates.
+
+Investors should watch whether this AI-driven capex momentum can sustain momentum if treasury yields continue to climb or if breadth narrows further. The next inflection point will likely come from quarterly earnings guidance on AI-related capex and demand signals from hyperscalers, particularly around compute-intensive AI workloads and the power infrastructure required to support them.
+Tickers: $AMD, $CEG
+Sources: Yahoo
 
 ## 2026-10-05
 **Tech Platforms Rally as Rate Stability Opens Valuation Window**
