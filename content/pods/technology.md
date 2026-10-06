@@ -3,9 +3,15 @@ pod: Technology
 ---
 
 ## Watchlist
-- $MSFT: Hyperscaler capex cycle accelerating; mentioned as AI/hybrid cloud driver through 2030
-- $NVDA: 24/7 onchain trading approval signals institutional confidence in sustained demand cycle
-- $MP: Pentagon-backed rare earth play; supply-chain de-risking tailwind supports AI infrastructure buildout
+- $AAPL: Valuation pressure evident; watch whether 22% margin target holds amid rate regime
+- $TSMC: Q3 margin guidance critical in high-rate environment; chip cycle inflection at stake
+- $CEG: Nuclear energy tailwind from AI capex cycle; benefits from secular tech demand despite rates
+
+## 2026-10-06
+**Tech Sector Recalibrating Valuations as Rates Hold Near Multi-Year Highs**
+Investors should monitor whether the 10-year yield breaks meaningfully higher—any move above 5.30% could accelerate multiple compression in growth-oriented segments. Watch also for Q3 guidance and margin outlooks from capital-efficient players (particularly semiconductor suppliers facing margin pressure); any surprise to the downside on forward profitability would likely extend the current rotation away from richly-valued names and toward cash-generative, dividend-capable peers.
+Tickers: $MSFT, $TSMC
+Sources: Yahoo, SeekingAlpha, ChartMill
 
 ## 2026-10-05
 **Tech Sector Bifurcates as Rate Environment Tilts Toward Infrastructure and AI Capital Intensity**
