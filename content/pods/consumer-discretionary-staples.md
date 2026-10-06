@@ -3,9 +3,16 @@ pod: Consumer Discretionary/Staples
 ---
 
 ## Watchlist
-- $WMT: Defensive positioning amid rate stability; CEO outlook signals retail chain direction
-- $HD: Trading below historical valuation; housing slowdown directly impacts discretionary spending
-- $TSCO: Testing 17-year dividend streak sustainability; dividend growth proxy for sector health
+- $COST: Down 10% YTD while S&P up 17%; valuation compression under rate pressure evident
+- $WMT: Diversified exposure across discretionary and staples; exposed to rate-driven consumer spending shifts
+
+## 2026-10-06
+**Rate Headwinds Weigh on Consumer Discretionary Across Portfolio**
+With the 10-year Treasury holding firm at 5.28% and broad market momentum tilted toward defensive names, rate-sensitive consumer discretionary equities are facing persistent headwinds that ripple across valuations and consumer behavior. The Nasdaq's modest outperformance today masks underlying stress in the discretionary space, where higher borrowing costs are dampening both consumer credit appetite and retailer margins—a dynamic already reflected in commentary around premium-priced names like Costco underperforming the broader market by significant margins over recent months.
+
+Investors should monitor whether the 10-year yield breaks materially higher or stabilizes, as any further move upward could accelerate rotation away from discretionary names into staples and dividend payers. Watch for Q4 consumer spending data and holiday traffic reports from major retailers to signal whether price-sensitive consumers are pulling back—early signals from niche players experimenting with value formats and lapsed-consumer recovery strategies suggest margin pressure remains acute across the sector.
+Tickers: $COST, $WMT
+Sources: Yahoo, SeekingAlpha, ChartMill
 
 ## 2026-10-05
 **Retail and Discretionary Sector Navigates Sticky Rates, Bifurcated Consumer**
