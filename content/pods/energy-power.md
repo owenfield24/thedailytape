@@ -3,8 +3,14 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Announced October dividend increase; economic moat thesis under investor scrutiny
-- $CVX: Passed momentum screen ahead of technical breakout; test of institutional demand
+- $XOM: Trending stock amid SCOTUS liability case; dividend sustainability under scrutiny
+- $CVX: Warning on diesel price impacts; operationally exposed to policy headwinds
+
+## 2026-10-06
+**Higher Rates Pit Energy Dividends Against Bond Competition**
+With the 10-year Treasury climbing to 5.28% and equities posting modest gains across the board, Energy's traditional dividend appeal faces renewed headwinds from risk-free alternatives. The sector's heavyweights—particularly integrated majors like Exxon and Chevron—are now competing directly with Treasury yields for income-focused capital, a dynamic that typically pressures valuations when rates stay elevated. Market chatter around dividend replacement strategies and analyst scrutiny on whether the XOM story has legs suggest investors are reassessing whether energy equities still offer sufficient yield pickup to justify equity risk in this rate environment.
+Tickers: $XOM, $CVX
+Sources: SeekingAlpha, Yahoo
 
 ## 2026-10-05
 **Energy Stocks Rally as Rates Stabilize, Dividend Appeal Resurges**
