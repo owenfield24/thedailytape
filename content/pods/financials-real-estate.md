@@ -3,9 +3,15 @@ pod: Financials & Real Estate
 ---
 
 ## Watchlist
-- $JPM: Banking moat thesis under discussion; earnings signal for sector NIM trajectory
-- $SBUX: Consumer spending barometer ahead of earnings; BofA flagged customer insight
-- $JPUS: Diversified equity ETF positioning; reflects broad-based sector allocation flows
+- $JPM: Q3 earnings preview; CEO commentary on rates, AI competition, and cyber risk expected
+- $BAC: Flagged tech bubble concerns; stock exposure and hedge positioning worth monitoring post-earnings
+- $CHRW: Transportation sector bellwether; slides continue amid rate and demand uncertainty
+
+## 2026-10-07
+**Banking Sector Navigates Higher Rates Amid Capital Competition From AI Boom**
+The 10-year Treasury holding firm at 5.31% continues to shape bank profitability and capital allocation decisions across the sector. With rates elevated and the AI boom now competing for institutional capital alongside government borrowing, financials are grappling with a dual headwind: margin compression from the flatter yield curve and outflows toward higher-growth technology bets. Bank stocks broadly traded lower in September, and while Q3 earnings could highlight strong banking momentum, the macro backdrop suggests investors remain cautious about rate-sensitive valuations even as Wall Street bonus pools signal underlying earnings resilience.
+Tickers: $JPM, $BAC
+Sources: SeekingAlpha, Yahoo
 
 ## 2026-10-05
 **Banking sector stabilizes as yield curve holds, economic resilience supports valuations**
