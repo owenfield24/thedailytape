@@ -3,8 +3,16 @@ pod: Consumer Discretionary/Staples
 ---
 
 ## Watchlist
-- $COST: Down 10% YTD while S&P up 17%; valuation compression under rate pressure evident
-- $WMT: Diversified exposure across discretionary and staples; exposed to rate-driven consumer spending shifts
+- $WMT: Advertising and data monetization offsetting rate-driven margin pressure; key barometer for staples sector
+- $HD: Rate-sensitive discretionary proxy; Jim Cramer notes limited relief until rates fall
+
+## 2026-10-07
+**Higher Rates Reshape Consumer Spending: Staples Stabilize, Discretionary Evolves**
+With the 10-year Treasury holding firm at 5.31% and the broader market posting only modest gains across all three major indices, consumer-facing sectors are showing divergent resilience tied to rate sensitivity and business model adaptability. Staples names like Walmart are leaning into higher-margin ancillary businesses—advertising platforms and data monetization—to offset margin pressure from persistent financing costs, while rate-sensitive discretionary players like Home Depot face structural headwinds until monetary policy shifts. The sector's narrative is less about demand destruction and more about which business models can thrive in a persistent higher-rate environment.
+
+Investors should monitor whether staples can sustain advertising and services growth as a secular offset to core retail margin compression, and whether discretionary names dependent on consumer credit and housing activity show stabilization signals tied to any Fed pivot expectations. Watch for Q-results and forward guidance from large-cap retailers to clarify whether data-driven monetization and operational efficiency can outpace the drag from elevated interest rates on consumer balance sheets.
+Tickers: $WMT, $HD
+Sources: Yahoo, ChartMill
 
 ## 2026-10-06
 **Rate Headwinds Weigh on Consumer Discretionary Across Portfolio**
