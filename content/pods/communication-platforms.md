@@ -3,9 +3,17 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $AMD: Crossed $1 trillion market cap on AI agent CPU demand acceleration
-- $CEG: 20-year Google nuclear deal signals long-term AI power infrastructure bet
-- $GOOG: 4.3B nuclear deal underscores magnitude of energy capex for AI scaling
+- $AVGO: AI custom-chip revenue accelerating at 221%; backstage infrastructure player benefiting most from buildout
+- $T: Dividend yield less attractive in higher-rate environment; potential tactical opportunity if yields correct
+- $FLYW: New tech veteran director may signal platform strategy shift; monitor for strategic commentary
+
+## 2026-10-07
+**AI Infrastructure Boom Attracts Capital Despite Rising Rate Environment**
+With the 10-year yield holding steady at 5.31% and broad equity indices posting modest gains, investors are selectively rotating toward high-growth narratives that can justify premium valuations in a higher-for-longer rate regime. The Communication & Platforms sector is bifurcating: AI infrastructure plays like chipmakers are commanding outsized attention (Broadcom's custom-chip business growing at 221% YoY), while traditional telecom dividend stocks face headwinds as rising yields make their payouts less attractive relative to risk-free alternatives. This mirrors historical precedent—the railroad boom commanded disproportionate capital despite macro uncertainty, and current AI buildout is tracking as an even larger share of economic investment.
+
+Investors should monitor whether this bifurcation widens or narrows as rate volatility resurfaces. If yields remain elevated, expect continued outperformance from AI-adjacent semiconductor and platform names over traditional telecom; conversely, any near-term rate decline could spark tactical mean reversion into dividend-paying communication stocks. Watch for margin pressures in infrastructure-heavy segments if capex demands remain elevated without corresponding revenue acceleration.
+Tickers: $AVGO, $AMD, $META
+Sources: Yahoo, SeekingAlpha
 
 ## 2026-10-06
 **AI Infrastructure Demand Overrides Rate Headwinds in Communications Sector**
