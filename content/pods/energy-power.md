@@ -3,8 +3,17 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $XOM: Trending stock amid SCOTUS liability case; dividend sustainability under scrutiny
-- $CVX: Warning on diesel price impacts; operationally exposed to policy headwinds
+- $CVX: Announced major Hess Midstream and DJ Basin asset sale; portfolio reset underway
+- $XOM: Dividend story cited as centerpiece of bull case amid rate support
+- $BP: Positioned by major investors as outperformance play in current environment
+
+## 2026-10-07
+**Higher Rates Support Energy Dividend Appeal as Portfolio Hedge**
+With the 10-year Treasury holding firm at 5.31% and broader equities gaining modest ground, energy stocks are reasserting their role as inflation hedges and high-yield income anchors for risk-conscious investors. The sector's resilience amid flat-to-positive market momentum reflects structural demand for both the commodity exposure and the above-market dividend yields that energy majors continue to offer—a dynamic underscored by recent commentary highlighting energy as a preferred defensive positioning tool and multiple mentions of dividend-focused plays across the complex.
+
+Investors should monitor whether the current rate regime persists or shifts, as sustained higher yields could pressure capital allocation toward energy's cash generation story, while any yield compression would test whether the sector can maintain momentum on pure valuation or commodity cycle grounds alone. Asset portfolio repositioning—evidenced by recent divestiture announcements—suggests majors are also actively reshaping their own capital bases, which could create both liquidity events and clearer strategic narratives over coming quarters.
+Tickers: $XLE, $CVX, $BP
+Sources: Yahoo, SeekingAlpha
 
 ## 2026-10-06
 **Higher Rates Pit Energy Dividends Against Bond Competition**
