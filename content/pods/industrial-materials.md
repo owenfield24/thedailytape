@@ -3,9 +3,17 @@ pod: Industrial & Materials
 ---
 
 ## Watchlist
-- $CAT: Valuation debate intensifying; watch for guidance on infrastructure capex sustainability
-- $URI: Sell-off seen as buying opportunity by MS; monitor rental demand trends
-- $HON: Recently spun out three entities; tracking sum-of-parts premium/discount versus market
+- $CAT: $1B North Carolina manufacturing commitment signals confidence despite rate environment
+- $GEV: Energy transition plays benefiting from sustained infrastructure and decarbonization capex
+- $FTAI: Aviation-focused industrials tracking airline health and equipment demand cycle
+
+## 2026-10-07
+**Industrial Capex Cycle Accelerates as Rates Stabilize Near Multi-Year Highs**
+With the 10-year yield holding steady at 5.31% and equities grinding modestly higher across all three major indices, Industrial & Materials companies are showing signs of sustained investment appetite despite the elevated rate environment. The sector's resilience—evidenced by strength in names like Caterpillar and GE Vernova, alongside broad participation from diversified industrials and specialty manufacturers—suggests that end-market demand remains intact and companies are committing to long-cycle capex projects despite cost-of-capital headwinds. At current yield levels, the risk of a sharp re-pricing appears muted, allowing large-cap cyclicals to maintain momentum on fundamentals rather than multiple expansion.
+
+Investors should monitor whether this capex cycle can sustain if yields move materially higher or if corporate guidance begins reflecting margin pressure from persistent input costs. Watch for evidence of demand elasticity in downstream end-markets—construction, energy transition, and defense—as these sectors are most sensitive to both rate dynamics and the economic growth embedded in current equity valuations.
+Tickers: $CAT, $GEV, $EMCOR
+Sources: Yahoo, ChartMill
 
 ## 2026-10-05
 **Steady Rates Keep Industrial Capex Appetite Intact Despite Valuation Scrutiny**
