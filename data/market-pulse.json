@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-10-06T13:06:15.880Z",
+  "asOf": "2026-10-07T13:06:15.947Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 774.83,
-      "changePercent": 0.6743
+      "value": 779.09,
+      "changePercent": 0.5498
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 512.11,
-      "changePercent": 0.1976
+      "value": 514.56,
+      "changePercent": 0.4784
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 756.2,
-      "changePercent": 0.8832
+      "value": 759.66,
+      "changePercent": 0.4576
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 5.28,
+    "value": 5.31,
     "unit": "%",
-    "changePercent": 0.04
+    "changePercent": 0.03
   },
-  "headline": "Tech strength lifts market as Nasdaq outpaces broader indices",
-  "deck": "Growth stocks lead a modest rally as investors digest AI momentum and corporate buyback strategies.",
-  "body": "The market opened with a cautiously optimistic tone, with the Nasdaq climbing 0.88% to lead the three major indices—outpacing the S&P 500's 0.67% gain and the Dow's more modest 0.20% advance. This tech-heavy performance reflects sustained investor enthusiasm around artificial intelligence, with coverage of Microsoft's continued AI pivot and Nvidia's record-high potential suggesting that mega-cap technology remains the market's primary driver. Meanwhile, the 10-Year Treasury ticked up 4 basis points to 5.28%, a move that typically weighs on growth stocks but hasn't derailed today's rally.\n\nThe headlines point to a market increasingly focused on AI narratives and corporate capital allocation decisions. Wall Street's bullish stance on Microsoft's AI strategy, paired with close attention to Nvidia's massive buyback program, underscores how investors are parsing both fundamental business shifts and shareholder-friendly actions in the tech sector. SpaceX's resurgence also suggests investor appetite for innovation-driven stories beyond traditional software and semiconductors.\n\nWith multiple segments of the market in focus—from transportation stocks to AI plays—today's gains reflect selective strength rather than broad-based enthusiasm. The modest overall index moves mask underlying momentum in growth names, while the Dow's lagging performance hints that value and traditional industrial exposure remain less favored in the current environment.",
-  "sources": "CNBC"
+  "headline": "Stocks edge higher as geopolitical tensions ripple through markets",
+  "deck": "Broad index gains reflect cautious optimism, though Middle East friction and regulatory headwinds temper momentum.",
+  "body": "The S&P 500, Dow, and Nasdaq all climbed modestly today, with the large-cap benchmark leading at 0.55% gains as investors digested a mixed bag of domestic and international developments. The 10-year Treasury ticked up 3 basis points to 5.31%, suggesting some flight-to-safety positioning despite the overall positive equity tone. These measured gains hint at a market still finding its footing amid multiple cross-currents.\n\nGeopolitical risks are front and center, with escalating Middle East tensions taking shape across multiple fronts. Turkey's increased military support to Saudi Arabia against Houthi forces and ongoing U.S.-Iran nuclear negotiations highlight elevated regional uncertainty, though energy markets appear to be pricing this as net-positive for refining margins—Shell flagged record expectations in that space. Iraq's dinar devaluation adds another layer of currency instability to an already complex picture.\n\nOn the domestic front, regulatory pressures are surfacing in unexpected quarters. Google's forced halt on two Texas data center projects signals tightening scrutiny on Big Tech infrastructure expansion, while the UK-based Headlam's collapse into administration underscores lingering fragility in certain sectors. These headwinds haven't derailed today's modest rally, but they warrant close monitoring as earnings season and policy developments unfold.",
+  "sources": "CNBC, Reuters"
 }
