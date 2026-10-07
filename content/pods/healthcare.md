@@ -3,9 +3,15 @@ pod: Healthcare
 ---
 
 ## Watchlist
-- $UNH: Medicare Advantage exit signals margin pressure spreading across payer cohort
-- $JNJ: Patent cliff looming; dividend yield attracting capital amid rate volatility
-- $UNITEDHEALTH: Under regulatory scrutiny on claims denial practices; cost controls under fire
+- $UNH: Recent downgrade signals investor concerns on profitability; Q3 earnings due soon
+- $ISRG: Subject of recent analyst rotation as higher rates pressure growth multiples
+- $JNJ: Dividend stability plays into current rate backdrop; pipeline data in focus
+
+## 2026-10-07
+**Healthcare Navigates Rate Resilience as Treasury Yields Hold Firm**
+With the 10-year Treasury climbing to 5.31% and broad equities posting modest gains, healthcare is showing mixed signals typical of a sector caught between defensive positioning and rotation concerns. Rate-sensitive segments—particularly insurers and integrated players dependent on investment income—face structural headwinds, as evidenced by recent downgrades in mega-cap coverage; meanwhile, higher discount rates are pressuring valuations for lower-yielding growth names like surgical robotics. The modest equity rally masks underlying churn within healthcare, where investors appear to be arbitrating between stable dividend payers and higher-growth stories tied to margin expansion.
+Tickers: $UNH, $ISRG, $JNJ
+Sources: SeekingAlpha, ChartMill, Yahoo
 
 ## 2026-10-06
 **Rate Pressure Forces Healthcare Giants to Rethink Coverage, Margins**
