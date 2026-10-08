@@ -3,9 +3,15 @@ pod: Technology
 ---
 
 ## Watchlist
-- $AAPL: Valuation pressure evident; watch whether 22% margin target holds amid rate regime
-- $TSMC: Q3 margin guidance critical in high-rate environment; chip cycle inflection at stake
-- $CEG: Nuclear energy tailwind from AI capex cycle; benefits from secular tech demand despite rates
+- $TSMC: Record Q3 revenue signals sustained AI chip demand; macro bellwether for sector health
+- $NVDA: Options flow suggests directional uncertainty; monitor for signs of AI momentum deceleration
+- $META: Regulatory headwinds and valuation pressure amid rate environment; watch for margin resilience
+
+## 2026-10-08
+**Tech Sector Treads Water as Rate Backdrop Shifts Market Sentiment**
+The Nasdaq's modest decline alongside a flattening 10-year yield reflects a sector caught between competing forces: AI-driven demand momentum—evidenced by TSMC's record Q3 revenue on chip strength—is colliding with persistent rate sensitivity that continues to weigh on high-multiple, capital-intensive names. With treasuries holding firm near elevated levels, the sector's bifurcation deepens: hardware and semiconductor beneficiaries of AI buildout (chip leaders) trade resilient, while unprofitable growth names and consumer-facing platforms face renewed scrutiny on valuation grounds.
+Tickers: $TSMC, $NVDA, $META
+Sources: Yahoo
 
 ## 2026-10-06
 **Tech Sector Recalibrating Valuations as Rates Hold Near Multi-Year Highs**
