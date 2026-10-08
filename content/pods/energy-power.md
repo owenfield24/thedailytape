@@ -3,9 +3,15 @@ pod: Energy & Power
 ---
 
 ## Watchlist
-- $CVX: Announced major Hess Midstream and DJ Basin asset sale; portfolio reset underway
-- $XOM: Dividend story cited as centerpiece of bull case amid rate support
-- $BP: Positioned by major investors as outperformance play in current environment
+- $CVX: Named Bull of the Day; Gulf shutdowns create near-term supply support and valuation test
+- $HP: Drilling services valuation pivot on margin guidance and capex cycle timing amid rate environment
+- $XOM: Upstream expansion plans under scrutiny as higher rates compress project NPV and returns
+
+## 2026-10-08
+**Higher Rates Strain Energy Sector Economics Amid Gulf Supply Risk**
+With the 10-year yield holding above 5.2% and broad equity indices slightly underwater, the energy sector faces a dual headwind: rising capital costs that compress downstream returns, and near-term supply disruption from hurricane activity in the Gulf. The combination of sustained higher rates—which increase the discount rate applied to future cash flows—and operational uncertainty is pressuring sector multiples even as oil prices approach $100/bbl, a level that would typically support upstream valuables. Rate-sensitive names in drilling services and downstream refining are particularly exposed as the cost of financing long-cycle projects and maintenance capex rises.
+Tickers: $CVX, $HP, $XLE
+Sources: ChartMill, Yahoo, SeekingAlpha
 
 ## 2026-10-07
 **Higher Rates Support Energy Dividend Appeal as Portfolio Hedge**
