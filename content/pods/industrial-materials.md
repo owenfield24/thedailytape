@@ -3,9 +3,14 @@ pod: Industrial & Materials
 ---
 
 ## Watchlist
-- $CAT: $1B North Carolina manufacturing commitment signals confidence despite rate environment
-- $GEV: Energy transition plays benefiting from sustained infrastructure and decarbonization capex
-- $FTAI: Aviation-focused industrials tracking airline health and equipment demand cycle
+- $HON: Won Kenya refinery contract but underperformed market today; rate sensitivity in focus
+- $SLB: Positioned as diversification play beyond oil; exposure to energy transition capex under review
+
+## 2026-10-08
+**Rate Headwinds Test Industrial Capex Cycle as Treasury Yields Hold Firm**
+With the 10-year Treasury holding above 5.2% and broad equities drifting lower across all three major indices, capital-intensive industrials and materials names are facing renewed pressure on financing costs and project returns. The modest declines in SPY, DIA, and QQQ suggest a cautious macro backdrop where higher for longer rates are dampening appetite for cyclical investments, evident in mixed positioning across both traditional energy plays and emerging EV infrastructure that require significant upfront deployment of capital.
+Tickers: $SLB, $HON
+Sources: Yahoo, ChartMill
 
 ## 2026-10-07
 **Industrial Capex Cycle Accelerates as Rates Stabilize Near Multi-Year Highs**
