@@ -3,9 +3,15 @@ pod: Healthcare
 ---
 
 ## Watchlist
-- $UNH: Recent downgrade signals investor concerns on profitability; Q3 earnings due soon
-- $ISRG: Subject of recent analyst rotation as higher rates pressure growth multiples
-- $JNJ: Dividend stability plays into current rate backdrop; pipeline data in focus
+- $UNH: P/E reset narrative suggests valuation inflection point worth tracking
+- $PFE: Dividend yield comparison vs. peers highlights income investor rotation signals
+- $CNT: Operational improvements at 12.34X P/E indicate value emergence in payers
+
+## 2026-10-08
+**Healthcare Valuations Reset as Rates Hold; Dividend Plays in Focus**
+With the 10-year yield holding steady near 5.27% and broad market sentiment subdued, healthcare's traditional defensive positioning is reshaping investor calculus around valuation and income. The sector's mega-cap names—particularly integrated insurers and diversified pharma—are seeing their elevated multiples compress as rising rates make equity risk premiums less attractive relative to fixed income, forcing a revaluation of both growth stories and dividend sustainability across the complex.
+Tickers: $UNH, $CNT, $PFE
+Sources: Yahoo, ChartMill
 
 ## 2026-10-07
 **Healthcare Navigates Rate Resilience as Treasury Yields Hold Firm**
