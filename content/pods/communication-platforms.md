@@ -3,9 +3,15 @@ pod: Communication & Platforms
 ---
 
 ## Watchlist
-- $AVGO: AI custom-chip revenue accelerating at 221%; backstage infrastructure player benefiting most from buildout
-- $T: Dividend yield less attractive in higher-rate environment; potential tactical opportunity if yields correct
-- $FLYW: New tech veteran director may signal platform strategy shift; monitor for strategic commentary
+- $META: Regulatory pressure on teen engagement metrics; AI capex profitability narrative key
+
+## 2026-10-08
+**AI Arms Race Pressures Profitability as Rates Hold Near Cycle Highs**
+With the 10-year yield holding firm at 5.27% and the broader market flat to slightly negative, growth-heavy communication and platform names face a dual headwind: capital intensity of AI development colliding with a higher rate environment that punishes unprofitable expansion. The sector's largest players are racing to deploy agentic AI systems and large language models—from Meta's Muse reaching half of customers in two weeks to institutional players like Balyasny embedding Gemini for research—but each incremental AI capability requires significant infrastructure spend at a time when cost of capital remains elevated. This dynamic explains both the sector's modest underperformance today and the underlying tension between innovation velocity and near-term margin pressure.
+
+Investors should monitor whether platforms can monetize AI agent deployments faster than the market currently prices in, and watch for any signs of margin compression as capex cycles intensify. Regulatory headwinds—like Florida's move against infinite scroll for teens—add another layer of uncertainty on revenue growth, making the path to profitability through AI a race against the clock in a higher-rate regime. The next catalyst will likely be quarterly earnings calls where management signals AI ROI timelines and whether FCF generation can offset elevated capex spend.
+Tickers: $META
+Sources: Yahoo, SeekingAlpha
 
 ## 2026-10-07
 **AI Infrastructure Boom Attracts Capital Despite Rising Rate Environment**
