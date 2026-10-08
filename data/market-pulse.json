@@ -1,31 +1,31 @@
 {
-  "asOf": "2026-10-07T13:06:15.947Z",
+  "asOf": "2026-10-08T13:06:15.843Z",
   "tradingDay": true,
   "indices": {
     "sp500": {
       "label": "S&P 500 (SPY)",
-      "value": 779.09,
-      "changePercent": 0.5498
+      "value": 777.22,
+      "changePercent": -0.24
     },
     "dow": {
       "label": "Dow Jones (DIA)",
-      "value": 514.56,
-      "changePercent": 0.4784
+      "value": 511.02,
+      "changePercent": -0.688
     },
     "nasdaq": {
       "label": "Nasdaq (QQQ)",
-      "value": 759.66,
-      "changePercent": 0.4576
+      "value": 757.73,
+      "changePercent": -0.2541
     }
   },
   "treasury10y": {
     "label": "10-Year Treasury",
-    "value": 5.31,
+    "value": 5.27,
     "unit": "%",
-    "changePercent": 0.03
+    "changePercent": -0.04
   },
-  "headline": "Stocks edge higher as geopolitical tensions ripple through markets",
-  "deck": "Broad index gains reflect cautious optimism, though Middle East friction and regulatory headwinds temper momentum.",
-  "body": "The S&P 500, Dow, and Nasdaq all climbed modestly today, with the large-cap benchmark leading at 0.55% gains as investors digested a mixed bag of domestic and international developments. The 10-year Treasury ticked up 3 basis points to 5.31%, suggesting some flight-to-safety positioning despite the overall positive equity tone. These measured gains hint at a market still finding its footing amid multiple cross-currents.\n\nGeopolitical risks are front and center, with escalating Middle East tensions taking shape across multiple fronts. Turkey's increased military support to Saudi Arabia against Houthi forces and ongoing U.S.-Iran nuclear negotiations highlight elevated regional uncertainty, though energy markets appear to be pricing this as net-positive for refining margins—Shell flagged record expectations in that space. Iraq's dinar devaluation adds another layer of currency instability to an already complex picture.\n\nOn the domestic front, regulatory pressures are surfacing in unexpected quarters. Google's forced halt on two Texas data center projects signals tightening scrutiny on Big Tech infrastructure expansion, while the UK-based Headlam's collapse into administration underscores lingering fragility in certain sectors. These headwinds haven't derailed today's modest rally, but they warrant close monitoring as earnings season and policy developments unfold.",
+  "headline": "Markets slip on geopolitical tensions and defense sector concerns",
+  "deck": "Broad equity declines amid escalating Middle East conflict and military spending implications.",
+  "body": "U.S. equities edged lower across all three major indices today, with the Dow leading losses at -0.69% while the S&P 500 and Nasdaq held relatively steady at -0.24% and -0.25% respectively. The modest selloff reflects investor caution as geopolitical risks intensify, particularly surrounding Iran, Saudi Arabia, and the Houthis in the Middle East. Bond yields ticked down slightly, with the 10-year Treasury falling 4 basis points to 5.27%, suggesting a flight to safety among fixed-income investors.\n\nGeopolitical flashpoints dominated today's headlines, from escalating Saudi-Houthi conflicts causing flight disruptions in Riyadh to renewed hypersonic missile threats from Russia and China. A former defense secretary's comments on the Iran situation, combined with satellite and defense sector commentary on emerging space threats, point to prolonged elevated defense spending and potential supply chain disruptions. These tensions typically support defense contractors but can create broader market uncertainty if they threaten global trade routes or energy supplies.\n\nOn the corporate side, the finalized Skydance-WBD acquisition and Ryanair's warning about sustained high jet fuel costs into 2028 highlight mixed sectoral pressures. Media consolidation and aviation sector margin compression offset any enthusiasm from M&A activity, keeping sentiment cautious as investors weigh near-term earnings headwinds against longer-term growth opportunities.",
   "sources": "CNBC, Reuters"
 }
